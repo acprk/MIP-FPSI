@@ -1,7 +1,7 @@
 # MIP-FPSI artifact (TIFS resubmission of T-IFS-23885-2025)
 
 Code, data-set builders, raw logs and table generators for "Hamming fuzzy PSI" (MIP-FPSI).
-Public location: `<ARTIFACT_URL>`. Archive integrity: `SHA256SUMS.txt` (one line per file).
+Public location: <https://github.com/acprk/MIP-FPSI>. Archive integrity: `SHA256SUMS.txt` (one line per file).
 
 Quick start, no build needed:
 
