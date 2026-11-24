@@ -1,0 +1,15 @@
+(128,4) cover (5,1): d=128 delta=4 n=4096 T=5 min_ell=25 f=98
+  global condition n V(d,2d)+(n+m)(V(d,d)+1) <= 2^(d-2): True
+  certified loads [b0,b1] = [1,4096],  log2(b1/b0) = 12.00,  (L+1)/2 = 6.5
+  simplified bound applies: True
+  F=10: rounded labels 13 (3.70 bits), competitor >= 4 (2.00 bits), excess <= 1.70 bits, simplified bound 2.79
+(128,16) cover (9,1): d=128 delta=16 n=4096 T=9 min_ell=14 f=98
+  global condition n V(d,2d)+(n+m)(V(d,d)+1) <= 2^(d-2): True
+  certified loads [b0,b1] = [5,2597],  log2(b1/b0) = 9.02,  (L+1)/2 = 6.5
+  simplified bound applies: True
+  F=274: rounded labels 13 (3.70 bits), competitor >= 2 (1.00 bits), excess <= 2.70 bits, simplified bound 4.02
+(128,16) cover (9,1), 15-bit table: d=128 delta=16 n=4096 T=9 min_ell=14 f=97
+  global condition n V(d,2d)+(n+m)(V(d,d)+1) <= 2^(d-2): True
+  certified loads [b0,b1] = [5,1905],  log2(b1/b0) = 8.57,  (L+1)/2 = 6.5
+  simplified bound applies: True
+  F=274: rounded labels 13 (3.70 bits), competitor >= 2 (1.00 bits), excess <= 2.70 bits, simplified bound 4.02

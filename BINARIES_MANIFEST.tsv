@@ -1,0 +1,87 @@
+sha256	kind	bytes	mtime	path (relative to the author's resubmit/ tree)	used by
+6bfe4731b28cc97b56a29b1bb5bba061117016c49856e63b081ccc89803518f0	elf-pie	6004536	2026-10-22 20:22 PDT	impl/build/fpsi_bench	results/suite_20261022_1934 (impl/scripts/run_suite.sh); early runs, not in the paper
+3e71a0b5e9c6a06bb8103e7921fcb5aff303c5eb582c9beac52c9bc90bd1c6d1	elf-pie	3619272	2026-10-22 20:22 PDT	impl/build/gmw_bench	results/suite_20261022_1934 (impl/scripts/run_suite.sh); early runs, not in the paper
+0015357abef9e9f71baff38b9fc92a71d45302d96a7fb83026e0e60e96a5c9e7	ar-archive	1631536	2026-10-22 20:22 PDT	impl/build/libmipfpsi.a	results/suite_20261022_1934 (impl/scripts/run_suite.sh); early runs, not in the paper
+4f00a990424469461bf435ad8774bc5889c48dfe0fd081191411fd3083b222c3	elf-pie	3375920	2026-10-22 20:22 PDT	impl/build/unit_tests	results/suite_20261022_1934 (impl/scripts/run_suite.sh); early runs, not in the paper
+4c79e03191bf1dc0ac057bb452acc2e81732b68c65e4c43f886b8acb6a6d4a45	elf-pie	221304	2026-10-27 08:15 PDT	impl/build10/choose_cover	experiments_r4 (e1_otfpsi_matched, e3_wan, e4_injection); experiments_r6/e3 stage 2 library
+197bd0842b568bdaa29393221d2bdf1b4e0acae31ccf3d57587133c76617631d	elf-pie	141512	2026-10-27 08:17 PDT	impl/build10/cover_dump	experiments_r4 (e1_otfpsi_matched, e3_wan, e4_injection); experiments_r6/e3 stage 2 library
+3a03c0521ccde37ef68bb59bcf887e3bd6705ae2dfa6b4c5180f4c8254f4592e	elf-pie	6135008	2026-10-27 08:15 PDT	impl/build10/fpsi_bench	experiments_r4 (e1_otfpsi_matched, e3_wan, e4_injection); experiments_r6/e3 stage 2 library
+3db252d43387d8cdbf3c9d0560b0346b750a55f378d3b45167ff5702d8e43b21	elf-pie	3619272	2026-10-27 08:15 PDT	impl/build10/gmw_bench	experiments_r4 (e1_otfpsi_matched, e3_wan, e4_injection); experiments_r6/e3 stage 2 library
+6628923cf892c1c2da841d3289586b668c33df2b80c6a08f64fa9752279432e5	ar-archive	2295334	2026-10-27 08:15 PDT	impl/build10/libmipfpsi.a	experiments_r4 (e1_otfpsi_matched, e3_wan, e4_injection); experiments_r6/e3 stage 2 library
+33c4398e3dddb7699059562d90af5016497b8c5f43def7656e4f53b7c916acbd	elf-pie	6471440	2026-10-27 08:15 PDT	impl/build10/net_bench	experiments_r4 (e1_otfpsi_matched, e3_wan, e4_injection); experiments_r6/e3 stage 2 library
+0da26f86eb4e9c3a87eee136fd6c0ba58082bc09d72f2dc097d1f14b4656de66	elf-pie	6458496	2026-10-27 08:15 PDT	impl/build10/or_deliver	experiments_r4 (e1_otfpsi_matched, e3_wan, e4_injection); experiments_r6/e3 stage 2 library
+3ddfd07a9ad3bd1db56e4e706e68c34fc8d6cb2213c05a1c5cd013fb0a21c58b	elf-pie	6110592	2026-10-27 08:15 PDT	impl/build10/unit_tests	experiments_r4 (e1_otfpsi_matched, e3_wan, e4_injection); experiments_r6/e3 stage 2 library
+67172db02368f16e76491c15854bb9d4727a1013c690a18895b913b868753b3b	ar-archive	2295214	2026-10-27 08:56 PDT	impl/build11/libmipfpsi.a	experiments_r4/e4_injection (second binary); libmipfpsi.a = library of experiments_r6 E1/E2
+e4d16199f4af10265f3d2c09bdc0f94774c4a0e2cd070d98768b9859388fcf43	elf-pie	6471440	2026-10-27 08:56 PDT	impl/build11/net_bench	experiments_r4/e4_injection (second binary); libmipfpsi.a = library of experiments_r6 E1/E2
+4c79e03191bf1dc0ac057bb452acc2e81732b68c65e4c43f886b8acb6a6d4a45	elf-pie	221304	2026-11-12 06:30 PST	impl/build12/choose_cover	experiments_r6 e4_stress, e5_abort, e6 library (same libmipfpsi.a as build11)
+197bd0842b568bdaa29393221d2bdf1b4e0acae31ccf3d57587133c76617631d	elf-pie	141512	2026-11-12 06:30 PST	impl/build12/cover_dump	experiments_r6 e4_stress, e5_abort, e6 library (same libmipfpsi.a as build11)
+033a7a1a372132be3364f7710d56a6bbbe3066615093bd03f5bfe6936c405c65	elf-pie	6140176	2026-11-12 06:30 PST	impl/build12/fpsi_bench	experiments_r6 e4_stress, e5_abort, e6 library (same libmipfpsi.a as build11)
+3db252d43387d8cdbf3c9d0560b0346b750a55f378d3b45167ff5702d8e43b21	elf-pie	3619272	2026-11-12 06:30 PST	impl/build12/gmw_bench	experiments_r6 e4_stress, e5_abort, e6 library (same libmipfpsi.a as build11)
+67172db02368f16e76491c15854bb9d4727a1013c690a18895b913b868753b3b	ar-archive	2295214	2026-11-12 06:30 PST	impl/build12/libmipfpsi.a	experiments_r6 e4_stress, e5_abort, e6 library (same libmipfpsi.a as build11)
+e4d16199f4af10265f3d2c09bdc0f94774c4a0e2cd070d98768b9859388fcf43	elf-pie	6471440	2026-11-12 06:30 PST	impl/build12/net_bench	experiments_r6 e4_stress, e5_abort, e6 library (same libmipfpsi.a as build11)
+a91389360d578803312391972aa9a0a91447d0dcda9be35ce5e2c9b6806720c2	elf-pie	6458496	2026-11-12 06:30 PST	impl/build12/or_deliver	experiments_r6 e4_stress, e5_abort, e6 library (same libmipfpsi.a as build11)
+5ab1e865341244c9cc0617971ce7ab10f00177dd78be2bc9ef58cded025a9d82	elf-pie	6110592	2026-11-12 06:30 PST	impl/build12/unit_tests	experiments_r6 e4_stress, e5_abort, e6 library (same libmipfpsi.a as build11)
+b67c431bbd2b39fd7bb64dbe25c1d459d4248b01a76bbf31fb11947bd92bcb89	elf-pie	6045184	2026-10-23 11:08 PDT	impl/build2/fpsi_bench	results/vs_otfpsi_20261023_0955 (run_vs_otfpsi.sh); superseded
+86342630a967ff6589d36e17545e0540640bd47a5c23e074622680b4cc516001	elf-pie	3619272	2026-10-23 11:08 PDT	impl/build2/gmw_bench	results/vs_otfpsi_20261023_0955 (run_vs_otfpsi.sh); superseded
+4d23e5babbf65c8e629f1965175719a27734430bf6b86621a5fc42f9a5a1609a	ar-archive	1910790	2026-10-23 11:08 PDT	impl/build2/libmipfpsi.a	results/vs_otfpsi_20261023_0955 (run_vs_otfpsi.sh); superseded
+27ff38801f48559ed50e33e70df0f537666dce0eba5f9d6bc1f050766ad1c9e0	elf-pie	6377744	2026-10-23 11:08 PDT	impl/build2/net_bench	results/vs_otfpsi_20261023_0955 (run_vs_otfpsi.sh); superseded
+63949998c069198f42ca61b1202f757202eec1d8cc999886ff04b3cf6883bf25	elf-pie	3384680	2026-10-23 11:08 PDT	impl/build2/unit_tests	results/vs_otfpsi_20261023_0955 (run_vs_otfpsi.sh); superseded
+37e92dd96aca695155b2d36d0ea7a6c9eb75d6c9b2162913bd5d2a9e8e8bd14c	elf-pie	6045184	2026-10-23 11:12 PDT	impl/build3/fpsi_bench	results/campaign2_20261023_1344 (supp. scale + ablation tables), campaign2_20261023_1108 (CONTAMINATED, unused)
+f66051e67c945a2a452bf3e79ec18de026c965ae6eba1c98b60192b8bc919855	elf-pie	3619272	2026-10-23 11:12 PDT	impl/build3/gmw_bench	results/campaign2_20261023_1344 (supp. scale + ablation tables), campaign2_20261023_1108 (CONTAMINATED, unused)
+320c566569faf9fb169a5439985b71fdcee049b30c91a0857778894bc5a94f93	ar-archive	1911878	2026-10-23 11:12 PDT	impl/build3/libmipfpsi.a	results/campaign2_20261023_1344 (supp. scale + ablation tables), campaign2_20261023_1108 (CONTAMINATED, unused)
+475ab3d25d51a4c612d451bd803bc0b8f164654e8fd36a8ad64edb7afbe66e2d	elf-pie	6377744	2026-10-23 11:12 PDT	impl/build3/net_bench	results/campaign2_20261023_1344 (supp. scale + ablation tables), campaign2_20261023_1108 (CONTAMINATED, unused)
+4fb68f142fbe0f8870aff025537abcbe2227d6fee1934d75eec8c758061d7756	elf-pie	3384680	2026-10-23 11:12 PDT	impl/build3/unit_tests	results/campaign2_20261023_1344 (supp. scale + ablation tables), campaign2_20261023_1108 (CONTAMINATED, unused)
+57aa8cf25ea90f928cfa2fb99ffd5bd886f6152f257cf53a2b28a04a379c79ee	elf-pie	6045184	2026-10-23 19:05 PDT	impl/build4/fpsi_bench	campaign2 follow-ups (run_followup3.sh, run_followup4.sh)
+f66051e67c945a2a452bf3e79ec18de026c965ae6eba1c98b60192b8bc919855	elf-pie	3619272	2026-10-23 19:06 PDT	impl/build4/gmw_bench	campaign2 follow-ups (run_followup3.sh, run_followup4.sh)
+88d14e569b7bf7a7c7eab8fd125bc05d9cd61dce694a75c04a18a094a2248349	ar-archive	1911678	2026-10-23 19:05 PDT	impl/build4/libmipfpsi.a	campaign2 follow-ups (run_followup3.sh, run_followup4.sh)
+1f37d878cda23f3e7fa041539c5e574c8fd2ec0b483d0512eb953edbadb7931d	elf-pie	6381840	2026-10-23 19:06 PDT	impl/build4/net_bench	campaign2 follow-ups (run_followup3.sh, run_followup4.sh)
+4fb68f142fbe0f8870aff025537abcbe2227d6fee1934d75eec8c758061d7756	elf-pie	3384680	2026-10-23 19:06 PDT	impl/build4/unit_tests	campaign2 follow-ups (run_followup3.sh, run_followup4.sh)
+c0107c2388a63eba49c5345e37a916bdb4452383c7af58cda18e6275482ddbc1	elf-pie	221304	2026-10-23 21:35 PDT	impl/build5/choose_cover	BUILD A: results/campaign3_20261023_2103, c3b_extra_20261024_0116, modes_r3_20261023_1956, campaign5 arm A
+8d028fe7626abd57c790f3a39db3ce27c3c718edbb73c6e24d1fdc686f489a32	elf-pie	6120064	2026-10-23 20:53 PDT	impl/build5/fpsi_bench	BUILD A: results/campaign3_20261023_2103, c3b_extra_20261024_0116, modes_r3_20261023_1956, campaign5 arm A
+3db252d43387d8cdbf3c9d0560b0346b750a55f378d3b45167ff5702d8e43b21	elf-pie	3619272	2026-10-24 04:36 PDT	impl/build5/gmw_bench	BUILD A: results/campaign3_20261023_2103, c3b_extra_20261024_0116, modes_r3_20261023_1956, campaign5 arm A
+6a66b8772f3b46c71465d1abb19a50c7eb526e143c168f2566435919e42a49bf	ar-archive	2277812	2026-10-23 20:52 PDT	impl/build5/libmipfpsi.a	BUILD A: results/campaign3_20261023_2103, c3b_extra_20261024_0116, modes_r3_20261023_1956, campaign5 arm A
+a558e673914b7f15a83b96b3fc42c3b644e0568183bb555cefdabc230850ef5b	elf-pie	6461032	2026-10-23 20:53 PDT	impl/build5/net_bench	BUILD A: results/campaign3_20261023_2103, c3b_extra_20261024_0116, modes_r3_20261023_1956, campaign5 arm A
+3e9f1ee1bf028730602c0b20b335d0ee212b0a1ced7d7a88e2d4b68454a46f1f	elf-pie	6099744	2026-10-23 20:53 PDT	impl/build5/unit_tests	BUILD A: results/campaign3_20261023_2103, c3b_extra_20261024_0116, modes_r3_20261023_1956, campaign5 arm A
+4c79e03191bf1dc0ac057bb452acc2e81732b68c65e4c43f886b8acb6a6d4a45	elf-pie	221304	2026-10-24 05:01 PDT	impl/build6/choose_cover	BUILD B: results/campaign4_20261024_0922, campaign5 arm B
+6b35bb598763c751a8cf61f18e544b8fce3a6f97f9d0d3dc7aac6647805feb05	elf-pie	6124512	2026-10-24 05:01 PDT	impl/build6/fpsi_bench	BUILD B: results/campaign4_20261024_0922, campaign5 arm B
+3db252d43387d8cdbf3c9d0560b0346b750a55f378d3b45167ff5702d8e43b21	elf-pie	3619272	2026-10-24 05:01 PDT	impl/build6/gmw_bench	BUILD B: results/campaign4_20261024_0922, campaign5 arm B
+5d1a02a9eecddc987194aa08ca6746d590d997651e5832f9f3fca418408ef564	ar-archive	2280860	2026-10-24 05:01 PDT	impl/build6/libmipfpsi.a	BUILD B: results/campaign4_20261024_0922, campaign5 arm B
+a700a2799dbeeaa4064ba116747d8fe88a9638f9e40b590df7efbb09486e2f7c	elf-pie	6465480	2026-10-24 05:02 PDT	impl/build6/net_bench	BUILD B: results/campaign4_20261024_0922, campaign5 arm B
+6472145a65356e8cb84e6b32196519baafd9318a96e08b320f3dd645698638cc	elf-pie	6104192	2026-10-24 05:01 PDT	impl/build6/unit_tests	BUILD B: results/campaign4_20261024_0922, campaign5 arm B
+4c79e03191bf1dc0ac057bb452acc2e81732b68c65e4c43f886b8acb6a6d4a45	elf-pie	221304	2026-10-24 23:54 PDT	impl/build7/choose_cover	build B + error-path fixes: results/dp_fixed_20261024_2356
+96fc0a30d9c399c5ac85638108385c89a62ac8a6d4f91e3e6dbf97762ee224e0	elf-pie	6124600	2026-10-24 23:54 PDT	impl/build7/fpsi_bench	build B + error-path fixes: results/dp_fixed_20261024_2356
+3db252d43387d8cdbf3c9d0560b0346b750a55f378d3b45167ff5702d8e43b21	elf-pie	3619272	2026-10-24 23:54 PDT	impl/build7/gmw_bench	build B + error-path fixes: results/dp_fixed_20261024_2356
+897dfcf1383add9779a7b359181a255c6e35b70039683d80ad7560f64bd93180	ar-archive	2282662	2026-10-24 23:54 PDT	impl/build7/libmipfpsi.a	build B + error-path fixes: results/dp_fixed_20261024_2356
+e3a8e7687427739f4434c2840468b0213bf47dc3c6af3527a27672c0b9077c63	elf-pie	6461472	2026-10-24 23:54 PDT	impl/build7/net_bench	build B + error-path fixes: results/dp_fixed_20261024_2356
+dcd2ab178a690f833fd56da683f4a8fa97363820ea557bec12ef98e514503613	elf-pie	6104280	2026-10-24 23:54 PDT	impl/build7/unit_tests	build B + error-path fixes: results/dp_fixed_20261024_2356
+4c79e03191bf1dc0ac057bb452acc2e81732b68c65e4c43f886b8acb6a6d4a45	elf-pie	221304	2026-10-25 00:13 PDT	impl/build8/choose_cover	build B + error-path fixes + -keycheck: campaign5 arm C (common back end)
+fcb34a656a33ec29b2fdd6b0d336290582e0ae10fcf885b719b0247cc899d4a6	elf-pie	6124600	2026-10-25 00:13 PDT	impl/build8/fpsi_bench	build B + error-path fixes + -keycheck: campaign5 arm C (common back end)
+3db252d43387d8cdbf3c9d0560b0346b750a55f378d3b45167ff5702d8e43b21	elf-pie	3619272	2026-10-25 00:13 PDT	impl/build8/gmw_bench	build B + error-path fixes + -keycheck: campaign5 arm C (common back end)
+860b88f0e1e1f7598d4461b2ff17954fc5352de563a9135c9d4f7aaa3e085eb5	ar-archive	2282710	2026-10-25 00:12 PDT	impl/build8/libmipfpsi.a	build B + error-path fixes + -keycheck: campaign5 arm C (common back end)
+e3fb701650486568fea7fc4491377f256a763d1817cda61cd5896aafb68bc90f	elf-pie	6461256	2026-10-25 00:13 PDT	impl/build8/net_bench	build B + error-path fixes + -keycheck: campaign5 arm C (common back end)
+c4e1f605efa3967bd4850aaa5ac1bf8686b1ff9d93d922963972509b903aaef5	elf-pie	6104280	2026-10-25 00:13 PDT	impl/build8/unit_tests	build B + error-path fixes + -keycheck: campaign5 arm C (common back end)
+4c79e03191bf1dc0ac057bb452acc2e81732b68c65e4c43f886b8acb6a6d4a45	elf-pie	221304	2026-10-25 02:27 PDT	impl/build9/choose_cover	results/policy_tests_20261025_0227
+5f47c6eb79c50942c85c705872b57ef218a8055cd8518153c9e9a08f37863822	elf-pie	6124600	2026-10-25 02:27 PDT	impl/build9/fpsi_bench	results/policy_tests_20261025_0227
+3db252d43387d8cdbf3c9d0560b0346b750a55f378d3b45167ff5702d8e43b21	elf-pie	3619272	2026-10-25 02:27 PDT	impl/build9/gmw_bench	results/policy_tests_20261025_0227
+7609bbbc8d633ec2d7627c842d8815cb9c0c3bf54f9e4b265a0db67eaea35969	ar-archive	2283774	2026-10-25 02:27 PDT	impl/build9/libmipfpsi.a	results/policy_tests_20261025_0227
+7b26312146844762682beab1f1fb035c04ec31f4268f6efab338a595585765b7	elf-pie	6465128	2026-10-25 02:27 PDT	impl/build9/net_bench	results/policy_tests_20261025_0227
+dae460984106803ffd1d7973e2b3d8534c37a9d3a2848644e8422878aa087721	elf-pie	6104280	2026-10-25 02:27 PDT	impl/build9/unit_tests	results/policy_tests_20261025_0227
+4c79e03191bf1dc0ac057bb452acc2e81732b68c65e4c43f886b8acb6a6d4a45	elf-pie	221304	2026-11-10 05:05 PST	audit_r5/build/choose_cover	audit_r5; fpsi_bench of experiments_r6 E2 (paired) and E1 (attribution)
+197bd0842b568bdaa29393221d2bdf1b4e0acae31ccf3d57587133c76617631d	elf-pie	141512	2026-11-10 05:05 PST	audit_r5/build/cover_dump	audit_r5; fpsi_bench of experiments_r6 E2 (paired) and E1 (attribution)
+0f2b985b60183dc7c365f54abbb8b9f4729c5509385c6d8dd90bb37ce3421a55	elf-pie	6135008	2026-11-10 05:05 PST	audit_r5/build/fpsi_bench	audit_r5; fpsi_bench of experiments_r6 E2 (paired) and E1 (attribution)
+3db252d43387d8cdbf3c9d0560b0346b750a55f378d3b45167ff5702d8e43b21	elf-pie	3619272	2026-11-10 05:05 PST	audit_r5/build/gmw_bench	audit_r5; fpsi_bench of experiments_r6 E2 (paired) and E1 (attribution)
+67172db02368f16e76491c15854bb9d4727a1013c690a18895b913b868753b3b	ar-archive	2295214	2026-11-10 05:05 PST	audit_r5/build/libmipfpsi.a	audit_r5; fpsi_bench of experiments_r6 E2 (paired) and E1 (attribution)
+e4d16199f4af10265f3d2c09bdc0f94774c4a0e2cd070d98768b9859388fcf43	elf-pie	6471440	2026-11-10 05:05 PST	audit_r5/build/net_bench	audit_r5; fpsi_bench of experiments_r6 E2 (paired) and E1 (attribution)
+a91389360d578803312391972aa9a0a91447d0dcda9be35ce5e2c9b6806720c2	elf-pie	6458496	2026-11-10 05:05 PST	audit_r5/build/or_deliver	audit_r5; fpsi_bench of experiments_r6 E2 (paired) and E1 (attribution)
+5ab1e865341244c9cc0617971ce7ab10f00177dd78be2bc9ef58cded025a9d82	elf-pie	6110592	2026-11-10 05:05 PST	audit_r5/build/unit_tests	audit_r5; fpsi_bench of experiments_r6 E2 (paired) and E1 (attribution)
+1cc7b8eafc0b37a102efe9a4eaf5eb6ef16da451125c99e9f12d332fe6f06ed3	elf-exec	3849840	2026-11-12 06:35 PST	experiments_r6/e3_otfpsi_real/build_otfpsi/otfpsi	experiments_r6 E3 (otFPSI on real inputs, output-matched stage 2)
+6796de01a8a563f44b23dcabec191ca77d45335b453c78f81210e5508ef54e93	elf-pie	6131416	2026-11-12 06:36 PST	experiments_r6/e3_otfpsi_real/build_stage2/or_deliver_local	experiments_r6 E3 (otFPSI on real inputs, output-matched stage 2)
+2640ed79452f74e08f37f823fa06db339353d4cb7d56edbc660cdc312f69445b	elf-pie	169584	2026-11-12 06:37 PST	experiments_r6/e6_candidates/build/cand_stats	experiments_r6 E6 candidate statistics
+87fae11add55da904119f124bf6918a48877acbaddfaf77e7fed6a94885a8b94	elf-pie	6135016	2026-11-12 06:29 PST	experiments_r6/harness/fpsi_bench_kc	experiments_r6 E1 (fpsi_bench_kc: -keycheck); fpsi_bench_ref = rebuild check
+0f2b985b60183dc7c365f54abbb8b9f4729c5509385c6d8dd90bb37ce3421a55	elf-pie	6135008	2026-11-12 06:29 PST	experiments_r6/harness/fpsi_bench_ref	experiments_r6 E1 (fpsi_bench_kc: -keycheck); fpsi_bench_ref = rebuild check
+a26b2b33a5c76ae4f0123de4df5cc9270f10a467b7f1eab520f455adc2cb0ec3	elf-exec	3837272	2026-11-12 06:33 PST	experiments_r6/otfpsi_inproc/otfpsi_inproc	experiments_r6 E2 native otFPSI, in-process transport
+0c68aa5fb82e0687b9563bfce2ffcdfb05b3ca44968650631f2e8ff8cdbf3373	elf-exec	4161344	2026-10-23 09:54 PDT	baselines/others/xdup/01_otfpsi/build/otfpsi	otFPSI in campaigns 2, 3, 4, vs_otfpsi, c3b_extra
+8367adcbf722aec08e69b9634fd6c7d1cbbd7676d07763ba4302970fa555e181	elf-exec	4168152	2026-10-27 08:13 PDT	baselines/others/xdup/01_otfpsi_cpu/build/otfpsi	otFPSI (getrusage) in experiments_r4/e1 (campaign5 used f232c639..., no longer on disk)
+47d5978d436ac6c3e5bbd2d392040d89cdd53e967d14e082bfaceeeb2533628e	ar-archive	8114454	2026-10-22 06:54 PDT	third_party/volepsi/out/build/volePSI/libvolePSI.a	volePSI @ ec76012, linked into every binary of ours
+
+# 197 object files (.o) under the same directories are not listed; their hashes are in BINARIES_OBJECTS.tsv

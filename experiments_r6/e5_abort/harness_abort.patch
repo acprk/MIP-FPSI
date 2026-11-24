@@ -1,0 +1,85 @@
+--- a/impl/src/main.cpp
++++ b/impl/src/main.cpp
+@@ -9,6 +9,7 @@
+ #include <macoro/when_all.h>
+ 
+ #include <chrono>
++#include <exception>
+ #include <sys/resource.h>
+ #include <fstream>
+ #include <iostream>
+@@ -18,6 +19,30 @@
+ 
+ using namespace mip;
+ 
++// Runs one party. If it throws, the exception is recorded and the party's end of the in-memory
++// channel is closed, so that the peer's pending (or next) send/recv completes with an error
++// instead of waiting forever; both parties then terminate and main exits non-zero.
++static coproto::task<void> guarded(coproto::task<void> party, coproto::Socket& sock, std::exception_ptr& err)
++{
++    try
++    {
++        co_await std::move(party);
++    }
++    catch (...)
++    {
++        err = std::current_exception();
++    }
++    if (err)
++        co_await sock.close();
++}
++
++static std::string what(const std::exception_ptr& e)
++{
++    try { std::rethrow_exception(e); }
++    catch (const std::exception& ex) { return ex.what(); }
++    catch (...) { return "unknown exception"; }
++}
++
+ int main(int argc, char** argv)
+ {
+     oc::CLP cmd(argc, argv);
+@@ -47,7 +72,7 @@
+         std::ifstream in(cmd.get<std::string>("data"), std::ios::binary);
+         u64 dd;
+         in.read((char*)&m, 8); in.read((char*)&n, 8); in.read((char*)&dd, 8);
+-        if (dd != cfg.d) { std::cerr << "d mismatch\n"; return 1; }
++        if (!in || dd != cfg.d) { std::cerr << "abort: data file header does not match -d\n"; return 1; }
+         X.resize(m, db); Y.resize(n, db);
+         in.read((char*)X.data(), m * db);
+         in.read((char*)Y.data(), n * db);
+@@ -123,22 +148,30 @@
+     getrusage(RUSAGE_SELF, &ru0);
+     double cpu0 = ru0.ru_utime.tv_sec + ru0.ru_utime.tv_usec * 1e-6 + ru0.ru_stime.tv_sec + ru0.ru_stime.tv_usec * 1e-6;
+     auto t0 = std::chrono::steady_clock::now();
++    std::exception_ptr errS, errR;
+     if (cmd.isSet("allpairs"))
+     {
+         auto r = macoro::sync_wait(macoro::when_all_ready(
+-            allPairsSender(cfg, X, socks[0], ps, &ts),
+-            allPairsReceiver(cfg, Y, socks[1], pr, out, &tr)));
++            guarded(allPairsSender(cfg, X, socks[0], ps, &ts), socks[0], errS),
++            guarded(allPairsReceiver(cfg, Y, socks[1], pr, out, &tr), socks[1], errR)));
+         std::get<0>(r).result();
+         std::get<1>(r).result();
+     }
+     else
+     {
+         auto r = macoro::sync_wait(macoro::when_all_ready(
+-            fpsiSender(cfg, X, socks[0], ps, is, &ts),
+-            fpsiReceiver(cfg, Y, socks[1], pr, out, ir, &tr)));
++            guarded(fpsiSender(cfg, X, socks[0], ps, is, &ts), socks[0], errS),
++            guarded(fpsiReceiver(cfg, Y, socks[1], pr, out, ir, &tr), socks[1], errR)));
+         std::get<0>(r).result();
+         std::get<1>(r).result();
+     }
++    if (errS || errR)
++    {
++        if (errS) std::cerr << "abort: sender: " << what(errS) << "\n";
++        if (errR) std::cerr << "abort: receiver: " << what(errR) << "\n";
++        std::cout << "aborted sender_err=" << (errS ? 1 : 0) << " receiver_err=" << (errR ? 1 : 0) << "\n";
++        return 3;
++    }
+     auto t1 = std::chrono::steady_clock::now();
+     double secs = std::chrono::duration<double>(t1 - t0).count();
+     rusage ru;

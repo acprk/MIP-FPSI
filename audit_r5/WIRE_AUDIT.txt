@@ -1,0 +1,48 @@
+audit_r5 wire audit (source sha256 in logs/sha256.txt). S = fpsiSender (holds X), R = fpsiReceiver (holds Y).
+Every explicit send/recv in the protocol path, plus the library sub-protocols they call.
+
+Size / leakage scalars (fpsi.cpp)
+  537/400  R->S  u64 n = |dedup(Y)|                                  size
+  401/538  S->R  u64 m = |dedup(X)|                                  size
+  547/407  R->S  u64 B (exact | nextPow2 | B+DP noise [| pow2] | Bbar) leakage L_S; abort (throw) before send if B>Bbar
+  438/572  S->R  u64 U (same release options)                         leakage L_R; only in index branch, not noU, not fallback
+  (no other scalar is sent; Q, T, N, tau, pb, fallback bit are recomputed locally from (m,n,B) + public params)
+
+Payload sharing (HamCpsi.cpp)
+  169/89   S->R  cuckoo seed (16 B). Fresh random; resampled locally until all m*Q queries placed
+                 (statistical dependence on X <= cuckoo failure prob; in paper's ledger)
+  126/196  RsOpprf (volePSI, unmodified call): OKVS/VOLE messages over n*T*U*3 programmed points (R) and N queries (S).
+                 Programmed values are value XOR fresh per-bin mask t_i; queries hashed with seed-keyed AES.
+
+Threshold (GMW, volePSI Gmw::run)                                    shares only; S input a_j^x-part, R input t_j
+  OT-threshold alternative (ot_threshold.cpp 86/105/121/140 and 167/169/198/200): masked choice bits e=c^bit,
+                 corrections masked by random-OT pads, 1-of-M table masked by pads and rho. fpsi_bench only.
+
+Regroup OSN (osn.cpp)                                                S=programmer, R=holder
+  203/241  S->R  e = c XOR switchbits (c = random-OT choice: uniform)
+  263/206  R->S  xm = eR XOR r_in (wire masks)                       uniform to S
+  264/207  R->S  z  = 4 bits/switch, both corrections padded by random-OT keys
+
+U-free OEP (oep.cpp), same pattern on w-byte words
+  203/252  S->R  e = c XOR control bits
+  296/209  R->S  masked bin shares (chunked)
+  297/210  R->S  padded corrections (chunked)
+
+Aggregate (GMW OR circuit)                                           shares only
+
+Delivery (fpsi.cpp 142-195)
+  151/179  chosen OT: S inputs (k_i0,k_i1) fresh random keys, R chooses e^R_i
+  168/183  S->R  2m ciphertexts PRG(k_ic) XOR pt_ic; pt = x_i||0^{8*ceil(lambda'/8)} iff e^S_i XOR c = 1, else uniform
+           matches protocol.tex step 5 (lambda' rounded up to whole bytes).
+
+Fallback all-pairs (fpsi.cpp 641-705): GMW threshold on m*n rows (S share = x_i, R share = y_j), GMW OR, same delivery.
+
+Findings
+  * No send of X, Y, x-bits, y-bits, distances, matched indices, or the ground truth. No debug path sends plaintext.
+  * Ground truth (net_bench.cpp 104-138, main.cpp 75-113) is computed locally by the harness from both sets
+    (each harness process generates/reads both X and Y) and is never passed to fpsiSender/fpsiReceiver or to the socket.
+    It uses a pigeonhole index over delta+1 contiguous blocks + mip::hamming (popcount), not the protocol's tables.
+  * noU branch: no recv(U)/send(U); all sizes depend on (m, n, B, public); program size n*T (not n*T*U).
+  * or_deliver.cpp (otFPSI baseline adapter): X is neither deduplicated nor shuffled before delivery, so the
+    order of R's output equals the sender's file order (baseline only; not the MIP protocol).
+  * Test hook MIP_INJECT_CUCKOO_FAIL (HamCpsi.cpp 153) is in library code; it only forces local resampling.

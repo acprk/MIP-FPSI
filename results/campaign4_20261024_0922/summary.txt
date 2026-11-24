@@ -1,0 +1,35 @@
+d4_noU_r1 thr=0 wall_s=3.18841 cpu_s=1.66307 sent_MB=83.8209 recv_MB=4.55089 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.18319 cpu_s=1.64747 sent_MB=4.55089 recv_MB=83.8209 
+ot_soft_r1 thr=2 232.35 353.40 8.72 Total Time: 228864.241 ms. 228.864 s
+d8_noU_r1 thr=0 wall_s=24.8898 cpu_s=12.7026 sent_MB=822.075 recv_MB=27.1823 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=24.884 cpu_s=12.6584 sent_MB=27.1823 recv_MB=822.075 
+d8_pow2_r1 thr=0 wall_s=20.6938 cpu_s=10.7796 sent_MB=36.8662 recv_MB=31.3325 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=20.6858 cpu_s=10.3672 sent_MB=31.3325 recv_MB=36.8662 
+d4_pow2_r1 thr=0 wall_s=2.8648 cpu_s=1.51209 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.85956 cpu_s=1.46214 sent_MB=5.05094 recv_MB=4.79196 
+d8_exact_r1 thr=0 wall_s=12.8313 cpu_s=6.70623 sent_MB=23.0499 recv_MB=19.8693 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=12.8256 cpu_s=6.40752 sent_MB=19.8693 recv_MB=23.0499 
+d4_exact_r1 thr=0 wall_s=2.82799 cpu_s=1.47493 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.82137 cpu_s=1.46052 sent_MB=5.05094 recv_MB=4.79196 
+d4_noU_r2 thr=0 wall_s=3.12335 cpu_s=1.64609 sent_MB=83.8209 recv_MB=4.55089 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.11669 cpu_s=1.60265 sent_MB=4.55089 recv_MB=83.8209 
+d4_pow2_r2 thr=0 wall_s=2.75201 cpu_s=1.45235 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.74702 cpu_s=1.40187 sent_MB=5.05094 recv_MB=4.79196 
+d8_exact_r2 thr=0 wall_s=12.4658 cpu_s=6.49601 sent_MB=23.0499 recv_MB=19.8693 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=12.46 cpu_s=6.25199 sent_MB=19.8693 recv_MB=23.0499 
+d8_noU_r2 thr=0 wall_s=24.6801 cpu_s=12.5782 sent_MB=822.075 recv_MB=27.1823 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=24.6746 cpu_s=12.5792 sent_MB=27.1823 recv_MB=822.075 
+d4_exact_r2 thr=0 wall_s=2.79495 cpu_s=1.4832 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.7896 cpu_s=1.42024 sent_MB=5.05094 recv_MB=4.79196 
+d8_pow2_r2 thr=0 wall_s=20.3268 cpu_s=10.4563 sent_MB=36.8662 recv_MB=31.3325 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=20.3202 cpu_s=10.3252 sent_MB=31.3325 recv_MB=36.8662 
+ot_soft_r2 thr=0 230.12 341.93 10.09 Total Time: 226146.859 ms. 226.147 s
+ot_soft_r3 thr=0 221.22 331.92 9.09 Total Time: 217729.194 ms. 217.729 s
+d4_exact_r3 thr=0 wall_s=2.8035 cpu_s=1.47891 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.79831 cpu_s=1.43244 sent_MB=5.05094 recv_MB=4.79196 
+d8_noU_r3 thr=0 wall_s=24.9933 cpu_s=12.7228 sent_MB=822.075 recv_MB=27.1823 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=24.9872 cpu_s=12.7485 sent_MB=27.1823 recv_MB=822.075 
+d8_pow2_r3 thr=0 wall_s=20.4138 cpu_s=10.6643 sent_MB=36.8662 recv_MB=31.3325 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=20.4071 cpu_s=10.2466 sent_MB=31.3325 recv_MB=36.8662 
+d8_exact_r3 thr=0 wall_s=12.8358 cpu_s=6.67066 sent_MB=23.0499 recv_MB=19.8693 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=12.8295 cpu_s=6.43375 sent_MB=19.8693 recv_MB=23.0499 
+d4_pow2_r3 thr=0 wall_s=2.79937 cpu_s=1.46826 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.79403 cpu_s=1.43127 sent_MB=5.05094 recv_MB=4.79196 
+d4_noU_r3 thr=0 wall_s=3.1977 cpu_s=1.67551 sent_MB=83.8209 recv_MB=4.55089 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.19245 cpu_s=1.6511 sent_MB=4.55089 recv_MB=83.8209 
+d8_noU_r4 thr=0 wall_s=28.2158 cpu_s=14.6042 sent_MB=822.075 recv_MB=27.1823 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=28.2059 cpu_s=14.0957 sent_MB=27.1823 recv_MB=822.075 
+d8_pow2_r4 thr=0 wall_s=27.2016 cpu_s=14.0841 sent_MB=36.8662 recv_MB=31.3325 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=27.1912 cpu_s=13.6551 sent_MB=31.3325 recv_MB=36.8662 
+d4_pow2_r4 thr=0 wall_s=3.29734 cpu_s=1.73848 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.29198 cpu_s=1.67633 sent_MB=5.05094 recv_MB=4.79196 
+d8_exact_r4 thr=57 wall_s=18.4039 cpu_s=8.6815 sent_MB=23.0499 recv_MB=19.8693 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=18.3937 cpu_s=9.22601 sent_MB=19.8693 recv_MB=23.0499 
+d4_noU_r4 thr=0 wall_s=3.99451 cpu_s=2.0901 sent_MB=83.8209 recv_MB=4.55089 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.98703 cpu_s=2.02682 sent_MB=4.55089 recv_MB=83.8209 
+ot_soft_r4 thr=36 263.85 379.20 10.02 Total Time: 259307.400 ms. 259.307 s
+d4_exact_r4 thr=0 wall_s=3.0151 cpu_s=1.55174 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.00936 cpu_s=1.57354 sent_MB=5.05094 recv_MB=4.79196 
+d8_exact_r5 thr=0 wall_s=14.066 cpu_s=7.22336 sent_MB=23.0499 recv_MB=19.8693 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=14.059 cpu_s=7.15194 sent_MB=19.8693 recv_MB=23.0499 
+d8_noU_r5 thr=0 wall_s=25.7133 cpu_s=13.1284 sent_MB=822.075 recv_MB=27.1823 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=25.7063 cpu_s=13.0918 sent_MB=27.1823 recv_MB=822.075 
+ot_soft_r5 thr=0 223.34 334.31 8.96 Total Time: 219831.773 ms. 219.832 s
+d4_noU_r5 thr=0 wall_s=3.24202 cpu_s=1.71473 sent_MB=83.8209 recv_MB=4.55089 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.23577 cpu_s=1.65297 sent_MB=4.55089 recv_MB=83.8209 
+d8_pow2_r5 thr=0 wall_s=20.928 cpu_s=10.9518 sent_MB=36.8662 recv_MB=31.3325 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=20.9217 cpu_s=10.4347 sent_MB=31.3325 recv_MB=36.8662 
+d4_exact_r5 thr=0 wall_s=2.86375 cpu_s=1.48905 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.85875 cpu_s=1.48654 sent_MB=5.05094 recv_MB=4.79196 
+d4_pow2_r5 thr=0 wall_s=2.84086 cpu_s=1.51143 sent_MB=4.79196 recv_MB=5.05094 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.83557 cpu_s=1.44568 sent_MB=5.05094 recv_MB=4.79196 

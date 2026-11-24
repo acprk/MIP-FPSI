@@ -1,0 +1,157 @@
+{
+ "C": 33,
+ "k": 64,
+ "receiver_size": 2959,
+ "targets": [
+  {
+   "id": 0,
+   "target_path": "Lib/test/test_asyncio/test_ssl.py",
+   "table": 1,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  },
+  {
+   "id": 1,
+   "target_path": "Modules/clinic/_csv.c.h",
+   "table": 0,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  },
+  {
+   "id": 2,
+   "target_path": "Doc/c-api/hash.rst",
+   "table": 3,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  },
+  {
+   "id": 3,
+   "target_path": "Tools/peg_generator/pegen/ast_dump.py",
+   "table": 2,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  },
+  {
+   "id": 4,
+   "target_path": "Lib/test/test_sax.py",
+   "table": 3,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  },
+  {
+   "id": 5,
+   "target_path": "Lib/encodings/uu_codec.py",
+   "table": 3,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  },
+  {
+   "id": 6,
+   "target_path": "Lib/test/test_ctypes/test_random_things.py",
+   "table": 2,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  },
+  {
+   "id": 7,
+   "target_path": "Doc/library/security_warnings.rst",
+   "table": 1,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  },
+  {
+   "id": 8,
+   "target_path": "Modules/cjkcodecs/_codecs_tw.c",
+   "table": 3,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  },
+  {
+   "id": 9,
+   "target_path": "Lib/test/test_dictviews.py",
+   "table": 0,
+   "H1": {
+    "size": 3023,
+    "max_load": 65,
+    "target_bucket_load": 65
+   },
+   "H0": {
+    "size": 3023,
+    "max_load": 64,
+    "target_bucket_load": 64
+   }
+  }
+ ]
+}

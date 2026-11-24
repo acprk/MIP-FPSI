@@ -1,0 +1,23 @@
+	Command being timed: "taskset -c 40,41 <ARTIFACT_ROOT>/experiments_r6/otfpsi_inproc/otfpsi_inproc -proto_distance batched -proto_threshold np -querier_size 4096 -responder_size 4096 -vector_size 128 -threshold 4 -prf aes -ot silent"
+	User time (seconds): 382.37
+	System time (seconds): 12.89
+	Percent of CPU this job got: 151%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:21.18
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6585892
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 6352953
+	Voluntary context switches: 12304
+	Involuntary context switches: 886
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 48
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

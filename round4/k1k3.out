@@ -1,0 +1,44 @@
+K1/K2: randomised search for large irredundant sets
+  e=4 d=1: best found 8  2^(e-d)=8  2^(e-d+1)=16
+  e=5 d=1: best found 16  2^(e-d)=16  2^(e-d+1)=32
+  e=6 d=1: best found 26  2^(e-d)=32  2^(e-d+1)=64
+  e=6 d=2: best found 12  2^(e-d)=16  2^(e-d+1)=32
+  e=7 d=2: best found 18  2^(e-d)=32  2^(e-d+1)=64
+  e=7 d=3: best found 10  2^(e-d)=16  2^(e-d+1)=32
+  e=8 d=2: best found 26  2^(e-d)=64  2^(e-d+1)=128
+  e=8 d=3: best found 13  2^(e-d)=32  2^(e-d+1)=64
+  e=8 d=4: best found 8  2^(e-d)=16  2^(e-d+1)=32
+  e=9 d=3: best found 21  2^(e-d)=64  2^(e-d+1)=128
+  max |P|/2^(e-d) found: 1.0
+K3: d=9, delta=2, 8 blocks of size 4, capacity 8
+  trial 0: n=16 ok, max placed per bucket 4
+  trial 1: n=20 ok, max placed per bucket 2
+  trial 2: n=120 ok, max placed per bucket 4
+  trial 3: n=16 ok, max placed per bucket 4
+  trial 4: n=120 ok, max placed per bucket 4
+  trial 5: n=20 ok, max placed per bucket 2
+  trial 6: n=15 ok, max placed per bucket 4
+  trial 7: n=20 ok, max placed per bucket 3
+  trial 8: n=20 ok, max placed per bucket 3
+  trial 9: n=12 ok, max placed per bucket 4
+  trial 10: n=20 ok, max placed per bucket 3
+  trial 11: n=20 ok, max placed per bucket 3
+  trial 12: n=16 ok, max placed per bucket 4
+  trial 13: n=20 ok, max placed per bucket 3
+  trial 14: n=120 ok, max placed per bucket 4
+  trial 15: n=13 ok, max placed per bucket 4
+  trial 16: n=20 ok, max placed per bucket 3
+  trial 17: n=60 ok, max placed per bucket 3
+  trial 18: n=16 ok, max placed per bucket 4
+  trial 19: n=120 ok, max placed per bucket 4
+  trial 20: n=60 ok, max placed per bucket 3
+  trial 21: n=16 ok, max placed per bucket 4
+  trial 22: n=120 ok, max placed per bucket 3
+  trial 23: n=20 ok, max placed per bucket 3
+  trial 24: n=11 ok, max placed per bucket 3
+  trial 25: n=120 ok, max placed per bucket 4
+  trial 26: n=60 ok, max placed per bucket 3
+  trial 27: n=16 ok, max placed per bucket 4
+  trial 28: n=120 ok, max placed per bucket 4
+  trial 29: n=120 ok, max placed per bucket 4
+all checks passed

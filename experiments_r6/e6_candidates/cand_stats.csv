@@ -1,0 +1,5 @@
+name,source,d,delta,b,s,m_dedup,n_dedup,T,ell_t(len x count),r,sumV,B,Q,mQ,nonempty_probed_mean,nonempty_probed_max,probe_hits_total,cand_pairs,true_cand_pairs,false_cand_pairs,false_cand_delta_lt_H_le_2delta,true_pairs_bruteforce,complete,output_size,uniform_estimate,nonempty_buckets,load_max,load_p99,load_p90,load_mean
+synth_d128_t4_b5s1,fpsi_bench generator seed=1,128,4,5,1,4096,4095,5,25x2 26x3 ,0,5,2,10,40960,0.329346,5,1375,472,363,109,107,363,yes,352,1.74957,20448,2,1,1,1.00132
+synth_d128_t16_b9s1,fpsi_bench generator seed=1,128,16,9,1,4096,4096,9,14x7 15x2 ,1,137,5,685,2805760,27.5798,47,127282,124187,457,123730,15,457,yes,423,123904,32994,5,2,2,1.11729
+cpython_simhash64_t3_b4s1,<ARTIFACT_ROOT>/data/code_simhash64.bin,64,3,4,1,2973,2959,4,16x4 ,0,4,33,132,392436,3.00942,4,19068,11767,3267,8500,2492,3267,yes,2265,536.933,10229,33,4,1,1.1571
+cifar_dhash64_t4_b6s2,<ARTIFACT_ROOT>/data/cifar_dhash64_mild.bin,64,4,6,2,9999,54994,15,20x1 21x8 22x6 ,0,15,12,180,1799820,6.0144,15,66246,16872,4984,11888,350,4984,yes,4923,3408.67,793937,12,2,1,1.03901

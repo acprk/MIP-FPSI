@@ -1,0 +1,34 @@
+--- pristine/fuzzyPSICode/src/party.cpp	2025-12-16 06:48:17.000000000 -0800
++++ fuzzyPSICode/src_check/party.cpp	2026-11-10 05:07:48.679988667 -0800
+@@ -200,8 +200,10 @@
+ 
+     //Decrypt sender's input
+     auto startDecrypt = TIMESTAMP();
++    uint64_t CHECK_matches = 0;
++    uint64_t CHECK_matches_tau[64] = {0};
+ 
+-#pragma omp parallel for
++#pragma omp parallel for reduction(+:CHECK_matches)
+     for (uint64_t i = 0; i < n_s ; i++) {
+ 
+       cipherTextPei CT (&bigBuf[i * CTSIZE(ELL)], ELL);
+@@ -209,11 +211,18 @@
+       for (uint64_t j = 0; j < n_r ; j++) {
+         for (uint32_t tau = 0 ; tau < T ; tau++) {
+           auto SK = skpei[j][tau];
+-          pei::decrypt(ELL, CT, SK, plaintext);
++          if (pei::decrypt(ELL, CT, SK, plaintext)) {
++            CHECK_matches++;
++            if (tau < 64) { CHECK_matches_tau[tau]++; }
++          }
+         }
+       }
+     }
+     auto decryptTiming = DURATION(startDecrypt);
++    cout << "CHECK: successful decryptions = " << CHECK_matches << " of " << (n_s * n_r * T) << " trials; expected n_s*n_r = " << (n_s * n_r) << " (all inputs identical, HD=0 -> only tau=0 key should open)" << endl;
++    for (uint32_t tau = 0; tau < T && tau < 64; tau++) {
++      cout << "CHECK: tau=" << tau << " successes=" << CHECK_matches_tau[tau] << endl;
++    }
+     totalElapsed += decryptTiming;
+ 
+     cout << "RECEIVER: " << ((double)comms / (1024 * 1024)) << " MB total, " << totalElapsed / (double)1000 << " s total [OT: " << OTtiming << " ms, network: " << netTiming << " ms, decryption: " << decryptTiming << " ms], KDerVolume: " << ((double)KDerVolume / (1024 * 1024)) <<"MByte" << endl;

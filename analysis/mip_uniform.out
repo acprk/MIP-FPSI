@@ -1,0 +1,6 @@
+uniform m=n=256 d=128 δ=4: {'b': 5, 'r': 0, 'B': 1, 'U': 1, 'Q': 5, 'gmw': 1625, 'prog': 1280, 'cand_true_pairs': 32, 'matches': 32, 'false_neg': 0}
+uniform m=n=256 d=128 δ=4: {'b': 3, 'r': 1, 'B': 1, 'U': 1, 'Q': 131, 'gmw': 42590, 'prog': 768, 'cand_true_pairs': 32, 'matches': 32, 'false_neg': 0}
+uniform m=n=1024 d=128 δ=4: {'b': 5, 'r': 0, 'B': 1, 'U': 1, 'Q': 5, 'gmw': 6502, 'prog': 5120, 'cand_true_pairs': 128, 'matches': 128, 'false_neg': 0}
+uniform m=n=1024 d=128 δ=4: {'b': 3, 'r': 1, 'B': 1, 'U': 1, 'Q': 131, 'gmw': 170362, 'prog': 3072, 'cand_true_pairs': 128, 'matches': 128, 'false_neg': 0}
+uniform m=n=4096 d=128 δ=4: {'b': 5, 'r': 0, 'B': 2, 'U': 2, 'Q': 10, 'gmw': 52019, 'prog': 40960, 'cand_true_pairs': 512, 'matches': 512, 'false_neg': 0}
+uniform m=n=4096 d=128 δ=4: {'b': 3, 'r': 1, 'B': 1, 'U': 1, 'Q': 131, 'gmw': 681451, 'prog': 12288, 'cand_true_pairs': 512, 'matches': 512, 'false_neg': 0}

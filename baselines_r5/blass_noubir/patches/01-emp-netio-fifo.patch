@@ -1,0 +1,78 @@
+--- pristine/fuzzyPSICode/emp-tool/emp-tool/io/net_io_channel.h	2024-10-21 14:26:03.000000000 -0700
++++ fuzzyPSICode/emp-tool/emp-tool/io/net_io_channel.h	2026-11-10 05:21:19.263136856 -0800
+@@ -24,6 +24,13 @@
+ 	int mysocket = -1;
+ 	int consocket = -1;
+ 	FILE * stream = nullptr;
++	// BN-FIFO patch: when EMP_FIFO_DIR is set, the channel uses two named
++	// pipes instead of a TCP socket (the benchmark host sandbox blocks
++	// loopback TCP and AF_UNIX). 'stream' is then the write side and
++	// 'rstream' the read side; otherwise rstream == stream.
++	FILE * rstream = nullptr;
++	char * rbuffer = nullptr;
++	bool fifo_mode = false;
+ 	char * buffer = nullptr;
+ 	bool has_sent = false;
+ 	string addr;
+@@ -35,6 +42,33 @@
+ 
+ 		this->port = port;
+ 		is_server = (address == nullptr);
++		const char * fifo_dir = getenv("EMP_FIFO_DIR");
++		if (fifo_dir != nullptr) {
++			fifo_mode = true;
++			string s2c = string(fifo_dir) + "/p" + std::to_string(port) + ".s2c";
++			string c2s = string(fifo_dir) + "/p" + std::to_string(port) + ".c2s";
++			// identical open order on both sides avoids open() deadlock
++			if (is_server) {
++				stream = fopen(s2c.c_str(), "wb");
++				rstream = fopen(c2s.c_str(), "rb");
++			} else {
++				rstream = fopen(s2c.c_str(), "rb");
++				stream = fopen(c2s.c_str(), "wb");
++			}
++			if (stream == nullptr || rstream == nullptr) {
++				perror("error: fifo open");
++				exit(1);
++			}
++			buffer = new char[NETWORK_BUFFER_SIZE];
++			memset(buffer, 0, NETWORK_BUFFER_SIZE);
++			setvbuf(stream, buffer, _IOFBF, NETWORK_BUFFER_SIZE);
++			rbuffer = new char[NETWORK_BUFFER_SIZE];
++			memset(rbuffer, 0, NETWORK_BUFFER_SIZE);
++			setvbuf(rstream, rbuffer, _IOFBF, NETWORK_BUFFER_SIZE);
++			if(!quiet)
++				std::cout << "connected (fifo)\n";
++			return;
++		}
+ 		if (address == nullptr) {
+ 			struct sockaddr_in dest;
+ 			struct sockaddr_in serv;
+@@ -82,6 +116,7 @@
+ 		buffer = new char[NETWORK_BUFFER_SIZE];
+ 		memset(buffer, 0, NETWORK_BUFFER_SIZE);
+ 		setvbuf(stream, buffer, _IOFBF, NETWORK_BUFFER_SIZE);
++		rstream = stream;
+ 		if(!quiet)
+ 			std::cout << "connected\n";
+ 	}
+@@ -101,6 +136,10 @@
+ 	~NetIO(){
+ 		flush();
+ 		fclose(stream);
++		if (fifo_mode) {
++			fclose(rstream);
++			delete[] rbuffer;
++		}
+ 		delete[] buffer;
+ 	}
+ 
+@@ -136,7 +175,7 @@
+ 		has_sent = false;
+ 		size_t sent = 0;
+ 		while(sent < len) {
+-			size_t res = fread(sent + (char*)data, 1, len - sent, stream);
++			size_t res = fread(sent + (char*)data, 1, len - sent, rstream);
+ 			if (res > 0)
+ 				sent += res;
+ 			else

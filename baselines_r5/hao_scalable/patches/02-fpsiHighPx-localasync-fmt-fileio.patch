@@ -1,0 +1,151 @@
+--- a/src/fpsiHighPx.cpp
++++ b/src/fpsiHighPx.cpp
+@@ -1,8 +1,12 @@
+ #include <coproto/Socket/AsioSocket.h>
++#include <coproto/Socket/LocalAsyncSock.h> // [hao_scalable patch] in-process transport (loopback TCP blocked)
+ #include <cryptoTools/Common/CuckooIndex.h>
+-#include <format>
++#define FMT_HEADER_ONLY // [hao_scalable patch] g++-12 has no std::format
++#include <fmt/format.h>
+ #include <libOTe/TwoChooseOne/Silent/SilentOtExtReceiver.h>
+ #include <libOTe/TwoChooseOne/Silent/SilentOtExtSender.h>
++#include <fstream> // [hao_scalable patch]
++#include <set>     // [hao_scalable patch]
+ #include <thread>
+ #include <vector>
+ #include "cmp.h"
+@@ -15,8 +19,8 @@
+ 
+ using namespace volePSI;
+ 
+-void normL1(std::vector<u64> x, std::vector<u64> y, std::vector<u8> &choiceBit, u64 d, int delta, std::array<coproto::AsioSocket, 2> &chl);
+-void normL2(oc::span<u64> x, oc::span<u64> y, std::vector<u8> &choiceBit, u64 d, int delta, std::array<coproto::AsioSocket, 2> &chl);
++void normL1(std::vector<u64> x, std::vector<u64> y, std::vector<u8> &choiceBit, u64 d, int delta, std::array<coproto::LocalAsyncSocket, 2> &chl);
++void normL2(oc::span<u64> x, oc::span<u64> y, std::vector<u8> &choiceBit, u64 d, int delta, std::array<coproto::LocalAsyncSocket, 2> &chl);
+ 
+ void sampleDataGlobalDisj(std::vector<std::vector<u64>> &sendSet, std::vector<std::vector<u64>> &recvSet, int delta, u64 n, size_t d, PRNG &prng)
+ {
+@@ -104,7 +108,7 @@
+ 
+     auto s = time.setTimePoint("preprocess done");
+ 
+-    auto socket = coproto::AsioSocket::makePair();
++    auto socket = coproto::LocalAsyncSocket::makePair();
+ 
+     for (int t = 0; t < numTry; t++) {
+         std::thread recvThr([&]() {
+@@ -238,7 +242,7 @@
+     double comm = (socket[0].bytesReceived() + socket[0].bytesSent()) * 1.0 / double(numTry) / 1024 / 1024;
+     double comp = std::chrono::duration_cast<std::chrono::microseconds>(e - s).count() * 1.0 / double(numTry) / double(1000 * 1000);
+ 
+-    std::cout << std::format("[ours]    L0    {:^5}  {:^5}  {:^5}  {:^10.3f} {:^10.3f}", d, delta, n, comm, comp) << std::endl;
++    std::cout << fmt::format("[ours]    L0    {:^5}  {:^5}  {:^5}  {:^10.3f} {:^10.3f}", d, delta, n, comm, comp) << std::endl;
+ }
+ 
+ void fpsiHighLpPx(const oc::CLP &cmd)
+@@ -275,6 +279,38 @@
+ 
+     sampleDataGlobalDisj(sendSet, recvSet, delta, n, d, prng);
+ 
++    // [hao_scalable patch] optional binary-vector file input: -in DIR reads DIR/sender.txt and
++    // DIR/receiver.txt (one 0/1 string of length d per line, exactly n lines each). Coordinate
++    // value = kOffset + bit, so that q - delta does not underflow; L1 is translation invariant,
++    // so L1 distance == Hamming distance. When -in is given, no synthetic points are planted.
++    const u64 kOffset = 1ull << 20;
++    const bool fileIn = cmd.isSet("in");
++    if (fileIn) {
++        auto dir = cmd.get<std::string>("in");
++        auto load = [&](const std::string &path, std::vector<std::vector<u64>> &set) {
++            std::ifstream f(path);
++            if (!f)
++                throw std::runtime_error("cannot open " + path);
++            set.clear();
++            std::string line;
++            while (std::getline(f, line)) {
++                if (line.empty())
++                    continue;
++                if (line.size() != d)
++                    throw std::runtime_error("bad line length in " + path);
++                std::vector<u64> v(d);
++                for (size_t j = 0; j < d; j++)
++                    v[j] = kOffset + (line[j] == '1' ? 1 : 0);
++                set.push_back(v);
++            }
++            if (set.size() != n)
++                throw std::runtime_error("expected n lines in " + path);
++        };
++        load(dir + "/sender.txt", sendSet);
++        load(dir + "/receiver.txt", recvSet);
++        interSize = 0;
++    }
++
+     for (u64 i = 0; i < interSize; i++) {
+         u64 averageDiff = 0;
+         if (lp == 1) {
+@@ -316,7 +352,7 @@
+ 
+     auto s = time.setTimePoint("preprocess done");
+ 
+-    auto socket = coproto::AsioSocket::makePair();
++    auto socket = coproto::LocalAsyncSocket::makePair();
+ 
+     for (auto t = 0; t < numTry; t++) {
+         std::thread recvThr([&]() {
+@@ -568,6 +604,35 @@
+         recvOT.join();
+ 
+         time.setTimePoint("OT done");
++
++        // [hao_scalable patch] diagnostics + receiver output dump (not timed by the protocol's own
++        // timer in a meaningful way; it is after "OT done").
++        if (cmd.isSet("out")) {
++            std::set<block> idS(rand_S.begin(), rand_S.end());
++            std::set<block> idR(rand_R.begin(), rand_R.end());
++            u64 idColl = 0;
++            for (auto &b : idR)
++                idColl += idS.count(b);
++            u64 nChoice = 0;
++            for (auto c : choiceBit)
++                nChoice += (c & 1);
++            std::cerr << "[diag] distinct sender ids " << idS.size() << " distinct receiver ids " << idR.size()
++                      << " id collisions " << idColl << " choiceBits " << nChoice << " results " << result.size()
++                      << std::endl;
++            std::ofstream fo(cmd.get<std::string>("out"));
++            for (auto &v : result) {
++                bool bin = fileIn;
++                for (auto x : v)
++                    bin = bin && (x == kOffset || x == kOffset + 1);
++                for (size_t j = 0; j < v.size(); j++) {
++                    if (bin)
++                        fo << (v[j] == kOffset + 1 ? '1' : '0');
++                    else
++                        fo << (j ? "," : "") << v[j];
++                }
++                fo << "\n";
++            }
++        }
+     }
+ 
+     auto e = time.setTimePoint("all done");
+@@ -580,10 +645,10 @@
+     double comp = std::chrono::duration_cast<std::chrono::microseconds>(e - s).count() * 1.0 / double(numTry) / double(1000 * 1000);
+     const char *metric = lp == 1 ? "L1" : "L2";
+ 
+-    std::cout << std::format("[ours]    {:<2}    {:^5}  {:^5}  {:^5}  {:^10.3f} {:^10.3f}", metric, d, delta, n, comm, comp) << std::endl;
++    std::cout << fmt::format("[ours]    {:<2}    {:^5}  {:^5}  {:^5}  {:^10.3f} {:^10.3f}", metric, d, delta, n, comm, comp) << std::endl;
+ }
+ 
+-void normL1(std::vector<u64> x, std::vector<u64> y, std::vector<u8> &choiceBit, u64 d, int delta, std::array<coproto::AsioSocket, 2> &chl)
++void normL1(std::vector<u64> x, std::vector<u64> y, std::vector<u8> &choiceBit, u64 d, int delta, std::array<coproto::LocalAsyncSocket, 2> &chl)
+ {
+     int bitsLen = 56;
+     u64 mask = (1ull << bitsLen) - 1;
+@@ -719,7 +784,7 @@
+     cmpRecvThr.join();
+ }
+ 
+-void normL2(oc::span<u64> x, oc::span<u64> y, std::vector<u8> &choiceBit, u64 d, int delta, std::array<coproto::AsioSocket, 2> &chl)
++void normL2(oc::span<u64> x, oc::span<u64> y, std::vector<u8> &choiceBit, u64 d, int delta, std::array<coproto::LocalAsyncSocket, 2> &chl)
+ {
+     int bitsLen = 56;
+     u64 mask = (1ull << bitsLen) - 1;

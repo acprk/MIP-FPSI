@@ -1,0 +1,170 @@
+U128-n2^10: 200/2000 trials, 0s
+U128-n2^10: 400/2000 trials, 1s
+U128-n2^10: 600/2000 trials, 1s
+U128-n2^10: 800/2000 trials, 1s
+U128-n2^10: 1000/2000 trials, 2s
+U128-n2^10: 1200/2000 trials, 2s
+U128-n2^10: 1400/2000 trials, 3s
+U128-n2^10: 1600/2000 trials, 3s
+U128-n2^10: 1800/2000 trials, 3s
+U128-n2^10: 2000/2000 trials, 4s
+{'dataset': 'U128-n2^10', 'd': 128, 'delta': 4, 'b': 5, 's': 1, 'n': 1024, 'T': 5, 'keybits': '25/26', 'B': 1, 'Bbar': 2, 'load1_frac': 1.0, 'trials': 2000, 'dp_draws': 100, 'seed': 0}
+U128-n2^12: 200/2000 trials, 0s
+U128-n2^12: 400/2000 trials, 1s
+U128-n2^12: 600/2000 trials, 1s
+U128-n2^12: 800/2000 trials, 1s
+U128-n2^12: 1000/2000 trials, 2s
+U128-n2^12: 1200/2000 trials, 2s
+U128-n2^12: 1400/2000 trials, 3s
+U128-n2^12: 1600/2000 trials, 3s
+U128-n2^12: 1800/2000 trials, 3s
+U128-n2^12: 2000/2000 trials, 4s
+{'dataset': 'U128-n2^12', 'd': 128, 'delta': 4, 'b': 5, 's': 1, 'n': 4096, 'T': 5, 'keybits': '25/26', 'B': 1, 'Bbar': 2, 'load1_frac': 1.0, 'trials': 2000, 'dp_draws': 100, 'seed': 0}
+U64-n2^12: 200/2000 trials, 0s
+U64-n2^12: 400/2000 trials, 1s
+U64-n2^12: 600/2000 trials, 1s
+U64-n2^12: 800/2000 trials, 1s
+U64-n2^12: 1000/2000 trials, 2s
+U64-n2^12: 1200/2000 trials, 2s
+U64-n2^12: 1400/2000 trials, 2s
+U64-n2^12: 1600/2000 trials, 3s
+U64-n2^12: 1800/2000 trials, 3s
+U64-n2^12: 2000/2000 trials, 3s
+{'dataset': 'U64-n2^12', 'd': 64, 'delta': 3, 'b': 4, 's': 1, 'n': 4096, 'T': 4, 'keybits': '16', 'B': 3, 'Bbar': 6, 'load1_frac': 0.9404, 'trials': 2000, 'dp_draws': 100, 'seed': 0}
+code-simhash64: 200/2000 trials, 0s
+code-simhash64: 400/2000 trials, 1s
+code-simhash64: 600/2000 trials, 1s
+code-simhash64: 800/2000 trials, 1s
+code-simhash64: 1000/2000 trials, 2s
+code-simhash64: 1200/2000 trials, 2s
+code-simhash64: 1400/2000 trials, 3s
+code-simhash64: 1600/2000 trials, 3s
+code-simhash64: 1800/2000 trials, 3s
+code-simhash64: 2000/2000 trials, 4s
+{'dataset': 'code-simhash64', 'd': 64, 'delta': 3, 'b': 4, 's': 1, 'n': 2959, 'T': 4, 'keybits': '16', 'B': 29, 'Bbar': 58, 'load1_frac': 0.7819, 'trials': 2000, 'dp_draws': 100, 'seed': 0}
+cifar-dhash64-mild: 200/2000 trials, 1s
+cifar-dhash64-mild: 400/2000 trials, 2s
+cifar-dhash64-mild: 600/2000 trials, 3s
+cifar-dhash64-mild: 800/2000 trials, 5s
+cifar-dhash64-mild: 1000/2000 trials, 6s
+cifar-dhash64-mild: 1200/2000 trials, 7s
+cifar-dhash64-mild: 1400/2000 trials, 8s
+cifar-dhash64-mild: 1600/2000 trials, 9s
+cifar-dhash64-mild: 1800/2000 trials, 10s
+cifar-dhash64-mild: 2000/2000 trials, 11s
+{'dataset': 'cifar-dhash64-mild', 'd': 64, 'delta': 4, 'b': 6, 's': 2, 'n': 54994, 'T': 15, 'keybits': '20/21/22', 'B': 26, 'Bbar': 52, 'load1_frac': 0.9235, 'trials': 2000, 'dp_draws': 100, 'seed': 0}
+U128-n2^10 shadow full: done, 5s
+U128-n2^12 shadow full: done, 5s
+U64-n2^12 shadow full: done, 4s
+code-simhash64 shadow split0: done, 0s
+code-simhash64 shadow split1: done, 1s
+code-simhash64 shadow split2: done, 1s
+code-simhash64 shadow split3: done, 2s
+code-simhash64 shadow split4: done, 2s
+code-simhash64 shadow split5: done, 3s
+code-simhash64 shadow split6: done, 3s
+code-simhash64 shadow split7: done, 4s
+code-simhash64 shadow split8: done, 4s
+code-simhash64 shadow split9: done, 5s
+cifar-dhash64-mild shadow split0: done, 2s
+cifar-dhash64-mild shadow split1: done, 4s
+cifar-dhash64-mild shadow split2: done, 6s
+cifar-dhash64-mild shadow split3: done, 8s
+cifar-dhash64-mild shadow split4: done, 10s
+cifar-dhash64-mild shadow split5: done, 12s
+cifar-dhash64-mild shadow split6: done, 14s
+cifar-dhash64-mild shadow split7: done, 16s
+cifar-dhash64-mild shadow split8: done, 18s
+cifar-dhash64-mild shadow split9: done, 20s
+U128-n2^10 shadow2 full: done, 5s
+U128-n2^12 shadow2 full: done, 5s
+U64-n2^12 shadow2 full: done, 4s
+code-simhash64 shadow2 split0: done, 1s
+code-simhash64 shadow2 split1: done, 1s
+code-simhash64 shadow2 split2: done, 2s
+code-simhash64 shadow2 split3: done, 2s
+code-simhash64 shadow2 split4: done, 3s
+code-simhash64 shadow2 split5: done, 3s
+code-simhash64 shadow2 split6: done, 4s
+code-simhash64 shadow2 split7: done, 4s
+code-simhash64 shadow2 split8: done, 5s
+code-simhash64 shadow2 split9: done, 5s
+cifar-dhash64-mild shadow2 split0: done, 2s
+cifar-dhash64-mild shadow2 split1: done, 5s
+cifar-dhash64-mild shadow2 split2: done, 7s
+cifar-dhash64-mild shadow2 split3: done, 9s
+cifar-dhash64-mild shadow2 split4: done, 11s
+cifar-dhash64-mild shadow2 split5: done, 13s
+cifar-dhash64-mild shadow2 split6: done, 15s
+cifar-dhash64-mild shadow2 split7: done, 17s
+cifar-dhash64-mild shadow2 split8: done, 19s
+cifar-dhash64-mild shadow2 split9: done, 21s
+U128-n2^10 uniform: not applicable
+U128-n2^12 uniform: not applicable
+U64-n2^12 uniform: not applicable
+code-simhash64 uniform split0: done, 1s
+code-simhash64 uniform split1: done, 1s
+code-simhash64 uniform split2: done, 2s
+code-simhash64 uniform split3: done, 2s
+code-simhash64 uniform split4: done, 2s
+code-simhash64 uniform split5: done, 3s
+code-simhash64 uniform split6: done, 3s
+code-simhash64 uniform split7: done, 4s
+code-simhash64 uniform split8: done, 4s
+code-simhash64 uniform split9: done, 5s
+cifar-dhash64-mild uniform split0: done, 6s
+cifar-dhash64-mild uniform split1: done, 12s
+cifar-dhash64-mild uniform split2: done, 18s
+cifar-dhash64-mild uniform split3: done, 24s
+cifar-dhash64-mild uniform split4: done, 30s
+cifar-dhash64-mild uniform split5: done, 35s
+cifar-dhash64-mild uniform split6: done, 41s
+cifar-dhash64-mild uniform split7: done, 46s
+cifar-dhash64-mild uniform split8: done, 52s
+cifar-dhash64-mild uniform split9: done, 58s
+U128-n2^10 prior full: done, 9s
+U128-n2^12 prior full: done, 10s
+U64-n2^12 prior full: done, 8s
+code-simhash64 prior full: done, 9s
+cifar-dhash64-mild prior full: done, 37s
+U128-n2^10 sweep full: done, 9s
+U128-n2^12 sweep full: done, 9s
+U64-n2^12 sweep full: done, 7s
+code-simhash64 sweep full: done, 7s
+cifar-dhash64-mild sweep full: done, 26s
+{'dataset': 'U128-n2^10', 'n': 1024, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.1, 'B_values': '1/2', 'mode': 'exact', 'B_revealed': 1.1, 'Q': 5.5, 'Q_over_exact': 1.0}
+{'dataset': 'U128-n2^10', 'n': 1024, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.1, 'B_values': '1/2', 'mode': 'rounded', 'B_revealed': 1.1, 'Q': 5.5, 'Q_over_exact': 1.0}
+{'dataset': 'U128-n2^10', 'n': 1024, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.1, 'B_values': '1/2', 'mode': 'bound', 'B_revealed': 2.2, 'Q': 11.0, 'Q_over_exact': 2.0}
+{'dataset': 'U128-n2^10', 'n': 1024, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.1, 'B_values': '1/2', 'mode': 'dp(eps=1.0)', 'B_revealed': 22.1, 'Q': 110.5, 'Q_over_exact': 20.091}
+{'dataset': 'U128-n2^10', 'n': 1024, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.1, 'B_values': '1/2', 'mode': 'dprounded(eps=1.0)', 'B_revealed': 31.97, 'Q': 159.9, 'Q_over_exact': 29.067}
+{'dataset': 'U128-n2^10', 'n': 1024, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.1, 'B_values': '1/2', 'mode': 'dp(eps=0.1)', 'B_revealed': 209.1, 'Q': 1045.5, 'Q_over_exact': 190.091}
+{'dataset': 'U128-n2^10', 'n': 1024, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.1, 'B_values': '1/2', 'mode': 'dprounded(eps=0.1)', 'B_revealed': 257.1, 'Q': 1285.5, 'Q_over_exact': 233.725}
+{'dataset': 'U128-n2^12', 'n': 4096, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.4, 'B_values': '1/2', 'mode': 'exact', 'B_revealed': 1.4, 'Q': 7.0, 'Q_over_exact': 1.0}
+{'dataset': 'U128-n2^12', 'n': 4096, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.4, 'B_values': '1/2', 'mode': 'rounded', 'B_revealed': 1.4, 'Q': 7.0, 'Q_over_exact': 1.0}
+{'dataset': 'U128-n2^12', 'n': 4096, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.4, 'B_values': '1/2', 'mode': 'bound', 'B_revealed': 2.8, 'Q': 14.0, 'Q_over_exact': 2.0}
+{'dataset': 'U128-n2^12', 'n': 4096, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.4, 'B_values': '1/2', 'mode': 'dp(eps=1.0)', 'B_revealed': 22.4, 'Q': 112.0, 'Q_over_exact': 16.0}
+{'dataset': 'U128-n2^12', 'n': 4096, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.4, 'B_values': '1/2', 'mode': 'dprounded(eps=1.0)', 'B_revealed': 31.98, 'Q': 159.9, 'Q_over_exact': 22.842}
+{'dataset': 'U128-n2^12', 'n': 4096, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.4, 'B_values': '1/2', 'mode': 'dp(eps=0.1)', 'B_revealed': 209.4, 'Q': 1047.0, 'Q_over_exact': 149.571}
+{'dataset': 'U128-n2^12', 'n': 4096, 'T': 5, 'keybits': '25/26', 'B_exact_mean': 1.4, 'B_values': '1/2', 'mode': 'dprounded(eps=0.1)', 'B_revealed': 257.13, 'Q': 1285.7, 'Q_over_exact': 183.666}
+{'dataset': 'U64-n2^12', 'n': 4096, 'T': 4, 'keybits': '16', 'B_exact_mean': 3.1, 'B_values': '3/4', 'mode': 'exact', 'B_revealed': 3.1, 'Q': 12.4, 'Q_over_exact': 1.0}
+{'dataset': 'U64-n2^12', 'n': 4096, 'T': 4, 'keybits': '16', 'B_exact_mean': 3.1, 'B_values': '3/4', 'mode': 'rounded', 'B_revealed': 4.0, 'Q': 16.0, 'Q_over_exact': 1.29}
+{'dataset': 'U64-n2^12', 'n': 4096, 'T': 4, 'keybits': '16', 'B_exact_mean': 3.1, 'B_values': '3/4', 'mode': 'bound', 'B_revealed': 6.2, 'Q': 24.8, 'Q_over_exact': 2.0}
+{'dataset': 'U64-n2^12', 'n': 4096, 'T': 4, 'keybits': '16', 'B_exact_mean': 3.1, 'B_values': '3/4', 'mode': 'dp(eps=1.0)', 'B_revealed': 24.1, 'Q': 96.4, 'Q_over_exact': 7.774}
+{'dataset': 'U64-n2^12', 'n': 4096, 'T': 4, 'keybits': '16', 'B_exact_mean': 3.1, 'B_values': '3/4', 'mode': 'dprounded(eps=1.0)', 'B_revealed': 32.0, 'Q': 128.0, 'Q_over_exact': 10.322}
+{'dataset': 'U64-n2^12', 'n': 4096, 'T': 4, 'keybits': '16', 'B_exact_mean': 3.1, 'B_values': '3/4', 'mode': 'dp(eps=0.1)', 'B_revealed': 211.1, 'Q': 844.4, 'Q_over_exact': 68.097}
+{'dataset': 'U64-n2^12', 'n': 4096, 'T': 4, 'keybits': '16', 'B_exact_mean': 3.1, 'B_values': '3/4', 'mode': 'dprounded(eps=0.1)', 'B_revealed': 257.35, 'Q': 1029.4, 'Q_over_exact': 83.016}
+{'dataset': 'code-simhash64', 'n': 2959, 'T': 4, 'keybits': '16', 'B_exact_mean': 29.0, 'B_values': '29', 'mode': 'exact', 'B_revealed': 29.0, 'Q': 116.0, 'Q_over_exact': 1.0}
+{'dataset': 'code-simhash64', 'n': 2959, 'T': 4, 'keybits': '16', 'B_exact_mean': 29.0, 'B_values': '29', 'mode': 'rounded', 'B_revealed': 32.0, 'Q': 128.0, 'Q_over_exact': 1.103}
+{'dataset': 'code-simhash64', 'n': 2959, 'T': 4, 'keybits': '16', 'B_exact_mean': 29.0, 'B_values': '29', 'mode': 'bound', 'B_revealed': 58.0, 'Q': 232.0, 'Q_over_exact': 2.0}
+{'dataset': 'code-simhash64', 'n': 2959, 'T': 4, 'keybits': '16', 'B_exact_mean': 29.0, 'B_values': '29', 'mode': 'dp(eps=1.0)', 'B_revealed': 50.0, 'Q': 200.0, 'Q_over_exact': 1.724}
+{'dataset': 'code-simhash64', 'n': 2959, 'T': 4, 'keybits': '16', 'B_exact_mean': 29.0, 'B_values': '29', 'mode': 'dprounded(eps=1.0)', 'B_revealed': 64.0, 'Q': 256.0, 'Q_over_exact': 2.207}
+{'dataset': 'code-simhash64', 'n': 2959, 'T': 4, 'keybits': '16', 'B_exact_mean': 29.0, 'B_values': '29', 'mode': 'dp(eps=0.1)', 'B_revealed': 237.0, 'Q': 948.0, 'Q_over_exact': 8.172}
+{'dataset': 'code-simhash64', 'n': 2959, 'T': 4, 'keybits': '16', 'B_exact_mean': 29.0, 'B_values': '29', 'mode': 'dprounded(eps=0.1)', 'B_revealed': 274.19, 'Q': 1096.7, 'Q_over_exact': 9.455}
+{'dataset': 'cifar-dhash64-mild', 'n': 54994, 'T': 15, 'keybits': '20/21/22', 'B_exact_mean': 26.0, 'B_values': '26', 'mode': 'exact', 'B_revealed': 26.0, 'Q': 390.0, 'Q_over_exact': 1.0}
+{'dataset': 'cifar-dhash64-mild', 'n': 54994, 'T': 15, 'keybits': '20/21/22', 'B_exact_mean': 26.0, 'B_values': '26', 'mode': 'rounded', 'B_revealed': 32.0, 'Q': 480.0, 'Q_over_exact': 1.231}
+{'dataset': 'cifar-dhash64-mild', 'n': 54994, 'T': 15, 'keybits': '20/21/22', 'B_exact_mean': 26.0, 'B_values': '26', 'mode': 'bound', 'B_revealed': 52.0, 'Q': 780.0, 'Q_over_exact': 2.0}
+{'dataset': 'cifar-dhash64-mild', 'n': 54994, 'T': 15, 'keybits': '20/21/22', 'B_exact_mean': 26.0, 'B_values': '26', 'mode': 'dp(eps=1.0)', 'B_revealed': 47.0, 'Q': 705.0, 'Q_over_exact': 1.808}
+{'dataset': 'cifar-dhash64-mild', 'n': 54994, 'T': 15, 'keybits': '20/21/22', 'B_exact_mean': 26.0, 'B_values': '26', 'mode': 'dprounded(eps=1.0)', 'B_revealed': 64.0, 'Q': 960.0, 'Q_over_exact': 2.462}
+{'dataset': 'cifar-dhash64-mild', 'n': 54994, 'T': 15, 'keybits': '20/21/22', 'B_exact_mean': 26.0, 'B_values': '26', 'mode': 'dp(eps=0.1)', 'B_revealed': 234.0, 'Q': 3510.0, 'Q_over_exact': 9.0}
+{'dataset': 'cifar-dhash64-mild', 'n': 54994, 'T': 15, 'keybits': '20/21/22', 'B_exact_mean': 26.0, 'B_values': '26', 'mode': 'dprounded(eps=0.1)', 'B_revealed': 269.47, 'Q': 4042.1, 'Q_over_exact': 10.364}
+ALL DONE

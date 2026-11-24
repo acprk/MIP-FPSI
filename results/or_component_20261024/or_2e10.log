@@ -1,0 +1,14 @@
+gates=1023 and=1023 levels=10
+output ones=954 wrong=0
+N=1024 nt=1 time_s=0.440051 comm_MB=0.875542 ANDs/s=2.38053e+06
+Label                                Time (ms)  diff (ms)
+__________________________________
+Gmw::generateTriple begin                  0.0      0.038  
+TripleGen::generateBaseOts begin           0.1      0.030  
+generateBase base                         30.2     30.119  ******
+generateBase ext                          56.8     26.645  ******
+TripleGen::generateBaseOts end            56.9      0.044  
+SilentTripleGen::expand begin             56.9      0.018  
+SilentTripleGen::expand end              261.1    204.234  **********
+Gmw::generateTriple end                  263.0      1.860  *
+

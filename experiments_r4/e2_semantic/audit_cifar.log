@@ -1,0 +1,12 @@
+{
+ "outputs_records": 4924,
+ "with_own_original": 4875,
+ "other": 49,
+ "other_visual_near_duplicate": 9,
+ "other_mad_quartiles": [
+  12.36,
+  15.48,
+  21.25
+ ],
+ "genuine_mad_median": 0.0
+}

@@ -1,0 +1,18 @@
+Paths referenced in RESULTS.md and where they are in this archive:
+OK      ../aggregate.py -> experiments_r6/aggregate.py
+OK      ../env.txt -> experiments_r6/env.txt
+OK      ../make_jobs.py -> experiments_r6/make_jobs.py
+OK      ../otfpsi_inproc/build.sh -> experiments_r6/otfpsi_inproc/build.sh
+OK      ../otfpsi_inproc/shim/coproto/Socket/AsioSocket.h -> experiments_r6/otfpsi_inproc/shim/coproto/Socket/AsioSocket.h
+OK      ../run_all.sh -> experiments_r6/run_all.sh
+OK      ../runner.py -> experiments_r6/runner.py
+BINARY  audit_r5/build/fpsi_bench (not shipped; sha256 in BINARIES_MANIFEST.tsv)
+BINARY  impl/build12/fpsi_bench (not shipped; sha256 in BINARIES_MANIFEST.tsv)
+OK      impl/scripts/run_seed_noU.sh -> impl/scripts/run_seed_noU.sh
+OK      impl/src/main.cpp -> impl/src/main.cpp
+OK      jobs_e2.jsonl -> experiments_r6/e2_paired/jobs_e2.jsonl
+OK      otfpsi_inproc/shim/coproto/Socket/AsioSocket.h -> experiments_r6/otfpsi_inproc/shim/coproto/Socket/AsioSocket.h
+OK      results.csv -> experiments_r6/e2_paired/results.csv
+OK      runs/<tag>.a<attempt>.{log,time} (per-run .log and .time files)
+OK      runs/summary.jsonl -> experiments_r6/e2_paired/runs/summary.jsonl
+OK      tables.md -> experiments_r6/e2_paired/tables.md

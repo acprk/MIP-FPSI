@@ -1,0 +1,15 @@
+== 2^12, d=128, delta=4
+native otFPSI   CPU 480.70 [455.02, 585.91]  wall 342.5  comm 3334 MiB
+matched otFPSI  CPU 545.20 [502.09, 565.87]  (stage1 528.5, OR+delivery 15.04)  wall 372.9  comm 3348 MiB  RSS 3.11 GiB
+  matched/native CPU ratio 1.13 [0.86, 1.18]
+ours exact      CPU 9.00 [8.63, 10.50]  wall 8.8  comm 12.6 MiB  | vs matched: CPU 57.28 [51.94, 65.55]x  wall 40.24 [36.50, 47.16]x  | vs native: CPU 51.72 [50.43, 65.14]x
+ours pow2       CPU 10.63 [9.98, 12.05]  wall 10.5  comm 15.8 MiB  | vs matched: CPU 49.36 [45.25, 56.71]x  wall 34.87 [31.55, 38.84]x  | vs native: CPU 44.19 [43.79, 53.17]x
+ours noU        CPU 10.99 [8.62, 14.13]  wall 10.8  comm 184.9 MiB  | vs matched: CPU 47.51 [38.59, 64.16]x  wall 33.22 [25.51, 45.65]x  | vs native: CPU 43.75 [37.46, 54.47]x
+== CPython, d=64, delta=3
+native otFPSI   CPU 124.06 [112.78, 142.11]  wall 80.8  comm 1017 MiB
+matched otFPSI  CPU 142.53 [134.00, 173.91]  (stage1 136.3, OR+delivery 6.46)  wall 100.7  comm 1024 MiB  RSS 2.69 GiB
+  matched/native CPU ratio 1.12 [1.00, 1.49]
+ours exact      CPU 37.35 [29.39, 44.62]  wall 36.7  comm 65.9 MiB  | vs matched: CPU 3.99 [3.72, 4.85]x  wall 2.87 [2.55, 3.49]x  | vs native: CPU 3.32 [2.76, 4.84]x
+ours pow2       CPU 70.41 [55.56, 86.54]  wall 74.1  comm 123.5 MiB  | vs matched: CPU 2.01 [1.84, 2.57]x  wall 1.47 [1.26, 1.78]x  | vs native: CPU 1.64 [1.50, 2.56]x
+ours noU        CPU 103.43 [76.63, 110.13]  wall 102.4  comm 1574.8 MiB  | vs matched: CPU 1.59 [1.29, 1.75]x  wall 1.15 [0.91, 1.18]x  | vs native: CPU 1.29 [1.09, 1.61]x
+all checks passed

@@ -1,0 +1,48 @@
+wan_o12_exact_r1 sender_exit=0 receiver_exit=0
+wan_o12_pow2_r1 sender_exit=0 receiver_exit=0
+wan_o12_noU_r1 sender_exit=0 receiver_exit=0
+wan_oc_exact_r1 sender_exit=0 receiver_exit=0
+wan_oc_noU_r1 sender_exit=0 receiver_exit=0
+wan_ot12_silent_r1 exit=0
+wan_ot12_soft_r1 exit=0
+wan_otc_silent_r1 exit=0
+wan_o12_exact_r2 sender_exit=0 receiver_exit=0
+wan_o12_pow2_r2 sender_exit=0 receiver_exit=0
+wan_o12_noU_r2 sender_exit=0 receiver_exit=0
+wan_oc_exact_r2 sender_exit=0 receiver_exit=0
+wan_oc_noU_r2 sender_exit=0 receiver_exit=0
+wan_ot12_silent_r2 exit=0
+wan_ot12_soft_r2 exit=0
+wan_otc_silent_r2 exit=0
+wan_o12_exact_r3 sender_exit=0 receiver_exit=0
+wan_o12_pow2_r3 sender_exit=0 receiver_exit=0
+wan_o12_noU_r3 sender_exit=0 receiver_exit=0
+wan_oc_exact_r3 sender_exit=0 receiver_exit=0
+wan_oc_noU_r3 sender_exit=0 receiver_exit=0
+wan_ot12_silent_r3 exit=0
+wan_ot12_soft_r3 exit=0
+wan_otc_silent_r3 exit=0
+lan_o12_exact_r1 sender_exit=0 receiver_exit=0
+lan_o12_pow2_r1 sender_exit=0 receiver_exit=0
+lan_o12_noU_r1 sender_exit=0 receiver_exit=0
+lan_oc_exact_r1 sender_exit=0 receiver_exit=0
+lan_oc_noU_r1 sender_exit=0 receiver_exit=0
+lan_ot12_silent_r1 exit=0
+lan_ot12_soft_r1 exit=0
+lan_otc_silent_r1 exit=0
+lan_o12_exact_r2 sender_exit=0 receiver_exit=0
+lan_o12_pow2_r2 sender_exit=0 receiver_exit=0
+lan_o12_noU_r2 sender_exit=0 receiver_exit=0
+lan_oc_exact_r2 sender_exit=0 receiver_exit=0
+lan_oc_noU_r2 sender_exit=0 receiver_exit=0
+lan_ot12_silent_r2 exit=0
+lan_ot12_soft_r2 exit=0
+lan_otc_silent_r2 exit=0
+lan_o12_exact_r3 sender_exit=0 receiver_exit=0
+lan_o12_pow2_r3 sender_exit=0 receiver_exit=0
+lan_o12_noU_r3 sender_exit=0 receiver_exit=0
+lan_oc_exact_r3 sender_exit=0 receiver_exit=0
+lan_oc_noU_r3 sender_exit=0 receiver_exit=0
+lan_ot12_silent_r3 exit=0
+lan_ot12_soft_r3 exit=0
+lan_otc_silent_r3 exit=0

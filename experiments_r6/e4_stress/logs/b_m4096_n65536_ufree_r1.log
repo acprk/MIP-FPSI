@@ -1,0 +1,30 @@
+# cmd: <ARTIFACT_ROOT>/impl/build12/fpsi_bench -m 4096 -n 65536 -d 128 -delta 4 -b 5 -s 1 -indexverify -pow2 -noU
+# env MIP_INJECT_CUCKOO_FAIL=
+# start 2026-11-12T07:11:46-08:00 loadavg_before=20.95 24.87 23.16 nr_throttled_before=63069
+m=4096 n=65536 d=128 delta=4 b=5 s=1 r=0 T=5 B=4 U=1 Q=20 bins=106605 prog=327680 tau=0 fallback=0 nt=1
+time_s=7.72213 cpu_s(both parties)=7.72138 comm_MB=200.394 (S->R 7.52702, R->S 192.867)
+matches=364 truth=364 false_neg=0 false_pos=0
+	Command being timed: "timeout 7200 taskset -c 44,45 <ARTIFACT_ROOT>/impl/build12/fpsi_bench -m 4096 -n 65536 -d 128 -delta 4 -b 5 -s 1 -indexverify -pow2 -noU"
+	User time (seconds): 7.30
+	System time (seconds): 0.88
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1187892
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 482853
+	Voluntary context switches: 3
+	Involuntary context switches: 16
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# end 2026-11-12T07:11:54-08:00 exit=0 loadavg_after=20.87 24.79 23.14 nr_throttled_after=63069 nr_throttled_delta=0

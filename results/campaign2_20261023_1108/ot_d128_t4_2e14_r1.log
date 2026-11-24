@@ -1,0 +1,69 @@
+----------------------------------------
+Configuration:
+  Distance Computation Protocol: batched
+  Threshold Comparison Protocol: np
+  Querier Size: 16384
+  Responder Size: 16384
+  Vector Size: 128
+  P Bits: 8
+  Modulus: 129
+  Threshold Comparison Count: 268435456
+  Threshold: 4
+  Run Sender: No
+  Run Receiver: No
+  IP: localhost:1212
+  PRF: aes
+  OT Protocol: silent
+  Secret Shared: No
+----------------------------------------
+Hamming Distance Protocol
+[Responder] Querier index: 0
+[Responder] Querier index: 1024
+[Responder] Querier index: 2048
+[Responder] Querier index: 3072
+[Responder] Querier index: 4096
+[Responder] Querier index: 5120
+[Responder] Querier index: 6144
+[Responder] Querier index: 7168
+[Responder] Querier index: 8192
+[Responder] Querier index: 9216
+[Responder] Querier index: 10240
+[Responder] Querier index: 11264
+[Responder] Querier index: 12288
+[Responder] Querier index: 13312
+[Responder] Querier index: 14336
+[Responder] Querier index: 15360
+############ Responder Distance Computation ############
+Label                    Time (ms)  diff (ms)
+__________________________________
+Memory allocation            414.1    414.081  ****
+Base OTs                     429.7     15.593  **
+Random OTs                  1386.6    956.942  *****
+Correlation transfer     3115543.2  3114156.620  **********
+
+Communication: 34360226789 bytes (32.000 GB)
+############ Querier Distance Computation ############
+Label                                   Time (ms)  diff (ms)
+__________________________________
+Choice computation                           18.6     18.585  **
+Base OTs                                    424.3    405.682  ****
+Random OTs                                 1359.6    935.292  *****
+Correlation transfer and extraction     3115638.7  3114279.183  **********
+
+Communication: 34360226789 bytes (32.000 GB)
+Verification succeeded!
+Label                                Time (ms)  diff (ms)
+__________________________________
+Interleaved Distance Computation     3115657.0  3115656.973  **********
+
+Threshold Comparison Protocol
+[Querier] OT Batch: 0/32
+[Querier] OT Batch: 1/32
+[Querier] OT Batch: 2/32
+[Querier] OT Batch: 3/32
+[Querier] OT Batch: 4/32
+[Querier] OT Batch: 5/32
+[Querier] OT Batch: 6/32
+[Querier] OT Batch: 7/32
+[Querier] OT Batch: 8/32
+[Querier] OT Batch: 9/32

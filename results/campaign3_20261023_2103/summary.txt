@@ -1,0 +1,234 @@
+ot_silent_2e8_r1 load=17.03 thr=0 1.26 1.54 0.11 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ot_soft_2e8_r1 load=17.03 thr=0 1.00 1.39 0.07 Total Communication: 13921392 bytes. 13595.109 KB. 13.276 MB. 0.013 GB.
+ot_silent_2e10_r1 load=17.40 thr=0 18.26 24.25 1.36 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ot_soft_2e10_r1 load=17.74 thr=0 14.80 21.00 0.72 Total Communication: 219313128 bytes. 214172.977 KB. 209.153 MB. 0.204 GB.
+ot_silent_2e12_r1 load=24.78 thr=16 274.81 376.46 17.20 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ot_soft_2e12_r1 load=23.26 thr=45 238.67 357.55 10.37 Total Communication: 3496069992 bytes. 3414130.852 KB. 3334.112 MB. 3.256 GB.
+ot_silent_2e8_r2 load=22.92 thr=0 1.17 1.56 0.09 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ot_soft_2e8_r2 load=22.92 thr=0 1.02 1.43 0.05 Total Communication: 13921392 bytes. 13595.109 KB. 13.276 MB. 0.013 GB.
+ot_silent_2e10_r2 load=22.84 thr=0 16.85 23.29 0.97 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ot_soft_2e10_r2 load=21.99 thr=0 14.60 20.99 0.59 Total Communication: 219313128 bytes. 214172.977 KB. 209.153 MB. 0.204 GB.
+ot_silent_2e12_r2 load=18.07 thr=25 270.73 368.07 15.33 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ot_soft_2e12_r2 load=22.45 thr=6 228.14 343.36 8.75 Total Communication: 3496069992 bytes. 3414130.852 KB. 3334.112 MB. 3.256 GB.
+ot_silent_2e8_r3 load=22.45 thr=0 1.16 1.52 0.07 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ot_soft_2e8_r3 load=22.45 thr=0 1.00 1.40 0.06 Total Communication: 13921392 bytes. 13595.109 KB. 13.276 MB. 0.013 GB.
+ot_silent_2e10_r3 load=20.43 thr=0 17.15 23.42 1.00 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ot_soft_2e10_r3 load=20.14 thr=0 14.71 21.17 0.58 Total Communication: 219313128 bytes. 214172.977 KB. 209.153 MB. 0.204 GB.
+ot_silent_2e12_r3 load=30.09 thr=113 290.53 397.20 17.61 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ot_soft_2e12_r3 load=31.24 thr=1306 262.80 391.64 10.80 Total Communication: 3496069992 bytes. 3414130.852 KB. 3334.112 MB. 3.256 GB.
+ot_silent_2e8_r4 load=28.58 thr=0 1.35 1.78 0.10 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ot_soft_2e8_r4 load=28.58 thr=0 1.16 1.64 0.07 Total Communication: 13921392 bytes. 13595.109 KB. 13.276 MB. 0.013 GB.
+ot_silent_2e10_r4 load=29.47 thr=2 19.37 26.73 1.23 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ot_soft_2e10_r4 load=29.88 thr=3 16.81 24.21 0.77 Total Communication: 219313128 bytes. 214172.977 KB. 209.153 MB. 0.204 GB.
+ot_silent_2e12_r4 load=28.62 thr=65 299.15 407.31 17.61 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ot_soft_2e12_r4 load=29.26 thr=14 254.47 385.91 10.76 Total Communication: 3496069992 bytes. 3414130.852 KB. 3334.112 MB. 3.256 GB.
+ot_silent_2e8_r5 load=29.26 thr=0 1.16 1.50 0.09 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ot_soft_2e8_r5 load=29.26 thr=0 0.99 1.38 0.05 Total Communication: 13921392 bytes. 13595.109 KB. 13.276 MB. 0.013 GB.
+ot_silent_2e10_r5 load=27.62 thr=0 16.99 23.37 1.11 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ot_soft_2e10_r5 load=26.14 thr=0 14.69 20.90 0.64 Total Communication: 219313128 bytes. 214172.977 KB. 209.153 MB. 0.204 GB.
+ot_silent_2e12_r5 load=21.22 thr=11 271.32 377.29 15.58 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ot_soft_2e12_r5 load=21.36 thr=1 225.72 340.63 8.30 Total Communication: 3496069992 bytes. 3414130.852 KB. 3334.112 MB. 3.256 GB.
+d128_t4_2e8_exact_r1 load=21.36 thr=0 wall_s=0.591128 cpu_s=0.331071 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.590782 cpu_s=0.292195 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_pow2_r1 load=21.26 thr=0 wall_s=0.49245 cpu_s=0.288436 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.492358 cpu_s=0.272744 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_noU_r1 load=21.26 thr=0 wall_s=0.524396 cpu_s=0.309463 sent_MB=5.20828 recv_MB=0.909883 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.524273 cpu_s=0.285002 sent_MB=0.909883 recv_MB=5.20828 
+d128_t4_2e8_dp_r1 load=21.26 thr=0 wall_s=3.27537 cpu_s=1.69988 sent_MB=4.89301 recv_MB=4.76439 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=3.27528 cpu_s=1.69274 sent_MB=4.76439 recv_MB=4.89301 
+d128_t4_2e8_exact_r2 load=21.23 thr=0 wall_s=0.509334 cpu_s=0.297374 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.50929 cpu_s=0.284318 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_pow2_r2 load=21.23 thr=0 wall_s=0.493227 cpu_s=0.279978 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.493142 cpu_s=0.281797 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_noU_r2 load=21.23 thr=0 wall_s=0.541459 cpu_s=0.323533 sent_MB=5.20828 recv_MB=0.909883 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.5414 cpu_s=0.291478 sent_MB=0.909883 recv_MB=5.20828 
+d128_t4_2e8_dp_r2 load=20.66 thr=0 wall_s=3.21217 cpu_s=1.65963 sent_MB=4.89301 recv_MB=4.76439 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=3.21188 cpu_s=1.67917 sent_MB=4.76439 recv_MB=4.89301 
+d128_t4_2e8_exact_r3 load=20.66 thr=0 wall_s=0.527956 cpu_s=0.302464 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.527869 cpu_s=0.298015 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_pow2_r3 load=20.66 thr=0 wall_s=0.53674 cpu_s=0.313307 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.536596 cpu_s=0.294706 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_noU_r3 load=20.66 thr=0 wall_s=0.566513 cpu_s=0.332749 sent_MB=5.20828 recv_MB=0.909883 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.56645 cpu_s=0.30742 sent_MB=0.909883 recv_MB=5.20828 
+d128_t4_2e8_dp_r3 load=20.60 thr=0 wall_s=3.36638 cpu_s=1.78086 sent_MB=4.89301 recv_MB=4.76439 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=3.366 cpu_s=1.70742 sent_MB=4.76439 recv_MB=4.89301 
+d128_t4_2e8_exact_r4 load=20.60 thr=0 wall_s=0.533359 cpu_s=0.308613 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.533229 cpu_s=0.297524 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_pow2_r4 load=20.60 thr=0 wall_s=0.564147 cpu_s=0.321719 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.564024 cpu_s=0.31475 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_noU_r4 load=20.60 thr=0 wall_s=0.547677 cpu_s=0.325787 sent_MB=5.20828 recv_MB=0.909883 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.547513 cpu_s=0.295723 sent_MB=0.909883 recv_MB=5.20828 
+d128_t4_2e8_dp_r4 load=19.91 thr=0 wall_s=3.22952 cpu_s=1.6828 sent_MB=4.89301 recv_MB=4.76439 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=3.22922 cpu_s=1.66675 sent_MB=4.76439 recv_MB=4.89301 
+d128_t4_2e8_exact_r5 load=19.91 thr=0 wall_s=0.498892 cpu_s=0.289641 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.49881 cpu_s=0.279126 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_pow2_r5 load=19.91 thr=0 wall_s=0.529493 cpu_s=0.314651 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.529379 cpu_s=0.285992 sent_MB=0.921068 recv_MB=0.41869 
+d128_t4_2e8_noU_r5 load=20.00 thr=0 wall_s=0.554659 cpu_s=0.325305 sent_MB=5.20828 recv_MB=0.909883 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.554497 cpu_s=0.301144 sent_MB=0.909883 recv_MB=5.20828 
+d128_t4_2e8_dp_r5 load=20.00 thr=0 wall_s=3.3744 cpu_s=1.80448 sent_MB=4.89301 recv_MB=4.76439 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=3.37406 cpu_s=1.69703 sent_MB=4.76439 recv_MB=4.89301 
+d128_t8_2e8_exact_r1 load=20.32 thr=0 wall_s=0.704817 cpu_s=0.397982 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.704745 cpu_s=0.381964 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_pow2_r1 load=20.32 thr=0 wall_s=0.73107 cpu_s=0.409605 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.730925 cpu_s=0.402089 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_noU_r1 load=20.32 thr=0 wall_s=0.751292 cpu_s=0.426875 sent_MB=12.6495 recv_MB=1.15985 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.751175 cpu_s=0.404452 sent_MB=1.15985 recv_MB=12.6495 
+d128_t8_2e8_dp_r1 load=20.30 thr=0 wall_s=4.4084 cpu_s=2.19689 sent_MB=3.10517 recv_MB=4.24298 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=4.40826 cpu_s=2.26561 sent_MB=4.24298 recv_MB=3.10517 
+d128_t8_2e8_exact_r2 load=20.30 thr=0 wall_s=0.693668 cpu_s=0.383815 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.693503 cpu_s=0.387904 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_pow2_r2 load=20.30 thr=0 wall_s=0.743916 cpu_s=0.414932 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.743792 cpu_s=0.408071 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_noU_r2 load=20.35 thr=0 wall_s=0.770754 cpu_s=0.44044 sent_MB=12.6495 recv_MB=1.15985 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.770631 cpu_s=0.409305 sent_MB=1.15985 recv_MB=12.6495 
+d128_t8_2e8_dp_r2 load=20.32 thr=0 wall_s=4.30598 cpu_s=2.11691 sent_MB=3.10517 recv_MB=4.24298 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=4.30581 cpu_s=2.26787 sent_MB=4.24298 recv_MB=3.10517 
+d128_t8_2e8_exact_r3 load=20.32 thr=0 wall_s=0.71373 cpu_s=0.402398 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.713577 cpu_s=0.386181 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_pow2_r3 load=20.32 thr=0 wall_s=0.74605 cpu_s=0.417802 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.745895 cpu_s=0.40885 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_noU_r3 load=20.32 thr=0 wall_s=0.782216 cpu_s=0.448306 sent_MB=12.6495 recv_MB=1.15985 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.782077 cpu_s=0.420673 sent_MB=1.15985 recv_MB=12.6495 
+d128_t8_2e8_dp_r3 load=20.30 thr=0 wall_s=4.19371 cpu_s=2.09153 sent_MB=3.10517 recv_MB=4.24298 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=4.19356 cpu_s=2.18107 sent_MB=4.24298 recv_MB=3.10517 
+d128_t8_2e8_exact_r4 load=20.30 thr=0 wall_s=0.717161 cpu_s=0.408054 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.717049 cpu_s=0.388347 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_pow2_r4 load=20.11 thr=0 wall_s=0.675181 cpu_s=0.364462 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.67502 cpu_s=0.386894 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_noU_r4 load=20.11 thr=0 wall_s=0.772879 cpu_s=0.442876 sent_MB=12.6495 recv_MB=1.15985 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.77277 cpu_s=0.421241 sent_MB=1.15985 recv_MB=12.6495 
+d128_t8_2e8_dp_r4 load=19.94 thr=5 wall_s=4.43492 cpu_s=2.15446 sent_MB=3.10517 recv_MB=4.24298 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=4.43484 cpu_s=2.17514 sent_MB=4.24298 recv_MB=3.10517 
+d128_t8_2e8_exact_r5 load=19.94 thr=0 wall_s=0.711023 cpu_s=0.392849 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.710901 cpu_s=0.392718 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_pow2_r5 load=19.94 thr=0 wall_s=0.697849 cpu_s=0.397104 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.697766 cpu_s=0.37477 sent_MB=1.18534 recv_MB=0.785583 
+d128_t8_2e8_noU_r5 load=19.94 thr=3 wall_s=0.884238 cpu_s=0.442403 sent_MB=12.6495 recv_MB=1.15985 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.884089 cpu_s=0.433366 sent_MB=1.15985 recv_MB=12.6495 
+d128_t8_2e8_dp_r5 load=19.95 thr=2 wall_s=4.42252 cpu_s=2.19002 sent_MB=3.10517 recv_MB=4.24298 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=4.42245 cpu_s=2.22071 sent_MB=4.24298 recv_MB=3.10517 
+d128_t4_2e10_exact_r1 load=19.79 thr=0 wall_s=1.08917 cpu_s=0.589338 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.08829 cpu_s=0.581819 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_pow2_r1 load=19.79 thr=0 wall_s=1.11683 cpu_s=0.600373 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.11603 cpu_s=0.594675 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_noU_r1 load=19.79 thr=0 wall_s=1.15985 cpu_s=0.647565 sent_MB=23.4433 recv_MB=1.64316 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.15897 cpu_s=0.607552 sent_MB=1.64316 recv_MB=23.4433 
+d128_t4_2e10_dp_r1 load=19.60 thr=0 wall_s=12.2655 cpu_s=6.47482 sent_MB=18.4928 recv_MB=16.0713 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=12.2639 cpu_s=6.1315 sent_MB=16.0713 recv_MB=18.4928 
+d128_t4_2e10_exact_r2 load=19.60 thr=0 wall_s=1.05267 cpu_s=0.574482 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.05184 cpu_s=0.554579 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_pow2_r2 load=19.60 thr=0 wall_s=1.05634 cpu_s=0.572473 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.05567 cpu_s=0.563869 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_noU_r2 load=18.91 thr=0 wall_s=1.13576 cpu_s=0.631451 sent_MB=23.4433 recv_MB=1.64316 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.13489 cpu_s=0.601148 sent_MB=1.64316 recv_MB=23.4433 
+d128_t4_2e10_dp_r2 load=18.85 thr=0 wall_s=12.1565 cpu_s=6.3893 sent_MB=18.4928 recv_MB=16.0713 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=12.1541 cpu_s=6.11497 sent_MB=16.0713 recv_MB=18.4928 
+d128_t4_2e10_exact_r3 load=18.85 thr=0 wall_s=1.09916 cpu_s=0.600287 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.09836 cpu_s=0.577217 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_pow2_r3 load=18.79 thr=0 wall_s=1.07418 cpu_s=0.586831 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.07335 cpu_s=0.56837 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_noU_r3 load=18.79 thr=0 wall_s=1.13806 cpu_s=0.632767 sent_MB=23.4433 recv_MB=1.64316 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.13721 cpu_s=0.591381 sent_MB=1.64316 recv_MB=23.4433 
+d128_t4_2e10_dp_r3 load=17.54 thr=0 wall_s=12.2649 cpu_s=6.50225 sent_MB=18.4928 recv_MB=16.0713 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=12.2635 cpu_s=6.10367 sent_MB=16.0713 recv_MB=18.4928 
+d128_t4_2e10_exact_r4 load=17.54 thr=0 wall_s=1.04416 cpu_s=0.576401 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.04312 cpu_s=0.550523 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_pow2_r4 load=17.54 thr=0 wall_s=1.07227 cpu_s=0.589257 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.07143 cpu_s=0.561113 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_noU_r4 load=17.54 thr=0 wall_s=1.12488 cpu_s=0.631568 sent_MB=23.4433 recv_MB=1.64316 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.12409 cpu_s=0.575638 sent_MB=1.64316 recv_MB=23.4433 
+d128_t4_2e10_dp_r4 load=16.12 thr=0 wall_s=11.9389 cpu_s=6.12703 sent_MB=18.4928 recv_MB=16.0713 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=11.9375 cpu_s=6.144 sent_MB=16.0713 recv_MB=18.4928 
+d128_t4_2e10_exact_r5 load=16.12 thr=0 wall_s=1.02505 cpu_s=0.561888 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.02427 cpu_s=0.542914 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_pow2_r5 load=16.12 thr=0 wall_s=0.988039 cpu_s=0.540599 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=0.987278 cpu_s=0.525323 sent_MB=1.68981 recv_MB=1.0732 
+d128_t4_2e10_noU_r5 load=15.55 thr=0 wall_s=1.11056 cpu_s=0.623033 sent_MB=23.4433 recv_MB=1.64316 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.10976 cpu_s=0.575599 sent_MB=1.64316 recv_MB=23.4433 
+d128_t4_2e10_dp_r5 load=14.62 thr=0 wall_s=11.4023 cpu_s=6.02795 sent_MB=18.4928 recv_MB=16.0713 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=11.401 cpu_s=5.69636 sent_MB=16.0713 recv_MB=18.4928 
+d128_t8_2e10_exact_r1 load=14.41 thr=0 wall_s=2.49787 cpu_s=1.29701 sent_MB=3.86276 recv_MB=3.62985 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=2.49686 cpu_s=1.30685 sent_MB=3.62985 recv_MB=3.86276 
+d128_t8_2e10_pow2_r1 load=14.41 thr=0 wall_s=3.03298 cpu_s=1.57685 sent_MB=4.89088 recv_MB=4.53893 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=3.03213 cpu_s=1.57321 sent_MB=4.53893 recv_MB=4.89088 
+d128_t8_2e10_noU_r1 load=13.90 thr=0 wall_s=3.6733 cpu_s=1.94855 sent_MB=121.495 recv_MB=4.03559 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=3.67235 cpu_s=1.86494 sent_MB=4.03559 recv_MB=121.495 
+d128_t8_2e10_dp_r1 load=12.14 thr=1 wall_s=23.1987 cpu_s=12.1813 sent_MB=38.2201 recv_MB=31.4273 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=23.1972 cpu_s=11.6082 sent_MB=31.4273 recv_MB=38.2201 
+d128_t8_2e10_exact_r2 load=12.14 thr=0 wall_s=2.4829 cpu_s=1.30015 sent_MB=3.86276 recv_MB=3.62985 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=2.48205 cpu_s=1.29011 sent_MB=3.62985 recv_MB=3.86276 
+d128_t8_2e10_pow2_r2 load=11.81 thr=0 wall_s=3.09336 cpu_s=1.62215 sent_MB=4.89088 recv_MB=4.53893 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=3.09241 cpu_s=1.58428 sent_MB=4.53893 recv_MB=4.89088 
+d128_t8_2e10_noU_r2 load=12.15 thr=0 wall_s=3.7701 cpu_s=1.9772 sent_MB=121.495 recv_MB=4.03559 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=3.76924 cpu_s=1.94051 sent_MB=4.03559 recv_MB=121.495 
+d128_t8_2e10_dp_r2 load=12.10 thr=2 wall_s=24.6875 cpu_s=12.7502 sent_MB=38.2201 recv_MB=31.4273 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=24.6859 cpu_s=12.4725 sent_MB=31.4273 recv_MB=38.2201 
+d128_t8_2e10_exact_r3 load=12.10 thr=0 wall_s=2.55676 cpu_s=1.34099 sent_MB=3.86276 recv_MB=3.62985 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=2.55591 cpu_s=1.32373 sent_MB=3.62985 recv_MB=3.86276 
+d128_t8_2e10_pow2_r3 load=11.93 thr=0 wall_s=3.09633 cpu_s=1.59971 sent_MB=4.89088 recv_MB=4.53893 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=3.09549 cpu_s=1.60663 sent_MB=4.53893 recv_MB=4.89088 
+d128_t8_2e10_noU_r3 load=11.78 thr=0 wall_s=4.12096 cpu_s=2.21113 sent_MB=121.495 recv_MB=4.03559 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=4.12003 cpu_s=2.06002 sent_MB=4.03559 recv_MB=121.495 
+d128_t8_2e10_dp_r3 load=11.71 thr=2 wall_s=27.1962 cpu_s=14.8089 sent_MB=38.2201 recv_MB=31.4273 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=27.1942 cpu_s=13.1197 sent_MB=31.4273 recv_MB=38.2201 
+d128_t8_2e10_exact_r4 load=11.71 thr=0 wall_s=2.46615 cpu_s=1.31065 sent_MB=3.86276 recv_MB=3.62985 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=2.46517 cpu_s=1.25952 sent_MB=3.62985 recv_MB=3.86276 
+d128_t8_2e10_pow2_r4 load=11.65 thr=0 wall_s=3.08037 cpu_s=1.61067 sent_MB=4.89088 recv_MB=4.53893 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=3.07935 cpu_s=1.58885 sent_MB=4.53893 recv_MB=4.89088 
+d128_t8_2e10_noU_r4 load=11.76 thr=0 wall_s=4.02554 cpu_s=2.12668 sent_MB=121.495 recv_MB=4.03559 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=4.0246 cpu_s=2.04362 sent_MB=4.03559 recv_MB=121.495 
+d128_t8_2e10_dp_r4 load=11.18 thr=4 wall_s=27.281 cpu_s=13.6265 sent_MB=38.2201 recv_MB=31.4273 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=27.2786 cpu_s=14.2883 sent_MB=31.4273 recv_MB=38.2201 
+d128_t8_2e10_exact_r5 load=10.93 thr=0 wall_s=2.44999 cpu_s=1.29529 sent_MB=3.86276 recv_MB=3.62985 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=2.44909 cpu_s=1.2681 sent_MB=3.62985 recv_MB=3.86276 
+d128_t8_2e10_pow2_r5 load=10.93 thr=0 wall_s=3.04952 cpu_s=1.59737 sent_MB=4.89088 recv_MB=4.53893 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=3.04865 cpu_s=1.56245 sent_MB=4.53893 recv_MB=4.89088 
+d128_t8_2e10_noU_r5 load=10.69 thr=0 wall_s=3.78672 cpu_s=2.03549 sent_MB=121.495 recv_MB=4.03559 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=3.78592 cpu_s=1.89526 sent_MB=4.03559 recv_MB=121.495 
+d128_t8_2e10_dp_r5 load=10.33 thr=2 wall_s=24.9284 cpu_s=13.1918 sent_MB=38.2201 recv_MB=31.4273 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=24.9259 cpu_s=12.32 sent_MB=31.4273 recv_MB=38.2201 
+d128_t4_2e12_exact_r1 load=10.46 thr=0 wall_s=3.08697 cpu_s=1.62291 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.08176 cpu_s=1.57981 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_pow2_r1 load=10.50 thr=0 wall_s=3.26225 cpu_s=1.729 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.25602 cpu_s=1.65117 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_noU_r1 load=10.46 thr=0 wall_s=3.87451 cpu_s=2.03585 sent_MB=106.056 recv_MB=4.60665 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.8691 cpu_s=1.97543 sent_MB=4.60665 recv_MB=106.056 
+d128_t4_2e12_dp_r1 load=9.92 thr=0 wall_s=46.6558 cpu_s=24.3077 sent_MB=74.3369 recv_MB=62.8362 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=46.648 cpu_s=23.5509 sent_MB=62.8362 recv_MB=74.3369 
+d128_t4_2e12_exact_r2 load=9.77 thr=0 wall_s=3.21425 cpu_s=1.73816 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.20883 cpu_s=1.59053 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_pow2_r2 load=9.77 thr=0 wall_s=2.95689 cpu_s=1.53035 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.95203 cpu_s=1.53539 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_noU_r2 load=9.63 thr=0 wall_s=3.53067 cpu_s=1.85159 sent_MB=106.056 recv_MB=4.60665 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.52563 cpu_s=1.80386 sent_MB=4.60665 recv_MB=106.056 
+d128_t4_2e12_dp_r2 load=9.41 thr=0 wall_s=45.5934 cpu_s=23.7747 sent_MB=74.3369 recv_MB=62.8362 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=45.5852 cpu_s=23.0237 sent_MB=62.8362 recv_MB=74.3369 
+d128_t4_2e12_exact_r3 load=9.29 thr=0 wall_s=2.98904 cpu_s=1.5528 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.98397 cpu_s=1.54839 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_pow2_r3 load=9.35 thr=0 wall_s=2.99241 cpu_s=1.58234 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.98737 cpu_s=1.52867 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_noU_r3 load=9.32 thr=0 wall_s=3.56253 cpu_s=1.90654 sent_MB=106.056 recv_MB=4.60665 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.5572 cpu_s=1.78168 sent_MB=4.60665 recv_MB=106.056 
+d128_t4_2e12_dp_r3 load=9.49 thr=0 wall_s=53.5151 cpu_s=28.456 sent_MB=74.3369 recv_MB=62.8362 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=53.5069 cpu_s=26.3751 sent_MB=62.8362 recv_MB=74.3369 
+d128_t4_2e12_exact_r4 load=9.53 thr=0 wall_s=3.23802 cpu_s=1.70347 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.23272 cpu_s=1.65336 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_pow2_r4 load=9.65 thr=0 wall_s=3.12946 cpu_s=1.67464 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.12358 cpu_s=1.571 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_noU_r4 load=10.00 thr=0 wall_s=3.71423 cpu_s=1.9431 sent_MB=106.056 recv_MB=4.60665 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.70858 cpu_s=1.90539 sent_MB=4.60665 recv_MB=106.056 
+d128_t4_2e12_dp_r4 load=10.12 thr=0 wall_s=53.1899 cpu_s=29.6418 sent_MB=74.3369 recv_MB=62.8362 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=53.1825 cpu_s=25.0741 sent_MB=62.8362 recv_MB=74.3369 
+d128_t4_2e12_exact_r5 load=10.03 thr=0 wall_s=3.00328 cpu_s=1.56297 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.99796 cpu_s=1.54889 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_pow2_r5 load=9.87 thr=0 wall_s=3.01896 cpu_s=1.58979 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.01397 cpu_s=1.54401 sent_MB=5.0771 recv_MB=4.89808 
+d128_t4_2e12_noU_r5 load=9.87 thr=0 wall_s=3.60141 cpu_s=1.91071 sent_MB=106.056 recv_MB=4.60665 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.59553 cpu_s=1.83043 sent_MB=4.60665 recv_MB=106.056 
+d128_t4_2e12_dp_r5 load=9.91 thr=0 wall_s=46.9073 cpu_s=24.1805 sent_MB=74.3369 recv_MB=62.8362 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=46.8986 cpu_s=23.9277 sent_MB=62.8362 recv_MB=74.3369 
+d128_t8_2e12_exact_r1 load=10.08 thr=0 wall_s=14.2148 cpu_s=7.44425 sent_MB=23.2668 recv_MB=19.9229 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=14.2087 cpu_s=7.10745 sent_MB=19.9229 recv_MB=23.2668 
+d128_t8_2e12_pow2_r1 load=9.91 thr=0 wall_s=23.7756 cpu_s=12.3487 sent_MB=38.2203 recv_MB=31.667 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=23.7693 cpu_s=12.0309 sent_MB=31.667 recv_MB=38.2203 
+d128_t8_2e12_noU_r1 load=9.97 thr=0 wall_s=30.8728 cpu_s=15.7963 sent_MB=1147.23 recv_MB=27.8658 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=30.8673 cpu_s=15.6916 sent_MB=27.8658 recv_MB=1147.23 
+d128_t8_2e12_dp_r1 load=11.45 thr=0 wall_s=107.678 cpu_s=57.7418 sent_MB=154.387 recv_MB=124.631 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=107.669 cpu_s=52.8277 sent_MB=124.631 recv_MB=154.387 
+d128_t8_2e12_exact_r2 load=11.63 thr=0 wall_s=15.1089 cpu_s=7.71818 sent_MB=23.2668 recv_MB=19.9229 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=15.103 cpu_s=7.75458 sent_MB=19.9229 recv_MB=23.2668 
+d128_t8_2e12_pow2_r2 load=11.56 thr=0 wall_s=25.2035 cpu_s=13.4837 sent_MB=38.2203 recv_MB=31.667 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=25.1969 cpu_s=12.4713 sent_MB=31.667 recv_MB=38.2203 
+d128_t8_2e12_noU_r2 load=11.91 thr=0 wall_s=37.309 cpu_s=19.9382 sent_MB=1147.23 recv_MB=27.8658 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=37.3033 cpu_s=18.0762 sent_MB=27.8658 recv_MB=1147.23 
+d128_t8_2e12_dp_r2 load=12.03 thr=0 wall_s=126.013 cpu_s=65.8744 sent_MB=154.387 recv_MB=124.631 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=126.002 cpu_s=63.3047 sent_MB=124.631 recv_MB=154.387 
+d128_t8_2e12_exact_r3 load=11.52 thr=0 wall_s=16.2073 cpu_s=9.01325 sent_MB=23.2668 recv_MB=19.9229 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=16.2013 cpu_s=7.58502 sent_MB=19.9229 recv_MB=23.2668 
+d128_t8_2e12_pow2_r3 load=11.25 thr=4 wall_s=27.8724 cpu_s=14.0186 sent_MB=38.2203 recv_MB=31.667 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=27.8658 cpu_s=14.3411 sent_MB=31.667 recv_MB=38.2203 
+d128_t8_2e12_noU_r3 load=11.15 thr=0 wall_s=33.5142 cpu_s=17.0829 sent_MB=1147.23 recv_MB=27.8658 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=33.5081 cpu_s=17.0598 sent_MB=27.8658 recv_MB=1147.23 
+d128_t8_2e12_dp_r3 load=12.24 thr=0 wall_s=111.302 cpu_s=63.1548 sent_MB=154.387 recv_MB=124.631 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=111.292 cpu_s=51.2761 sent_MB=124.631 recv_MB=154.387 
+d128_t8_2e12_exact_r4 load=12.34 thr=0 wall_s=14.3386 cpu_s=7.40327 sent_MB=23.2668 recv_MB=19.9229 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=14.3327 cpu_s=7.26703 sent_MB=19.9229 recv_MB=23.2668 
+d128_t8_2e12_pow2_r4 load=12.60 thr=0 wall_s=24.3903 cpu_s=12.5599 sent_MB=38.2203 recv_MB=31.667 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=24.3834 cpu_s=12.4245 sent_MB=31.667 recv_MB=38.2203 
+d128_t8_2e12_noU_r4 load=12.43 thr=0 wall_s=35.9303 cpu_s=19.1901 sent_MB=1147.23 recv_MB=27.8658 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=35.9237 cpu_s=17.4159 sent_MB=27.8658 recv_MB=1147.23 
+d128_t8_2e12_dp_r4 load=13.24 thr=0 wall_s=112.912 cpu_s=54.3431 sent_MB=154.387 recv_MB=124.631 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=112.899 cpu_s=61.0087 sent_MB=124.631 recv_MB=154.387 
+d128_t8_2e12_exact_r5 load=13.32 thr=0 wall_s=14.5156 cpu_s=7.53446 sent_MB=23.2668 recv_MB=19.9229 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=14.5089 cpu_s=7.33239 sent_MB=19.9229 recv_MB=23.2668 
+d128_t8_2e12_pow2_r5 load=13.21 thr=0 wall_s=24.1952 cpu_s=12.7232 sent_MB=38.2203 recv_MB=31.667 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=24.1879 cpu_s=12.0838 sent_MB=31.667 recv_MB=38.2203 
+d128_t8_2e12_noU_r5 load=13.05 thr=5 wall_s=32.3738 cpu_s=16.9906 sent_MB=1147.23 recv_MB=27.8658 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=32.3685 cpu_s=15.852 sent_MB=27.8658 recv_MB=1147.23 
+d128_t8_2e12_dp_r5 load=12.74 thr=0 wall_s=94.5245 cpu_s=48.8069 sent_MB=154.387 recv_MB=124.631 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=94.5123 cpu_s=48.1679 sent_MB=124.631 recv_MB=154.387 
+d128_t16_2e8_exact_r1 load=12.68 thr=0 wall_s=3.66919 cpu_s=1.94654 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.6691 cpu_s=1.79729 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_pow2_r1 load=12.68 thr=0 wall_s=3.66836 cpu_s=1.93485 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.6683 cpu_s=1.80644 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_noU_r1 load=12.63 thr=0 wall_s=3.67174 cpu_s=1.92839 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.67169 cpu_s=1.81856 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_dp_r1 load=12.74 thr=0 wall_s=3.5621 cpu_s=1.82397 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.56205 cpu_s=1.81301 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_exact_r2 load=12.76 thr=0 wall_s=3.68654 cpu_s=1.94703 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.68644 cpu_s=1.81948 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_pow2_r2 load=12.70 thr=0 wall_s=3.65697 cpu_s=1.92032 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.65691 cpu_s=1.81781 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_noU_r2 load=12.70 thr=0 wall_s=3.55824 cpu_s=1.81644 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.55815 cpu_s=1.81976 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_dp_r2 load=12.64 thr=0 wall_s=3.69602 cpu_s=1.95451 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.69592 cpu_s=1.82195 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_exact_r3 load=12.59 thr=0 wall_s=3.74824 cpu_s=1.9786 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.74814 cpu_s=1.84965 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_pow2_r3 load=12.54 thr=0 wall_s=3.4979 cpu_s=1.75301 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.49784 cpu_s=1.81985 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_noU_r3 load=12.42 thr=0 wall_s=3.52604 cpu_s=1.8313 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.52589 cpu_s=1.7731 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e8_dp_r3 load=12.42 thr=0 wall_s=3.60256 cpu_s=1.87715 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.60246 cpu_s=1.8006 sent_MB=4.26743 recv_MB=3.13646 
+d128_t16_2e10_exact_r1 load=12.04 thr=0 wall_s=39.5897 cpu_s=19.8933 sent_MB=39.0707 recv_MB=47.9804 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=39.5881 cpu_s=20.8746 sent_MB=47.9804 recv_MB=39.0707 
+d128_t16_2e10_pow2_r1 load=11.62 thr=0 wall_s=45.6119 cpu_s=23.0125 sent_MB=48.0337 recv_MB=63.1089 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=45.6099 cpu_s=23.8463 sent_MB=63.1089 recv_MB=48.0337 
+d128_t16_2e10_noU_r1 load=11.29 thr=4 wall_s=63.4228 cpu_s=32.4173 sent_MB=2570.4 recv_MB=55.141 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=63.4211 cpu_s=32.1604 sent_MB=55.141 recv_MB=2570.4 
+d128_t16_2e10_dp_r1 load=12.18 thr=0 wall_s=60.6093 cpu_s=30.3756 sent_MB=49.8709 recv_MB=67.0145 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=60.6086 cpu_s=30.6417 sent_MB=67.0145 recv_MB=49.8709 
+d128_t16_2e10_exact_r2 load=13.34 thr=0 wall_s=49.8917 cpu_s=27.1793 sent_MB=39.0707 recv_MB=47.9804 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=49.8901 cpu_s=24.2193 sent_MB=47.9804 recv_MB=39.0707 
+d128_t16_2e10_pow2_r2 load=13.34 thr=0 wall_s=62.5069 cpu_s=31.7904 sent_MB=48.0337 recv_MB=63.1089 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=62.505 cpu_s=32.2642 sent_MB=63.1089 recv_MB=48.0337 
+d128_t16_2e10_noU_r2 load=12.09 thr=7 wall_s=80.7793 cpu_s=41.053 sent_MB=2570.4 recv_MB=55.141 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=80.7777 cpu_s=41.0102 sent_MB=55.141 recv_MB=2570.4 
+d128_t16_2e10_dp_r2 load=11.61 thr=0 wall_s=78.6682 cpu_s=38.7853 sent_MB=49.8709 recv_MB=67.0145 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=78.6673 cpu_s=40.3028 sent_MB=67.0145 recv_MB=49.8709 
+d128_t16_2e10_exact_r3 load=11.46 thr=0 wall_s=51.7968 cpu_s=26.0915 sent_MB=39.0707 recv_MB=47.9804 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=51.7948 cpu_s=27.3571 sent_MB=47.9804 recv_MB=39.0707 
+d128_t16_2e10_pow2_r3 load=11.00 thr=0 wall_s=58.3556 cpu_s=28.4905 sent_MB=48.0337 recv_MB=63.1089 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=58.354 cpu_s=31.2442 sent_MB=63.1089 recv_MB=48.0337 
+d128_t16_2e10_noU_r3 load=10.54 thr=0 wall_s=68.7272 cpu_s=34.1233 sent_MB=2570.4 recv_MB=55.141 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=68.7256 cpu_s=35.9764 sent_MB=55.141 recv_MB=2570.4 
+d128_t16_2e10_dp_r3 load=11.29 thr=0 wall_s=63.1205 cpu_s=31.1918 sent_MB=49.8709 recv_MB=67.0145 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=63.1196 cpu_s=32.3382 sent_MB=67.0145 recv_MB=49.8709 
+d128_t16_2e12_exact_r1 load=10.65 thr=21 wall_s=240.93 cpu_s=120.233 sent_MB=245.814 recv_MB=316.594 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=240.918 cpu_s=125.083 sent_MB=316.594 recv_MB=245.814 
+d128_t16_2e12_pow2_r1 load=13.00 thr=17 wall_s=473.287 cpu_s=266.766 sent_MB=402.33 recv_MB=515.162 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=473.271 cpu_s=218.439 sent_MB=515.162 recv_MB=402.33 
+d128_t16_2e12_noU_r1 load=13.45 thr=0 
+d128_t16_2e12_dp_r1 load=13.53 thr=1 
+d128_t16_2e12_exact_r2 load=15.11 thr=30 wall_s=242.565 cpu_s=120.027 sent_MB=245.814 recv_MB=316.594 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=242.551 cpu_s=126.185 sent_MB=316.594 recv_MB=245.814 
+d128_t16_2e12_pow2_r2 load=10.43 thr=19 wall_s=413.64 cpu_s=210.708 sent_MB=402.33 recv_MB=515.162 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=413.625 cpu_s=212.331 sent_MB=515.162 recv_MB=402.33 
+d128_t16_2e12_noU_r2 load=10.40 thr=0 
+d128_t16_2e12_dp_r2 load=9.85 thr=0 
+d128_t16_2e12_exact_r3 load=12.24 thr=9 wall_s=231.462 cpu_s=116.887 sent_MB=245.814 recv_MB=316.594 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=231.45 cpu_s=119.302 sent_MB=316.594 recv_MB=245.814 
+d128_t16_2e12_pow2_r3 load=14.51 thr=37 wall_s=462.6 cpu_s=235.196 sent_MB=402.33 recv_MB=515.162 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=462.581 cpu_s=227.146 sent_MB=515.162 recv_MB=402.33 
+d128_t16_2e12_noU_r3 load=14.63 thr=0 
+d128_t16_2e12_dp_r3 load=14.65 thr=0 
+real_code_exact_r1 load=14.49 thr=0 wall_s=21.6738 cpu_s=11.3967 sent_MB=35.6266 recv_MB=30.4029 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=21.6683 cpu_s=10.8475 sent_MB=30.4029 recv_MB=35.6266 
+real_code_pow2_r1 load=15.60 thr=1 wall_s=43.4127 cpu_s=22.4524 sent_MB=65.5431 recv_MB=58.6607 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=43.4069 cpu_s=22.0955 sent_MB=58.6607 recv_MB=65.5431 
+real_code_noU_r1 load=14.95 thr=16 wall_s=59.4416 cpu_s=29.4586 sent_MB=1610.45 recv_MB=52.9588 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=59.4369 cpu_s=29.9361 sent_MB=52.9588 recv_MB=1610.45 
+real_code_dp_r1 load=15.69 thr=0 wall_s=44.4961 cpu_s=24.1108 sent_MB=95.1267 recv_MB=58.6607 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=44.4881 cpu_s=21.5648 sent_MB=58.6607 recv_MB=95.1267 
+real_code_exact_r2 load=15.84 thr=8 wall_s=22.3087 cpu_s=11.4331 sent_MB=35.6266 recv_MB=30.4029 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=22.3037 cpu_s=10.9746 sent_MB=30.4029 recv_MB=35.6266 
+real_code_pow2_r2 load=16.24 thr=15 wall_s=44.1147 cpu_s=22.4679 sent_MB=65.5431 recv_MB=58.6607 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=44.107 cpu_s=22.0464 sent_MB=58.6607 recv_MB=65.5431 
+real_code_noU_r2 load=16.81 thr=2 wall_s=57.9828 cpu_s=29.1497 sent_MB=1610.45 recv_MB=52.9588 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=57.9784 cpu_s=29.6499 sent_MB=52.9588 recv_MB=1610.45 
+real_code_dp_r2 load=16.94 thr=0 wall_s=42.7659 cpu_s=22.2395 sent_MB=65.5431 recv_MB=58.6607 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=42.76 cpu_s=21.7408 sent_MB=58.6607 recv_MB=65.5431 
+real_code_exact_r3 load=16.90 thr=0 wall_s=21.9053 cpu_s=11.499 sent_MB=35.6266 recv_MB=30.4029 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=21.8997 cpu_s=11.0303 sent_MB=30.4029 recv_MB=35.6266 
+real_code_pow2_r3 load=17.05 thr=4 wall_s=43.6134 cpu_s=22.3196 sent_MB=65.5431 recv_MB=58.6607 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=43.6082 cpu_s=22.3312 sent_MB=58.6607 recv_MB=65.5431 
+real_code_noU_r3 load=16.78 thr=8 wall_s=58.7854 cpu_s=29.2555 sent_MB=1610.45 recv_MB=52.9588 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=58.7805 cpu_s=30.1487 sent_MB=52.9588 recv_MB=1610.45 
+real_code_dp_r3 load=17.25 thr=0 wall_s=44.7671 cpu_s=23.653 sent_MB=65.5431 recv_MB=58.6607 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=44.7597 cpu_s=22.3384 sent_MB=58.6607 recv_MB=65.5431 
+ot_code_silent_r1 load=18.12 thr=8 90.75 116.01 6.84 Total Communication: 580028700 bytes. 566434.277 KB. 553.158 MB. 0.540 GB.
+ot_code_soft_r1 load=18.41 thr=8 65.14 94.52 4.02 Total Communication: 1066185616 bytes. 1041196.891 KB. 1016.794 MB. 0.993 GB.
+ot_code_silent_r2 load=19.12 thr=0 91.10 117.38 6.93 Total Communication: 580028700 bytes. 566434.277 KB. 553.158 MB. 0.540 GB.
+ot_code_soft_r2 load=20.38 thr=16 66.47 96.50 4.12 Total Communication: 1066185616 bytes. 1041196.891 KB. 1016.794 MB. 0.993 GB.
+ot_code_silent_r3 load=19.44 thr=0 92.24 119.48 7.23 Total Communication: 580028700 bytes. 566434.277 KB. 553.158 MB. 0.540 GB.
+ot_code_soft_r3 load=19.29 thr=0 66.80 94.57 4.27 Total Communication: 1066185616 bytes. 1041196.891 KB. 1016.794 MB. 0.993 GB.
+real_cifar_exact_r1 load=18.54 thr=12 wall_s=148.105 cpu_s=79.2824 sent_MB=240.379 recv_MB=152.101 matches=4923 truth=4923 false_neg=0 false_pos=0 wall_s=148.077 cpu_s=73.0995 sent_MB=152.101 recv_MB=240.379 
+real_cifar_pow2_r1 load=18.12 thr=8 wall_s=172.326 cpu_s=89.9751 sent_MB=263.007 recv_MB=199.011 matches=4923 truth=4923 false_neg=0 false_pos=0 wall_s=172.303 cpu_s=86.7794 sent_MB=199.011 recv_MB=263.007 
+real_cifar_noU_r1 load=19.77 thr=16 wall_s=301.376 cpu_s=162.827 sent_MB=7101 recv_MB=180.997 matches=4923 truth=4923 false_neg=0 false_pos=0 wall_s=301.356 cpu_s=142.073 sent_MB=180.997 recv_MB=7101 
+real_cifar_dp_r1 load=29.42 thr=57 wall_s=604.071 cpu_s=357.875 sent_MB=1307.51 recv_MB=401.782 matches=4923 truth=4923 false_neg=0 false_pos=0 wall_s=603.982 cpu_s=253.359 sent_MB=401.782 recv_MB=1307.51 
+break_2e14_r1 load=29.59 thr=0
+cov4_cover2_r1 load=29.00 thr=0 wall_s=16.4924 cpu_s=8.85951 sent_MB=13.2843 recv_MB=16.7428 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=16.486 cpu_s=8.08198 sent_MB=16.7428 recv_MB=13.2843 
+cov16_cover3_r1 load=28.82 thr=43 wall_s=422.496 cpu_s=209.485 sent_MB=425.877 recv_MB=350.148 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=422.477 cpu_s=218.886 sent_MB=350.148 recv_MB=425.877 
+break_2e14_r2 load=28.89 thr=0
+cov4_cover2_r2 load=28.71 thr=0 wall_s=15.2452 cpu_s=7.89709 sent_MB=13.2843 recv_MB=16.7428 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=15.2382 cpu_s=7.70759 sent_MB=16.7428 recv_MB=13.2843 
+cov16_cover3_r2 load=27.12 thr=32 wall_s=379.463 cpu_s=202.275 sent_MB=425.877 recv_MB=350.148 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=379.441 cpu_s=181.949 sent_MB=350.148 recv_MB=425.877 
+break_2e14_r3 load=26.46 thr=2
+cov4_cover2_r3 load=26.81 thr=0 wall_s=14.3832 cpu_s=7.12846 sent_MB=13.2843 recv_MB=16.7428 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=14.3764 cpu_s=7.6162 sent_MB=16.7428 recv_MB=13.2843 
+cov16_cover3_r3 load=32.87 thr=107 wall_s=406.209 cpu_s=194.752 sent_MB=425.877 recv_MB=350.148 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=406.176 cpu_s=218.098 sent_MB=350.148 recv_MB=425.877 
+d128_t4_2e14_exact_r1 load=29.42 thr=0 wall_s=31.7006 cpu_s=16.5015 sent_MB=24.8476 recv_MB=25.297 matches=1367 truth=1367 false_neg=0 false_pos=0 wall_s=31.6658 cpu_s=16.1118 sent_MB=25.297 recv_MB=24.8476 
+d128_t4_2e14_pow2_r1 load=29.53 thr=0 wall_s=39.4952 cpu_s=19.9481 sent_MB=28.6849 recv_MB=32.642 matches=1367 truth=1367 false_neg=0 false_pos=0 wall_s=39.4604 cpu_s=20.5214 sent_MB=32.642 recv_MB=28.6849 
+d128_t4_2e14_noU_r1 load=28.96 thr=12 wall_s=44.107 cpu_s=22.8954 sent_MB=997.759 recv_MB=29.0464 matches=1367 truth=1367 false_neg=0 false_pos=0 wall_s=44.0855 cpu_s=21.4086 sent_MB=29.0464 recv_MB=997.759 
+ot_soft_2e14_r1 load=33.90 thr=4051 4049.66 6171.58 148.25 Total Communication: 55886136192 bytes. 54576304.875 KB. 53297.173 MB. 52.048 GB.
+ot_soft_cifar_r1 load=24.03 thr=92 4173.55 6334.77 210.75 Total Communication: 66551199880 bytes. 64991406.133 KB. 63468.170 MB. 61.981 GB.
+ot4_silent_2e10_r1 load=16.93 thr=0 18.37 27.22 1.17
+ot4_softspoken_2e10_r1 load=17.26 thr=0 16.19 25.82 0.77
+ot4_silent_2e12_r1 load=21.03 thr=0 265.80 385.08 17.83
+ot4_softspoken_2e12_r1 load=15.51 thr=8 224.93 351.98 13.15
+ot4_silent_2e10_r2 load=15.74 thr=0 17.40 24.66 1.57
+ot4_softspoken_2e10_r2 load=15.34 thr=0 14.77 22.63 0.94
+ot4_silent_2e12_r2 load=12.45 thr=11 261.66 379.86 18.62
+ot4_softspoken_2e12_r2 load=12.24 thr=0 217.97 346.53 11.02
+ot4_silent_2e10_r3 load=12.36 thr=0 16.28 23.29 1.31
+ot4_softspoken_2e10_r3 load=12.29 thr=0 14.06 21.79 0.82
+ot4_silent_2e12_r3 load=11.21 thr=0 256.90 374.41 16.57
+ot4_softspoken_2e12_r3 load=12.38 thr=0 219.55 344.77 11.21

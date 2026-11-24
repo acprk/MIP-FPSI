@@ -1,0 +1,6 @@
+m=3199 n=3170 d=64 delta=3 b=4 s=1 r=0 T=4 B=131 U=148 Q=524 bins=2211824 prog=1876640 tau=13 nt=1
+time_s=499.615 comm_MB=311.472 (S->R 135.904, R->S 175.569)
+matches=2265 truth=2265 false_neg=0 false_pos=0
+m=3199 n=3170 d=64 delta=3 b=4 s=1 r=0 T=4 B=33 U=38 Q=132 bins=514388 prog=449768 tau=11 nt=1
+time_s=129.667 comm_MB=66.4357 (S->R 30.6337, R->S 35.802)
+matches=2265 truth=2265 false_neg=0 false_pos=0

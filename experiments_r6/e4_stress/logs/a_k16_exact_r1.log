@@ -1,0 +1,30 @@
+# cmd: <ARTIFACT_ROOT>/impl/build12/fpsi_bench -data <ARTIFACT_ROOT>/experiments_r6/e4_stress/data/cluster_k16.bin -d 128 -delta 4 -b 5 -s 1 -indexverify
+# env MIP_INJECT_CUCKOO_FAIL=
+# start 2026-11-12T06:39:17-08:00 loadavg_before=17.56 18.28 15.10 nr_throttled_before=62811
+m=4096 n=4096 d=128 delta=4 b=5 s=1 r=0 T=5 B=16 U=4 Q=80 bins=429154 prog=81920 tau=0 fallback=0 nt=1
+time_s=20.5536 cpu_s(both parties)=20.5529 comm_MB=55.0542 (S->R 31.4786, R->S 23.5756)
+matches=348 truth=348 false_neg=0 false_pos=0
+	Command being timed: "timeout 7200 taskset -c 44,45 <ARTIFACT_ROOT>/impl/build12/fpsi_bench -data <ARTIFACT_ROOT>/experiments_r6/e4_stress/data/cluster_k16.bin -d 128 -delta 4 -b 5 -s 1 -indexverify"
+	User time (seconds): 19.81
+	System time (seconds): 0.79
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:20.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1292528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 428862
+	Voluntary context switches: 3
+	Involuntary context switches: 28
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# end 2026-11-12T06:39:37-08:00 exit=0 loadavg_after=17.81 18.29 15.18 nr_throttled_after=62811 nr_throttled_delta=0

@@ -1,0 +1,81 @@
+----------------------------------------
+Configuration:
+  Distance Computation Protocol: shared_batched
+  Threshold Comparison Protocol: np
+  Querier Size: 1024
+  Responder Size: 1024
+  Vector Size: 128
+  P Bits: 8
+  Modulus: 129
+  Threshold Comparison Count: 1048576
+  Threshold: 4
+  Run Sender: No
+  Run Receiver: No
+  IP: localhost:1212
+  PRF: aes
+  OT Protocol: softspoken
+  Secret Shared: Yes
+----------------------------------------
+Hamming Distance Protocol
+Processing vector position: 0
+Processing vector position: 12
+Processing vector position: 24
+Processing vector position: 36
+Processing vector position: 48
+Processing vector position: 60
+Processing vector position: 72
+Processing vector position: 84
+Processing vector position: 96
+Processing vector position: 108
+Processing vector position: 120
+############ Sender Distance Computation ############
+Label                                    Time (ms)  diff (ms)
+__________________________________
+Base OTs                                      21.7     21.747  ***
+Random OT                                     49.2     27.467  ***
+Correlation computation and transfer       37797.1  37747.884  **********
+
+Communication: 404759992 bytes (0.377 GB)
+Random OT Communication: 2105784 bytes (0.002 GB)
+############ Receiver Distance Computation ############
+Label                                            Time (ms)  diff (ms)
+__________________________________
+Choice computation                                     1.9      1.931  *
+Base OTs                                              23.7     21.787  ***
+Random OTs                                            32.7      9.018  **
+Correlation transfer and Distance extraction       37930.1  37897.357  **********
+
+Communication: 404759992 bytes (0.377 GB)
+Verification succeeded!
+Label                                Time (ms)  diff (ms)
+__________________________________
+Interleaved Distance Computation       37934.3  37934.329  **********
+
+Threshold Comparison Protocol
+[Querier] OT Batch: 0/1
+############ Receiver Summary ############
+Label                           Time (ms)  diff (ms)
+__________________________________
+Base OTs                             15.9     15.884  ***
+Compute Choices                      32.6     16.678  ***
+Random OTs                          229.6    197.027  ******
+Receive and Unmask Messages        7365.5   7135.864  **********
+
+Communication: 84030000 bytes (0.078 GB)
+############ Sender Summary ############
+Label                            Time (ms)  diff (ms)
+__________________________________
+Base OTs                              11.8     11.845  ***
+Random OTs                           531.7    519.874  *******
+Message masking and transfer        7382.0   6850.298  **********
+
+Communication: 84030000 bytes (0.078 GB)
+Verification succeeded!
+Label                                Time (ms)  diff (ms)
+__________________________________
+Interleaved Threshold Comparison        7465.5   7465.491  **********
+
+
+
+Total Time: 45399.821 ms. 45.400 s
+Total Communication: 488789992 bytes. 477333.977 KB. 466.146 MB. 0.455 GB.

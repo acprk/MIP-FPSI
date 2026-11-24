@@ -1,0 +1,2 @@
+role=0 m=4096 n=4096 d=64 delta=3 B=3 U=1 Q=60 fallback=0
+wall_s=11.8392 cpu_s=6.35191 sent_MB=19.1226 recv_MB=15.5816

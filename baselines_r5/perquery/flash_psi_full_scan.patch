@@ -1,0 +1,90 @@
+--- /tmp/flashorig/flash-psi-HEAD/src/bin/simulation.rs	2024-05-25 11:48:28.000000000 -0700
++++ flash-psi/src/bin/simulation.rs	2026-11-10 05:28:26.284323821 -0800
+@@ -102,6 +102,12 @@
+ 
+     #[clap(short, long, default_value_t = false, help = "print more information")]
+     verbose: bool,
++
++    // baselines_r5 patch: the shipped simulation lets the receiver stop decoding at the
++    // planted index m/2 (upto = m/2); --full-scan makes it decode all m sender entries,
++    // as a real query (unknown match position) must.
++    #[clap(long, default_value_t = false, help = "receiver decodes all m entries (not only up to m/2)")]
++    full_scan: bool,
+ }
+ 
+ fn vrole<FE: FiniteField, const MAL: bool>(
+@@ -278,6 +284,7 @@
+     no_check: bool,
+     csv: bool,
+     verbose: bool,
++    full_scan: bool,
+ ) {
+     let mut rng = AesRng::new();
+     let (ot_sender, ot_receiver) =
+@@ -297,6 +304,7 @@
+             verbose,
+         );
+     let idx = m / 2;
++    let upto = if full_scan { m - 1 } else { idx };
+     let input: Vec<_> = orig_inputs[idx].iter().map(|x| *x == 1).collect();
+ 
+     let (sender, receiver) = UnixStream::pair().unwrap();
+@@ -315,7 +323,7 @@
+         // let the input be one of the sender's input so that we're guaranteed a match
+         let start = Instant::now();
+         let res = fl_receiver
+-            .receive(idx, &input, &mut chan, &mut rng, verbose)
++            .receive(upto, &input, &mut chan, &mut rng, verbose)
+             .unwrap();
+         let elapsed = start.elapsed();
+         (res, elapsed)
+@@ -336,7 +344,7 @@
+ 
+     if !no_check {
+         let expected = fl_sender.get_label(idx);
+-        assert_eq!(*output.last().unwrap(), (idx, expected));
++        assert!(output.contains(&(idx, expected)), "planted match not found (false negative)");
+         if verbose {
+             println!("[FL SIM] assert ok");
+         }
+@@ -344,7 +352,7 @@
+ 
+     // the output.len() should have a size of 1,
+     // but if there is a false positive then it will have size > 1
+-    let fpr = (output.len() - 1) as f64 / (idx as f64 + 1f64);
++    let fpr = (output.len() as f64 - 1f64) / (upto as f64 + 1f64);
+     let elapsed = start.elapsed();
+     let comm_u64 = match comm {
+         Some(x) => x,
+@@ -393,6 +401,7 @@
+                     cli.no_check,
+                     cli.csv,
+                     cli.verbose,
++                    cli.full_scan,
+                 )
+             } else {
+                 flpsi::<F64b, F64b, false>(
+@@ -404,6 +413,7 @@
+                     cli.no_check,
+                     cli.csv,
+                     cli.verbose,
++                    cli.full_scan,
+                 )
+             }
+         }
+--- /tmp/flashorig/flash-psi-HEAD/Cargo.toml	2024-05-25 11:48:28.000000000 -0700
++++ flash-psi/Cargo.toml	2026-11-10 05:23:37.713937616 -0800
+@@ -9,9 +9,10 @@
+ opt-level = 3
+ 
+ [dependencies]
+-scuttlebutt = { git = "https://github.com/kc1212/swanky.git", rev = "2ebb4f432db6b1e0f796b1842e1c76157d21145f", features = ["serde", "ff"] }
+-fancy-garbling = { git = "https://github.com/kc1212/swanky.git", rev = "2ebb4f432db6b1e0f796b1842e1c76157d21145f", features = ["serde"] }
+-ocelot = { git = "https://github.com/kc1212/swanky.git", rev = "2ebb4f432db6b1e0f796b1842e1c76157d21145f" }
++# baselines_r5: same pinned fork commit kc1212/swanky@2ebb4f4, fetched as a codeload tarball
++scuttlebutt = { path = "../swanky-2ebb4f432db6b1e0f796b1842e1c76157d21145f/scuttlebutt", features = ["serde", "ff"] }
++fancy-garbling = { path = "../swanky-2ebb4f432db6b1e0f796b1842e1c76157d21145f/fancy-garbling", features = ["serde"] }
++ocelot = { path = "../swanky-2ebb4f432db6b1e0f796b1842e1c76157d21145f/ocelot" }
+ rmp-serde = "1.1.2"
+ blake3 = "1.4.1"
+ clap = { version = "4.4", features = ["derive"] }

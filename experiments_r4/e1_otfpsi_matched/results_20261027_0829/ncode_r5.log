@@ -1,0 +1,93 @@
+----------------------------------------
+Configuration:
+  Distance Computation Protocol: batched
+  Threshold Comparison Protocol: np
+  Querier Size: 2973
+  Responder Size: 2959
+  Vector Size: 64
+  P Bits: 7
+  Modulus: 65
+  Threshold Comparison Count: 8797107
+  Threshold: 4
+  Run Sender: No
+  Run Receiver: No
+  IP: 127.0.0.1:26083
+  PRF: aes
+  OT Protocol: softspoken
+  Secret Shared: No
+----------------------------------------
+Hamming Distance Protocol
+[Responder] Querier index: 0
+[Responder] Querier index: 185
+[Responder] Querier index: 370
+[Responder] Querier index: 555
+[Responder] Querier index: 740
+[Responder] Querier index: 925
+[Responder] Querier index: 1110
+[Responder] Querier index: 1295
+[Responder] Querier index: 1480
+[Responder] Querier index: 1665
+[Responder] Querier index: 1850
+[Responder] Querier index: 2035
+[Responder] Querier index: 2220
+[Responder] Querier index: 2405
+[Responder] Querier index: 2590
+[Responder] Querier index: 2775
+[Responder] Querier index: 2960
+############ Responder Distance Computation ############
+Label                    Time (ms)  diff (ms)
+__________________________________
+Memory allocation             10.5     10.457  **
+Base OTs                      22.0     11.585  **
+Random OTs                    36.5     14.449  ***
+Correlation transfer       40305.3  40268.847  **********
+
+Communication: 502018032 bytes (0.468 GB)
+############ Querier Distance Computation ############
+Label                                   Time (ms)  diff (ms)
+__________________________________
+Choice computation                            0.6      0.598  
+Base OTs                                     20.0     19.388  ***
+Random OTs                                   24.6      4.642  *
+Correlation transfer and extraction       40317.5  40292.921  **********
+
+Communication: 502018032 bytes (0.468 GB)
+PROTOCOL_CPU distance 71.864
+Verification succeeded!
+Label                                Time (ms)  diff (ms)
+__________________________________
+Interleaved Distance Computation       40323.2  40323.216  **********
+
+Threshold Comparison Protocol
+[Querier] OT Batch: 0/2
+[Querier] OT Batch: 1/2
+############ Sender Summary ############
+Label                            Time (ms)  diff (ms)
+__________________________________
+Base OTs                               9.6      9.603  **
+Random OTs                          3885.9   3876.315  ********
+Random OTs                         34647.7  30761.732  **********
+Message masking and transfer       36116.3   1468.674  *******
+
+Communication: 564167584 bytes (0.525 GB)
+############ Receiver Summary ############
+Label                           Time (ms)  diff (ms)
+__________________________________
+Base OTs                             16.6     16.624  ***
+Compute Choices                     137.2    120.566  *****
+Random OTs                         1617.0   1479.779  *******
+Compute Choices                   34519.3  32902.299  **********
+Random OTs                        34595.0     75.750  ****
+Receive and Unmask Messages       36122.5   1527.470  *******
+
+Communication: 564167584 bytes (0.525 GB)
+PROTOCOL_CPU threshold 40.916
+Verification succeeded!
+Label                                Time (ms)  diff (ms)
+__________________________________
+Interleaved Threshold Comparison       36127.2  36127.220  **********
+
+
+
+Total Time: 76450.437 ms. 76.450 s
+Total Communication: 1066185616 bytes. 1041196.891 KB. 1016.794 MB. 0.993 GB.

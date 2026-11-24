@@ -1,0 +1,152 @@
+----------------------------------------
+Configuration:
+  Distance Computation Protocol: individual
+  Threshold Comparison Protocol: np
+  Querier Size: 4096
+  Responder Size: 4096
+  Vector Size: 128
+  P Bits: 8
+  Modulus: 129
+  Threshold Comparison Count: 16777216
+  Threshold: 4
+  Run Sender: No
+  Run Receiver: No
+  IP: localhost:1212
+  PRF: aes
+  OT Protocol: softspoken
+  Secret Shared: Yes
+----------------------------------------
+Hamming Distance Protocol
+Number of OT batches: 16
+Number of OT batches: 16
+############ Sender Distance Computation ############
+Label                                    Time (ms)  diff (ms)
+__________________________________
+Base OTs                                      38.8     38.807  ****
+Random OT                                   6989.8   6951.027  **********
+Correlation computation and transfer       15368.7   8378.886  **********
+Random OT                                  20091.6   4722.832  *********
+Correlation computation and transfer       28428.0   8336.408  **********
+Random OT                                  33296.1   4868.131  *********
+Correlation computation and transfer       41650.0   8353.898  **********
+Random OT                                  46439.1   4789.145  *********
+Correlation computation and transfer       54774.8   8335.662  **********
+Random OT                                  59471.7   4696.916  *********
+Correlation computation and transfer       67761.1   8289.420  **********
+Random OT                                  72532.9   4771.808  *********
+Correlation computation and transfer       80888.7   8355.794  **********
+Random OT                                  85681.2   4792.490  *********
+Correlation computation and transfer       93966.9   8285.705  **********
+Random OT                                  98652.5   4685.548  *********
+Correlation computation and transfer      106946.9   8294.412  **********
+Random OT                                 111609.7   4662.793  *********
+Correlation computation and transfer      119928.8   8319.131  **********
+Random OT                                 124797.0   4868.148  *********
+Correlation computation and transfer      133092.6   8295.592  **********
+Random OT                                 137877.0   4784.397  *********
+Correlation computation and transfer      146185.1   8308.160  **********
+Random OT                                 152735.0   6549.901  **********
+Correlation computation and transfer      162434.4   9699.400  **********
+Random OT                                 167051.3   4616.855  *********
+Correlation computation and transfer      175371.3   8320.062  **********
+Random OT                                 180122.4   4751.045  *********
+Correlation computation and transfer      189676.8   9554.459  **********
+Random OT                                 195588.2   5911.309  *********
+Correlation computation and transfer      203888.2   8300.049  **********
+Random OT                                 208557.7   4669.536  *********
+Correlation computation and transfer      216905.7   8347.940  **********
+Flush                                     217199.9    294.189  ******
+
+Communication: 19327459760 bytes (18.000 GB)
+Random OT Communication: 17179910576 bytes (16.000 GB)
+############ Receiver Distance Computation ############
+Label                                            Time (ms)  diff (ms)
+__________________________________
+Base OTs                                              38.9     38.861  ****
+Choice computation                                   198.2    159.348  ******
+Random OTs                                          6951.2   6753.003  **********
+Correlation transfer and Distance extraction       15381.9   8430.677  **********
+Choice computation                                 15986.3    604.414  *******
+Random OTs                                         20067.1   4080.750  *********
+Correlation transfer and Distance extraction       28440.2   8373.137  **********
+Choice computation                                 29072.3    632.120  *******
+Random OTs                                         33257.2   4184.848  *********
+Correlation transfer and Distance extraction       41662.3   8405.116  **********
+Choice computation                                 42278.8    616.531  *******
+Random OTs                                         46401.2   4122.350  *********
+Correlation transfer and Distance extraction       54787.1   8385.913  **********
+Choice computation                                 55405.8    618.771  *******
+Random OTs                                         59448.2   4042.316  *********
+Correlation transfer and Distance extraction       67773.4   8325.251  **********
+Choice computation                                 68392.1    618.702  *******
+Random OTs                                         72493.7   4101.602  *********
+Correlation transfer and Distance extraction       80901.3   8407.547  **********
+Choice computation                                 81526.4    625.171  *******
+Random OTs                                         85644.2   4117.723  *********
+Correlation transfer and Distance extraction       93979.1   8334.961  **********
+Choice computation                                 94594.9    615.757  *******
+Random OTs                                         98615.2   4020.280  *********
+Correlation transfer and Distance extraction      106959.0   8343.884  **********
+Choice computation                                107572.9    613.870  *******
+Random OTs                                        111571.5   3998.559  *********
+Correlation transfer and Distance extraction      119941.1   8369.604  **********
+Choice computation                                120559.5    618.400  *******
+Random OTs                                        124758.2   4198.682  *********
+Correlation transfer and Distance extraction      133104.8   8346.665  **********
+Choice computation                                133726.7    621.820  *******
+Random OTs                                        137835.8   4109.157  *********
+Correlation transfer and Distance extraction      146197.5   8361.710  **********
+Choice computation                                146813.0    615.460  *******
+Random OTs                                        152695.2   5882.187  *********
+Correlation transfer and Distance extraction      162446.6   9751.422  **********
+Choice computation                                163056.3    609.714  *******
+Random OTs                                        167027.2   3970.856  *********
+Correlation transfer and Distance extraction      175383.9   8356.720  **********
+Choice computation                                176000.5    616.606  *******
+Random OTs                                        180082.9   4082.453  *********
+Correlation transfer and Distance extraction      189992.8   9909.885  **********
+Choice computation                                190353.3    360.509  ******
+Random OTs                                        195550.2   5196.824  *********
+Correlation transfer and Distance extraction      203900.7   8350.512  **********
+Choice computation                                204514.2    613.494  *******
+Random OTs                                        208519.4   4005.252  *********
+Correlation transfer and Distance extraction      216917.9   8398.469  **********
+
+Communication: 19327459760 bytes (18.000 GB)
+Verification succeeded!
+Label                                Time (ms)  diff (ms)
+__________________________________
+Interleaved Distance Computation      217392.2  217392.184  **********
+
+Threshold Comparison Protocol
+[Querier] OT Batch: 0/2
+[Querier] OT Batch: 1/2
+############ Sender Summary ############
+Label                            Time (ms)  diff (ms)
+__________________________________
+Base OTs                              10.2     10.179  **
+Random OTs                          3789.7   3779.555  ********
+Random OTs                         53700.7  49910.967  **********
+Message masking and transfer       99963.4  46262.683  **********
+
+Communication: 1344350640 bytes (1.252 GB)
+############ Receiver Summary ############
+Label                           Time (ms)  diff (ms)
+__________________________________
+Base OTs                             21.2     21.207  ***
+Compute Choices                     133.9    112.676  ****
+Random OTs                         1484.1   1350.244  *******
+Compute Choices                   51470.0  49985.878  **********
+Random OTs                        52938.5   1468.493  *******
+Receive and Unmask Messages      100063.7  47125.237  **********
+
+Communication: 1344350640 bytes (1.252 GB)
+Verification succeeded!
+Label                                Time (ms)  diff (ms)
+__________________________________
+Interleaved Threshold Comparison      100069.5  100069.547  **********
+
+
+
+Total Time: 317461.732 ms. 317.462 s
+Total Communication: 20671810400 bytes. 20187314.844 KB. 19714.175 MB. 19.252 GB.

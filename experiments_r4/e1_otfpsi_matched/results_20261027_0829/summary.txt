@@ -1,0 +1,50 @@
+n12_r1 exit=0
+o12_pow2_r1 sender_exit=0 receiver_exit=0 load=60.53
+oc_noU_r1 sender_exit=0 receiver_exit=0 load=60.84
+o12_exact_r1 sender_exit=0 receiver_exit=0 load=60.69
+ncode_r1 exit=0
+m12_r1 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+oc_pow2_r1 sender_exit=0 receiver_exit=0 load=59.95
+o12_noU_r1 sender_exit=0 receiver_exit=0 load=59.79
+mcode_r1 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+oc_exact_r1 sender_exit=0 receiver_exit=0 load=61.03
+oc_pow2_r2 sender_exit=0 receiver_exit=0 load=82.17
+o12_noU_r2 sender_exit=0 receiver_exit=0 load=79.76
+o12_pow2_r2 sender_exit=0 receiver_exit=0 load=77.18
+oc_exact_r2 sender_exit=0 receiver_exit=0 load=71.97
+n12_r2 exit=0
+o12_exact_r2 sender_exit=0 receiver_exit=0 load=65.79
+ncode_r2 exit=0
+oc_noU_r2 sender_exit=0 receiver_exit=0 load=74.31
+mcode_r2 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+m12_r2 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+n12_r3 exit=0
+o12_noU_r3 sender_exit=0 receiver_exit=0 load=92.85
+mcode_r3 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+o12_exact_r3 sender_exit=0 receiver_exit=0 load=72.98
+oc_noU_r3 sender_exit=0 receiver_exit=0 load=68.85
+oc_exact_r3 sender_exit=0 receiver_exit=0 load=67.46
+o12_pow2_r3 sender_exit=0 receiver_exit=0 load=66.92
+oc_pow2_r3 sender_exit=0 receiver_exit=0 load=67.55
+m12_r3 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+ncode_r3 exit=0
+o12_exact_r4 sender_exit=0 receiver_exit=0 load=60.96
+ncode_r4 exit=0
+oc_pow2_r4 sender_exit=0 receiver_exit=0 load=63.73
+o12_noU_r4 sender_exit=0 receiver_exit=0 load=63.38
+oc_exact_r4 sender_exit=0 receiver_exit=0 load=62.71
+oc_noU_r4 sender_exit=0 receiver_exit=0 load=61.13
+m12_r4 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+o12_pow2_r4 sender_exit=0 receiver_exit=0 load=61.01
+n12_r4 exit=0
+mcode_r4 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+ncode_r5 exit=0
+o12_noU_r5 sender_exit=0 receiver_exit=0 load=63.82
+m12_r5 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+oc_pow2_r5 sender_exit=0 receiver_exit=0 load=84.45
+o12_pow2_r5 sender_exit=0 receiver_exit=0 load=83.14
+mcode_r5 stage1 exit=0 stage2 sender exit=0 stage2 receiver exit=0 
+oc_noU_r5 sender_exit=0 receiver_exit=0 load=71.33
+o12_exact_r5 sender_exit=0 receiver_exit=0 load=71.34
+n12_r5 exit=0
+oc_exact_r5 sender_exit=0 receiver_exit=0 load=61.86

@@ -1,0 +1,11 @@
+recv_overflow: expect=abort exit=124 -> FAIL(hang)(no 'B exceeds')
+send_overflow_index: expect=abort exit=124 -> FAIL(hang)(no 'U exceeds')
+send_overflow_fallback: expect=ok exit=0 -> PASS
+bounds_ok: expect=ok exit=0 -> PASS
+dp_plus_bound: expect=abort exit=124 -> FAIL(hang)(no 'exclusive')
+cuckoo_retry: expect=ok exit=0 -> PASS
+cuckoo_retry_noU: expect=ok exit=0 -> PASS
+empty_sender: expect=ok exit=0 -> PASS
+empty_receiver: expect=ok exit=0 -> PASS
+cuckoo_hook_control: expect=abort exit=124 -> FAIL(hang)(no 'failed 16 times')
+failures=4

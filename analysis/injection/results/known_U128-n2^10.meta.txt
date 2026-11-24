@@ -1,0 +1,1 @@
+{'dataset': 'U128-n2^10', 'd': 128, 'delta': 4, 'b': 5, 's': 1, 'n': 1024, 'T': 5, 'keybits': '25/26', 'B': 1, 'Bbar': 2, 'load1_frac': 1.0, 'trials': 2000, 'dp_draws': 100, 'seed': 0}

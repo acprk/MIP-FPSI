@@ -1,0 +1,19 @@
+--- a/src/fpsiLowPx.cpp
++++ b/src/fpsiLowPx.cpp
+@@ -2,7 +2,8 @@
+ #include <coproto/Socket/AsioSocket.h>
+ #include <cryptoTools/Common/BitVector.h>
+ #include <cryptoTools/Common/CuckooIndex.h>
+-#include <format>
++#define FMT_HEADER_ONLY // [hao_scalable patch] g++-12 has no std::format
++#include <fmt/format.h>
+ #include <libOTe/TwoChooseOne/Silent/SilentOtExtReceiver.h>
+ #include <libOTe/TwoChooseOne/Silent/SilentOtExtSender.h>
+ #include <thread>
+@@ -452,5 +453,5 @@
+     double comp = std::chrono::duration_cast<std::chrono::microseconds>(e - s).count() * 1.0 / double(numTry) / double(1000 * 1000);
+     const char *metric = lp == 0 ? "L0" : (lp == 1 ? "L1" : "L2");
+ 
+-    std::cout << std::format("[ours]    {:<2}    {:^5}  {:^5}  {:^5}  {:^10.3f} {:^10.3f}", metric, d, delta, n, comm, comp) << std::endl;
++    std::cout << fmt::format("[ours]    {:<2}    {:^5}  {:^5}  {:^5}  {:^10.3f} {:^10.3f}", metric, d, delta, n, comm, comp) << std::endl;
+ }

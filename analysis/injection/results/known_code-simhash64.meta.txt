@@ -1,0 +1,1 @@
+{'dataset': 'code-simhash64', 'd': 64, 'delta': 3, 'b': 4, 's': 1, 'n': 2959, 'T': 4, 'keybits': '16', 'B': 29, 'Bbar': 58, 'load1_frac': 0.7819, 'trials': 2000, 'dp_draws': 100, 'seed': 0}

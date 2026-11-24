@@ -1,0 +1,8 @@
+otFPSI SoftSpoken 2^12: reps=5 CPU median 352.0 s, wall 230.1 s, protocol-scoped wall 226.1 s
+delta=4 exact: CPU median 2.94 s, comm 9.8 MiB, B/U ['2/2'], paired speed-up median 121.2x [115.4, 124.5] over 5 reps
+delta=4 pow2 : CPU median 2.96 s, comm 9.8 MiB, B/U ['2/2'], paired speed-up median 117.6x [114.0, 123.3] over 5 reps
+delta=4 noU  : CPU median 3.33 s, comm 88.4 MiB, B/U ['2/1'], paired speed-up median 102.5x [94.5, 109.4] over 5 reps
+delta=8 exact: CPU median 13.11 s, comm 42.9 MiB, B/U ['5/5'], paired speed-up median 26.0x [21.7, 27.6] over 5 reps
+delta=8 pow2 : CPU median 21.15 s, comm 68.2 MiB, B/U ['8/8'], paired speed-up median 16.3x [14.0, 17.1] over 5 reps
+delta=8 noU  : CPU median 25.47 s, comm 849.3 MiB, B/U ['8/1'], paired speed-up median 13.6x [13.1, 14.3] over 5 reps
+all checks passed

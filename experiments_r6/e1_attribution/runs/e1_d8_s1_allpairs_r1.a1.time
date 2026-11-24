@@ -1,0 +1,23 @@
+	Command being timed: "taskset -c 40,41 <ARTIFACT_ROOT>/audit_r5/build/fpsi_bench -m 4096 -n 4096 -d 128 -delta 8 -b 9 -s 1 -nt 1 -indexverify -seed 1 -allpairs"
+	User time (seconds): 896.46
+	System time (seconds): 140.80
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 17:19.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 13020204
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 75617535
+	Voluntary context switches: 4
+	Involuntary context switches: 2488
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,12 @@
+skipped Fri Oct 23 10:43:15 PM PDT 2026: ./build5/net_bench -role 1 -addr 127.0.0.1:2147 -indexverify -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -noU 
+skipped Fri Oct 23 10:43:15 PM PDT 2026: ./build5/net_bench -role 0 -addr 127.0.0.1:2147 -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -noU 
+skipped Fri Oct 23 10:43:35 PM PDT 2026: ./build5/net_bench -role 1 -addr 127.0.0.1:2148 -indexverify -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -dpeps 1 
+skipped Fri Oct 23 10:43:35 PM PDT 2026: ./build5/net_bench -role 0 -addr 127.0.0.1:2148 -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -dpeps 1 
+skipped Fri Oct 23 10:54:37 PM PDT 2026: ./build5/net_bench -role 1 -addr 127.0.0.1:2151 -indexverify -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -noU 
+skipped Fri Oct 23 10:54:37 PM PDT 2026: ./build5/net_bench -role 0 -addr 127.0.0.1:2151 -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -noU 
+skipped Fri Oct 23 10:54:57 PM PDT 2026: ./build5/net_bench -role 1 -addr 127.0.0.1:2152 -indexverify -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -dpeps 1 
+skipped Fri Oct 23 10:54:57 PM PDT 2026: ./build5/net_bench -role 0 -addr 127.0.0.1:2152 -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -dpeps 1 
+skipped Fri Oct 23 11:06:40 PM PDT 2026: ./build5/net_bench -role 1 -addr 127.0.0.1:2155 -indexverify -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -noU 
+skipped Fri Oct 23 11:06:40 PM PDT 2026: ./build5/net_bench -role 0 -addr 127.0.0.1:2155 -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -noU 
+skipped Fri Oct 23 11:07:00 PM PDT 2026: ./build5/net_bench -role 1 -addr 127.0.0.1:2156 -indexverify -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -dpeps 1 
+skipped Fri Oct 23 11:07:00 PM PDT 2026: ./build5/net_bench -role 0 -addr 127.0.0.1:2156 -m 4096 -n 4096 -d 128 -delta 16 -b 9 -s 1 -pow2 -dpeps 1 

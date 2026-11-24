@@ -1,0 +1,15 @@
+--- a/src/oprf_impl.cpp
++++ b/src/oprf_impl.cpp
+@@ -317,7 +317,11 @@
+             setTimePoint("LargeOprfReceiver::receive-xor");
+ 
+             // Retain the allocation while queued sends overlap the next XOR.
+-            co_await chl.send(detail::SharedSlice<block>{ pOwner, offset, subP.size() });
++            // [hao_scalable patch] by-reference send: with coproto::LocalAsyncSocket the moved
++            // SharedSlice was released before the peer copied it (ASan heap-use-after-free).
++            // A named lvalue send completes only after the bytes are consumed, and pOwner
++            // outlives this loop, so the table stays valid. Bytes on the wire are unchanged.
++            co_await chl.send(subP);
+ 
+             setTimePoint("LargeOprfReceiver::receive-send");
+ 

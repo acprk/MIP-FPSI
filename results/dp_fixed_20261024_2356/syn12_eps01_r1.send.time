@@ -1,0 +1,24 @@
+Command terminated by signal 15
+	Command being timed: "taskset -c 46 ./build7/net_bench -role 0 -addr 127.0.0.1:23711 -m 4096 -n 4096 -d 128 -delta 4 -b 5 -s 1 -noU -pow2 -nofallback -dpeps 0.1"
+	User time (seconds): 89.37
+	System time (seconds): 30.41
+	Percent of CPU this job got: 56%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:32.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 26655168
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 20394048
+	Voluntary context switches: 421
+	Involuntary context switches: 599
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,26 @@
+otFPSI 2^12 d=128: proc CPU 343.5, protocol CPU 339.6, wall 222.1 s
+otFPSI CPython: proc CPU 97.1, protocol CPU 95.8, wall 65.9 s
+code_exact  n=5 CPU   21.28  comm    65.9 MiB  vs proto 4.6x [4.1, 4.8]  vs proc 4.7x [4.2, 4.9]  wall 3.2x [2.8, 3.5]  ['33/38/132 fb=0']
+code_pow2   n=5 CPU   42.83  comm   123.5 MiB  vs proto 2.3x [2.1, 2.5]  vs proc 2.3x [2.1, 2.5]  wall 1.6x [1.4, 1.7]  ['64/64/256 fb=0']
+code_noU    n=5 CPU   57.17  comm  1574.8 MiB  vs proto 1.7x [1.5, 1.8]  vs proc 1.7x [1.5, 1.8]  wall 1.2x [1.0, 1.2]  ['64/1/256 fb=0']
+t16_exact   n=5 CPU  233.47  comm   555.3 MiB  vs proto 1.5x [1.1, 1.5]  vs proc 1.5x [1.1, 1.5]  wall 1.0x [0.7, 1.0]  ['5/14/685 fb=0']
+t16_pow2    n=5 CPU  405.29  comm   881.9 MiB  vs proto 0.8x [0.8, 0.9]  vs proc 0.8x [0.8, 0.9]  wall 0.6x [0.5, 0.6]  ['8/16/1096 fb=0']
+t4_pow2_A   n=5 CPU    3.27  comm    10.0 MiB  vs proto 104.1x [97.4, 112.0]  vs proc 105.3x [98.6, 113.3]  wall 69.8x [66.9, 76.7]  ['2/2/10 fb=0']
+t4_pow2_B   n=5 CPU    3.04  comm     9.8 MiB  vs proto 110.0x [104.8, 113.0]  vs proc 111.2x [106.0, 114.3]  wall 75.5x [70.8, 77.1]  ['2/2/10 fb=0']
+t4_noU_A    n=5 CPU    3.67  comm   110.7 MiB  vs proto 91.8x [86.4, 92.9]  vs proc 92.9x [87.4, 93.9]  wall 63.2x [58.5, 63.7]  ['2/1/10 fb=0']
+t4_noU_B    n=5 CPU    3.71  comm    88.4 MiB  vs proto 91.6x [89.6, 103.2]  vs proc 92.7x [90.7, 104.4]  wall 62.0x [61.0, 70.7]  ['2/1/10 fb=0']
+t8_pow2_A   n=5 CPU   24.60  comm    69.9 MiB  vs proto 13.6x [12.7, 14.4]  vs proc 13.8x [12.9, 14.6]  wall 9.2x [8.5, 9.6]  ['8/8/72 fb=0']
+t8_pow2_B   n=5 CPU   23.26  comm    68.2 MiB  vs proto 14.5x [13.1, 15.8]  vs proc 14.7x [13.2, 16.0]  wall 9.7x [8.7, 10.6]  ['8/8/72 fb=0']
+t4_ours8    n=5 CPU    3.13  comm     9.8 MiB  vs proto 109.0x [96.1, 117.9]  vs proc 110.3x [97.2, 119.2]  wall 74.9x [64.8, 80.6]  ['2/2/10 fb=0']
+t4_ctrl     n=5 CPU    4.93  comm    14.9 MiB  vs proto 68.6x [65.5, 78.1]  vs proc 69.4x [66.3, 79.0]  wall 46.0x [44.4, 52.8]  ['2/2/10 fb=0']
+t8_ours8    n=5 CPU   22.36  comm    68.2 MiB  vs proto 15.2x [13.0, 16.7]  vs proc 15.4x [13.2, 16.9]  wall 10.2x [8.6, 11.2]  ['8/8/72 fb=0']
+t8_ctrl     n=5 CPU   33.10  comm   101.2 MiB  vs proto 10.3x [8.1, 11.3]  vs proc 10.4x [8.2, 11.5]  wall 6.9x [5.5, 7.6]  ['8/8/72 fb=0']
+build A / build B, delta=4 rounded: CPU ratio 1.009 [0.998, 1.103] over 5 rounds
+build A / build B, delta=4 U-free: CPU ratio 1.050 [0.990, 1.111] over 5 rounds
+build A / build B, delta=8 rounded: CPU ratio 1.033 [1.001, 1.160] over 5 rounds
+control (full payload + key check) / ours, delta=4: CPU ratio 1.510 [1.402, 1.700] over 5 rounds
+control (full payload + key check) / ours, delta=8: CPU ratio 1.470 [1.390, 1.791] over 5 rounds
+CIFAR exact: n=3 CPU median 125.7 [122.2, 220.7], wall 123.4, comm 367.4 MiB
+CIFAR pow2 : n=3 CPU median 187.8 [180.4, 333.8], wall 187.6, comm 447.8 MiB
+CIFAR noU  : n=3 CPU median 295.9 [242.7, 425.0], wall 292.9, comm 5441.2 MiB
+all checks passed

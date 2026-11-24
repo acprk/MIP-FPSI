@@ -1,0 +1,1 @@
+data/cifar_dhash64_mild.bin: |X|=9999 |Y|=54994 exact-equality=2027 fuzzy(delta=4)=4923 extra=2896

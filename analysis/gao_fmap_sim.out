@@ -1,0 +1,4 @@
+m=2973 n=2959 |I|=2265
+best P=16: Gao's mapping misses 144/2265 = 0.0636 of the true output
+m=9999 n=54994 |I|=4923
+best P=12: Gao's mapping misses 4874/4923 = 0.9900 of the true output

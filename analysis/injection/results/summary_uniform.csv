@@ -1,0 +1,15 @@
+dataset,setting,mode,eps,trials,adv,ci95,k_median,k_mean,k_max,C_median,C_max,C_hat_median,C_hat_min,frac_k_too_small,adv_opt_theory,bound_e_eps
+cifar-dhash64-mild,uniform,exact,,2000,0.0,0.0,5,4.6,5,15,18,4,3,1.0,,
+cifar-dhash64-mild,uniform,rounded,,2000,0.0,0.0,8,6.4,8,15,18,4,3,1.0,,
+cifar-dhash64-mild,uniform,bound,,2000,1.0,0.0,30,29.0,36,15,18,4,3,0.0,,
+cifar-dhash64-mild,uniform,dp,1.0,2000,-0.0,0.0001,5,4.6,5,15,18,4,3,1.0,0.4621,1.7183
+cifar-dhash64-mild,uniform,dp,0.1,2000,0.0,0.0025,5,4.6,5,15,18,4,3,1.0,0.05,0.1052
+cifar-dhash64-mild,uniform,dprounded,1.0,2000,0.0461,0.0064,11,11.0,11,15,18,4,3,1.0,0.4621,1.7183
+cifar-dhash64-mild,uniform,dprounded,0.1,2000,0.0485,0.003,48,48.0,48,15,18,4,3,0.0,0.05,0.1052
+code-simhash64,uniform,exact,,2000,0.0,0.0,4,4.0,4,15,18,3,3,1.0,,
+code-simhash64,uniform,rounded,,2000,0.0,0.0,4,4.0,4,15,18,3,3,1.0,,
+code-simhash64,uniform,bound,,2000,1.0,0.0,30,30.2,36,15,18,3,3,0.0,,
+code-simhash64,uniform,dp,1.0,2000,0.0,0.0,4,4.0,4,15,18,3,3,1.0,0.4621,1.7183
+code-simhash64,uniform,dp,0.1,2000,-0.002,0.0024,4,4.0,4,15,18,3,3,1.0,0.05,0.1052
+code-simhash64,uniform,dprounded,1.0,2000,-0.0005,0.0009,11,11.0,11,15,18,3,3,1.0,0.4621,1.7183
+code-simhash64,uniform,dprounded,0.1,2000,0.0524,0.0031,48,48.0,48,15,18,3,3,0.0,0.05,0.1052

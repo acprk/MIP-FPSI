@@ -1,0 +1,24 @@
+benes routing: ok
+osn protocol: ok
+oep (extended permutation, w in {1,13,20}): ok
+noU FPSI d=128 delta=4 uniform: B=1 revealedB=1 (default-mode U would be 3) programmed=1500 |I|=116: exact
+noU FPSI d=128 delta=4 uniform dp(eps=1): B=1 revealedB=22 (default-mode U would be 4) programmed=1500 |I|=107: exact
+noU FPSI d=128 delta=4 clustered: B=29 revealedB=29 (default-mode U would be 13) programmed=1365 |I|=106: exact
+noU FPSI d=128 delta=4 clustered dp(eps=1): B=33 revealedB=54 (default-mode U would be 16) programmed=1340 |I|=116: exact
+noU FPSI d=64 delta=3 uniform: B=2 revealedB=2 (default-mode U would be 3) programmed=1200 |I|=97: exact
+noU FPSI d=64 delta=3 uniform dp(eps=1): B=1 revealedB=19 (default-mode U would be 3) programmed=1200 |I|=107: exact
+noU FPSI d=64 delta=3 clustered: B=19 revealedB=19 (default-mode U would be 10) programmed=1092 |I|=114: exact
+noU FPSI d=64 delta=3 clustered dp(eps=1): B=17 revealedB=38 (default-mode U would be 11) programmed=1100 |I|=121: exact
+cover d=64 delta=3 q=1 T=15: covering property holds on 3000 worst-case difference sets
+cover d=64 delta=8 q=2 T=62: covering property holds on 3000 worst-case difference sets
+cover d=128 delta=4 q=1 T=31: covering property holds on 3000 worst-case difference sets
+cover d=128 delta=16 q=3 T=189: covering property holds on 3000 worst-case difference sets
+cover d=128 delta=16 q=4 T=124: covering property holds on 3000 worst-case difference sets
+circuits: ok
+radius formula: ok
+MIP d=64 delta=3 b=4 s=1 r=0 T=4 B=2 U=2 Q=8: no false negative
+MIP d=64 delta=3 b=6 s=3 r=0 T=20 B=1 U=1 Q=20: no false negative
+MIP d=128 delta=4 b=5 s=1 r=0 T=5 B=1 U=1 Q=5: no false negative
+MIP d=128 delta=4 b=3 s=1 r=1 T=3 B=1 U=1 Q=131: no false negative
+MIP d=128 delta=6 b=4 s=2 r=2 T=6 B=1 U=1 Q=12486: no false negative
+MIP d=256 delta=8 b=9 s=1 r=0 T=9 B=1 U=1 Q=9: no false negative

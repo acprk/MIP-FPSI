@@ -1,0 +1,2 @@
+recv_overflow: expect=abort sender_exit=134 receiver_exit=124 -> FAIL(no 'B exceeds')
+send_overflow_index: expect=abort sender_exit=134 receiver_exit=124 -> FAIL(no 'U exceeds')

@@ -1,0 +1,272 @@
+----------------------------------------
+Configuration:
+  Distance Computation Protocol: batched
+  Threshold Comparison Protocol: np
+  Querier Size: 16384
+  Responder Size: 16384
+  Vector Size: 128
+  P Bits: 8
+  Modulus: 129
+  Threshold Comparison Count: 268435456
+  Threshold: 4
+  Run Sender: No
+  Run Receiver: No
+  IP: localhost:1212
+  PRF: aes
+  OT Protocol: silent
+  Secret Shared: No
+----------------------------------------
+Hamming Distance Protocol
+[Responder] Querier index: 0
+[Responder] Querier index: 1024
+[Responder] Querier index: 2048
+[Responder] Querier index: 3072
+[Responder] Querier index: 4096
+[Responder] Querier index: 5120
+[Responder] Querier index: 6144
+[Responder] Querier index: 7168
+[Responder] Querier index: 8192
+[Responder] Querier index: 9216
+[Responder] Querier index: 10240
+[Responder] Querier index: 11264
+[Responder] Querier index: 12288
+[Responder] Querier index: 13312
+[Responder] Querier index: 14336
+[Responder] Querier index: 15360
+############ Responder Distance Computation ############
+Label                    Time (ms)  diff (ms)
+__________________________________
+Memory allocation            267.5    267.529  ****
+Base OTs                     274.8      7.225  *
+Random OTs                   944.9    670.179  *****
+Correlation transfer     1873600.3  1872655.366  **********
+
+Communication: 34360226789 bytes (32.000 GB)
+############ Querier Distance Computation ############
+Label                                   Time (ms)  diff (ms)
+__________________________________
+Choice computation                            8.8      8.753  **
+Base OTs                                    287.5    278.748  ****
+Random OTs                                  924.0    636.542  ****
+Correlation transfer and extraction     1873695.3  1872771.290  **********
+
+Communication: 34360226789 bytes (32.000 GB)
+Verification succeeded!
+Label                                Time (ms)  diff (ms)
+__________________________________
+Interleaved Distance Computation     1873704.3  1873704.325  **********
+
+Threshold Comparison Protocol
+[Querier] OT Batch: 0/32
+[Querier] OT Batch: 1/32
+[Querier] OT Batch: 2/32
+[Querier] OT Batch: 3/32
+[Querier] OT Batch: 4/32
+[Querier] OT Batch: 5/32
+[Querier] OT Batch: 6/32
+[Querier] OT Batch: 7/32
+[Querier] OT Batch: 8/32
+[Querier] OT Batch: 9/32
+[Querier] OT Batch: 10/32
+[Querier] OT Batch: 11/32
+[Querier] OT Batch: 12/32
+[Querier] OT Batch: 13/32
+[Querier] OT Batch: 14/32
+[Querier] OT Batch: 15/32
+[Querier] OT Batch: 16/32
+[Querier] OT Batch: 17/32
+[Querier] OT Batch: 18/32
+[Querier] OT Batch: 19/32
+[Querier] OT Batch: 20/32
+[Querier] OT Batch: 21/32
+[Querier] OT Batch: 22/32
+[Querier] OT Batch: 23/32
+[Querier] OT Batch: 24/32
+[Querier] OT Batch: 25/32
+[Querier] OT Batch: 26/32
+[Querier] OT Batch: 27/32
+[Querier] OT Batch: 28/32
+[Querier] OT Batch: 29/32
+[Querier] OT Batch: 30/32
+[Querier] OT Batch: 31/32
+############ Sender Summary ############
+Label                            Time (ms)  diff (ms)
+__________________________________
+Base OTs                              33.9     33.880  ***
+Random OTs                         22854.3  22820.456  *********
+Base OTs                           70625.0  47770.655  **********
+Random OTs                         93481.7  22856.746  *********
+Base OTs                          141364.5  47882.750  **********
+Random OTs                        164202.3  22837.807  *********
+Base OTs                          211734.5  47532.200  **********
+Random OTs                        234989.2  23254.723  *********
+Base OTs                          282601.7  47612.436  **********
+Random OTs                        305627.6  23025.906  *********
+Base OTs                          353011.0  47383.399  **********
+Random OTs                        375966.9  22955.971  *********
+Base OTs                          423289.2  47322.236  **********
+Random OTs                        446431.3  23142.095  *********
+Base OTs                          493820.0  47388.699  **********
+Random OTs                        516715.3  22895.380  *********
+Base OTs                          563986.0  47270.617  **********
+Random OTs                        587164.3  23178.341  *********
+Base OTs                          634298.6  47134.297  **********
+Random OTs                        657506.4  23207.780  *********
+Base OTs                          704888.1  47381.735  **********
+Random OTs                        728235.6  23347.480  *********
+Base OTs                          775449.4  47213.786  **********
+Random OTs                        798795.3  23345.926  *********
+Base OTs                          846010.9  47215.584  **********
+Random OTs                        876528.9  30517.951  *********
+Base OTs                          925450.2  48921.368  **********
+Random OTs                        956331.6  30881.429  *********
+Base OTs                         1005912.0  49580.323  **********
+Random OTs                       1037637.0  31725.071  *********
+Base OTs                         1089701.0  52063.924  **********
+Random OTs                       1129398.6  39697.581  *********
+Base OTs                         1182580.3  53181.710  **********
+Random OTs                       1217568.8  34988.582  *********
+Base OTs                         1272618.0  55049.135  **********
+Random OTs                       1306961.1  34343.124  *********
+Base OTs                         1358219.0  51257.881  **********
+Random OTs                       1387265.0  29045.981  *********
+Base OTs                         1443194.3  55929.341  **********
+Random OTs                       1475279.5  32085.202  *********
+Base OTs                         1532080.0  56800.456  **********
+Random OTs                       1566452.6  34372.623  *********
+Base OTs                         1620625.7  54173.074  **********
+Random OTs                       1654816.5  34190.789  *********
+Base OTs                         1717898.0  63081.527  **********
+Random OTs                       1762930.1  45032.117  **********
+Base OTs                         1836454.7  73524.612  **********
+Random OTs                       1876091.0  39636.278  *********
+Base OTs                         1945837.0  69745.974  **********
+Random OTs                       1977199.3  31362.382  *********
+Base OTs                         2036505.0  59305.614  **********
+Random OTs                       2066131.8  29626.830  *********
+Base OTs                         2120830.0  54698.165  **********
+Random OTs                       2152851.7  32021.701  *********
+Base OTs                         2208308.9  55457.264  **********
+Random OTs                       2243360.6  35051.644  *********
+Base OTs                         2309271.0  65910.396  **********
+Random OTs                       2336684.5  27413.514  *********
+Base OTs                         2385639.0  48954.474  **********
+Random OTs                       2411086.8  25447.799  *********
+Base OTs                         2461214.8  50128.082  **********
+Random OTs                       2490038.6  28823.811  *********
+Base OTs                         2552460.0  62421.313  **********
+Random OTs                       2584191.4  31731.460  *********
+Message masking and transfer     2641443.0  57251.579  **********
+
+Communication: 4601870032 bytes (4.286 GB)
+############ Receiver Summary ############
+Label                           Time (ms)  diff (ms)
+__________________________________
+Base OTs                             42.1     42.129  ***
+Compute Choices                     156.8    114.647  ****
+Random OTs                        22597.8  22440.974  *********
+Base OTs                          70630.9  48033.146  **********
+Compute Choices                   70751.7    120.803  ****
+Random OTs                        93226.0  22474.324  *********
+Base OTs                         141354.6  48128.544  **********
+Compute Choices                  141468.3    113.727  ****
+Random OTs                       163942.8  22474.501  *********
+Base OTs                         211728.6  47785.774  **********
+Compute Choices                  211842.8    114.203  ****
+Random OTs                       234726.7  22883.873  *********
+Base OTs                         282604.1  47877.458  **********
+Compute Choices                  282722.0    117.848  ****
+Random OTs                       305374.0  22652.091  *********
+Base OTs                         353005.8  47631.786  **********
+Compute Choices                  353117.5    111.644  ****
+Random OTs                       375706.6  22589.073  *********
+Base OTs                         423290.3  47583.752  **********
+Compute Choices                  423409.8    119.542  ****
+Random OTs                       446175.4  22765.590  *********
+Base OTs                         493816.2  47640.724  **********
+Compute Choices                  493932.5    116.385  ****
+Random OTs                       516458.8  22526.254  *********
+Base OTs                         563979.5  47520.682  **********
+Compute Choices                  564093.0    113.477  ****
+Random OTs                       586899.8  22806.855  *********
+Base OTs                         634294.1  47394.328  **********
+Compute Choices                  634406.7    112.504  ****
+Random OTs                       657251.8  22845.113  *********
+Base OTs                         704878.1  47626.337  **********
+Compute Choices                  704992.1    114.047  ****
+Random OTs                       727964.9  22972.724  *********
+Base OTs                         775448.0  47483.153  **********
+Compute Choices                  775574.7    126.704  ****
+Random OTs                       798537.3  22962.552  *********
+Base OTs                         846014.7  47477.458  **********
+Compute Choices                  846133.7    118.927  ****
+Random OTs                       876131.6  29997.911  *********
+Base OTs                         925454.2  49322.593  **********
+Compute Choices                  925573.2    119.022  ****
+Random OTs                       956053.6  30480.382  *********
+Base OTs                        1005909.7  49856.157  **********
+Compute Choices                 1006049.4    139.664  ****
+Random OTs                      1037320.8  31271.396  *********
+Base OTs                        1089702.1  52381.275  **********
+Compute Choices                 1089833.7    131.623  ****
+Random OTs                      1129058.2  39224.526  *********
+Base OTs                        1182573.3  53515.117  **********
+Compute Choices                 1182707.0    133.693  ****
+Random OTs                      1217223.1  34516.113  *********
+Base OTs                        1272615.1  55391.921  **********
+Compute Choices                 1272750.8    135.723  ****
+Random OTs                      1306680.7  33929.864  *********
+Base OTs                        1358218.6  51537.926  **********
+Compute Choices                 1358350.0    131.426  ****
+Random OTs                      1386967.1  28617.100  *********
+Base OTs                        1443187.8  56220.666  **********
+Compute Choices                 1443327.6    139.835  ****
+Random OTs                      1474987.4  31659.833  *********
+Base OTs                        1532078.2  57090.756  **********
+Compute Choices                 1532219.1    140.868  ****
+Random OTs                      1566091.2  33872.092  *********
+Base OTs                        1620621.7  54530.520  **********
+Compute Choices                 1620751.1    129.404  ****
+Random OTs                      1654522.8  33771.718  *********
+Base OTs                        1717894.4  63371.627  **********
+Compute Choices                 1718034.2    139.808  ****
+Random OTs                      1762467.1  44432.828  **********
+Base OTs                        1836447.8  73980.726  **********
+Compute Choices                 1836588.1    140.318  ****
+Random OTs                      1875737.4  39149.235  *********
+Base OTs                        1945834.6  70097.243  **********
+Compute Choices                 1945974.7    140.078  ****
+Random OTs                      1976878.5  30903.783  *********
+Base OTs                        2036498.9  59620.412  **********
+Compute Choices                 2036632.6    133.770  ****
+Random OTs                      2065845.1  29212.433  *********
+Base OTs                        2120824.3  54979.211  **********
+Compute Choices                 2120946.7    122.381  ****
+Random OTs                      2152582.1  31635.403  *********
+Base OTs                        2208301.5  55719.439  **********
+Compute Choices                 2208422.1    120.605  ****
+Random OTs                      2242830.6  34408.506  *********
+Base OTs                        2309257.7  66427.115  **********
+Compute Choices                 2309381.0    123.262  ****
+Random OTs                      2336410.7  27029.736  *********
+Base OTs                        2385632.5  49221.796  **********
+Compute Choices                 2385756.2    123.701  ****
+Random OTs                      2410808.4  25052.116  *********
+Base OTs                        2461210.8  50402.472  **********
+Compute Choices                 2461334.4    123.589  ****
+Random OTs                      2489765.7  28431.322  *********
+Base OTs                        2552455.0  62689.237  **********
+Compute Choices                 2552573.6    118.603  ****
+Random OTs                      2583918.8  31345.189  *********
+Receive and Unmask Messages     2641513.8  57595.025  **********
+
+Communication: 4601870032 bytes (4.286 GB)
+Verification succeeded!
+Label                                Time (ms)  diff (ms)
+__________________________________
+Interleaved Threshold Comparison     2641742.2  2641742.192  **********
+
+
+
+Total Time: 4515446.518 ms. 4515.447 s
+Total Communication: 38962096821 bytes. 38048922.677 KB. 37157.151 MB. 36.286 GB.

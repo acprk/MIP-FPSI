@@ -1,0 +1,43 @@
+genuine pairs 27726, impostor pairs 398893
+
+=== d=128 (SimHash of FaceNet) genuine mean 29.4±10.4, impostor mean 62.5±8.6
+  FAR<=0.001: delta=34 (0.266d) TAR=0.7597 FAR=9.40e-04
+    LSH miss<=9.1e-13: k'=21 L=35822 impostor-cand-rate=6.716e-02 -> per-elt cost at n=2^20 ~1.06e+05 (vs all-pairs 1048576)
+    LSH miss<=9.5e-07: k'=21 L=17911 impostor-cand-rate=4.333e-02 -> per-elt cost at n=2^20 ~6.33e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-03: k'=21 L=8925 impostor-cand-rate=2.678e-02 -> per-elt cost at n=2^20 ~3.7e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-02: k'=21 L=5950 impostor-cand-rate=1.987e-02 -> per-elt cost at n=2^20 ~2.68e+04 (vs all-pairs 1048576)
+    pigeonhole 35 blocks of ~3 bits: impostor-cand-rate=9.453e-01
+  FAR<=0.0001: delta=27 (0.211d) TAR=0.4813 FAR=9.28e-05
+    LSH miss<=9.1e-13: k'=23 L=11865 impostor-cand-rate=1.422e-02 -> per-elt cost at n=2^20 ~2.68e+04 (vs all-pairs 1048576)
+    LSH miss<=9.5e-07: k'=23 L=5933 impostor-cand-rate=8.404e-03 -> per-elt cost at n=2^20 ~1.47e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-03: k'=23 L=2956 impostor-cand-rate=4.808e-03 -> per-elt cost at n=2^20 ~8e+03 (vs all-pairs 1048576)
+    LSH miss<=1.0e-02: k'=23 L=1971 impostor-cand-rate=3.432e-03 -> per-elt cost at n=2^20 ~5.57e+03 (vs all-pairs 1048576)
+    pigeonhole 28 blocks of ~4 bits: impostor-cand-rate=7.362e-01
+
+=== d=256 (SimHash of FaceNet) genuine mean 59.2±19.6, impostor mean 124.1±15.4
+  FAR<=0.001: delta=72 (0.281d) TAR=0.8202 FAR=8.72e-04
+    LSH miss<=9.1e-13: k'=21 L=40143 impostor-cand-rate=9.918e-02 -> per-elt cost at n=2^20 ~1.44e+05 (vs all-pairs 1048576)
+    LSH miss<=9.5e-07: k'=21 L=20072 impostor-cand-rate=6.364e-02 -> per-elt cost at n=2^20 ~8.68e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-03: k'=22 L=14421 impostor-cand-rate=3.399e-02 -> per-elt cost at n=2^20 ~5.01e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-02: k'=22 L=9614 impostor-cand-rate=2.513e-02 -> per-elt cost at n=2^20 ~3.6e+04 (vs all-pairs 1048576)
+    pigeonhole 73 blocks of ~3 bits: impostor-cand-rate=9.977e-01
+  FAR<=0.0001: delta=60 (0.234d) TAR=0.6063 FAR=8.77e-05
+    LSH miss<=9.1e-13: k'=23 L=17832 impostor-cand-rate=2.663e-02 -> per-elt cost at n=2^20 ~4.58e+04 (vs all-pairs 1048576)
+    LSH miss<=9.5e-07: k'=23 L=8916 impostor-cand-rate=1.571e-02 -> per-elt cost at n=2^20 ~2.54e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-03: k'=23 L=4443 impostor-cand-rate=8.926e-03 -> per-elt cost at n=2^20 ~1.38e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-02: k'=24 L=3990 impostor-cand-rate=5.348e-03 -> per-elt cost at n=2^20 ~9.6e+03 (vs all-pairs 1048576)
+    pigeonhole 61 blocks of ~4 bits: impostor-cand-rate=9.624e-01
+
+=== d=512 (SimHash of FaceNet) genuine mean 119.2±38.3, impostor mean 249.4±28.3
+  FAR<=0.001: delta=153 (0.299d) TAR=0.8728 FAR=9.63e-04
+    LSH miss<=9.1e-13: k'=21 L=57403 impostor-cand-rate=1.269e-01 -> per-elt cost at n=2^20 ~1.9e+05 (vs all-pairs 1048576)
+    LSH miss<=9.5e-07: k'=21 L=28702 impostor-cand-rate=8.118e-02 -> per-elt cost at n=2^20 ~1.14e+05 (vs all-pairs 1048576)
+    LSH miss<=1.0e-03: k'=22 L=20778 impostor-cand-rate=4.328e-02 -> per-elt cost at n=2^20 ~6.62e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-02: k'=22 L=13852 impostor-cand-rate=3.187e-02 -> per-elt cost at n=2^20 ~4.73e+04 (vs all-pairs 1048576)
+    pigeonhole 154 blocks of ~3 bits: impostor-cand-rate=1.000e+00
+  FAR<=0.0001: delta=123 (0.240d) TAR=0.6303 FAR=9.53e-05
+    LSH miss<=9.1e-13: k'=23 L=18079 impostor-cand-rate=2.586e-02 -> per-elt cost at n=2^20 ~4.52e+04 (vs all-pairs 1048576)
+    LSH miss<=9.5e-07: k'=23 L=9040 impostor-cand-rate=1.487e-02 -> per-elt cost at n=2^20 ~2.46e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-03: k'=23 L=4505 impostor-cand-rate=8.271e-03 -> per-elt cost at n=2^20 ~1.32e+04 (vs all-pairs 1048576)
+    LSH miss<=1.0e-02: k'=23 L=3003 impostor-cand-rate=5.806e-03 -> per-elt cost at n=2^20 ~9.09e+03 (vs all-pairs 1048576)
+    pigeonhole 124 blocks of ~4 bits: impostor-cand-rate=9.967e-01

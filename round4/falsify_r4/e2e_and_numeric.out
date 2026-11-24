@@ -1,0 +1,16 @@
+K3 d=6 delta=2 blocks C(6,4,2): worst capacity used = 4 (2^(e-d)=4)
+Fano-complement blocks cover all 2-sets of [7]: True
+K3 d=7 delta=2 Fano complements: worst capacity used = 4 (2^(e-d)=4)
+K3 d=6 delta=3 blocks {012345} (all pairs): worst = 4 (2^(e-d)=8)
+K3 d=6 delta=2 blocks size 5 (C(6,5,2) needs ... use 3 blocks): worst = 5 (2^(e-d)=8)
+V(j,floor(j/2)) >= 2^(j-1) for j<400: True
+argmin f = {2d-1,2d} for delta=1..20: True
+C(2d,d)>=4^d/(2 sqrt d) for d=1..300: True
+delta=4: asymptotic gap 2*4^d/C(2d,d)=7.314  4sqrt(d)=8.000  old 2^d=16  greedy factor 1+ln C(2d,d)=5.25 -> explicit gap <= 38.4
+delta=8: asymptotic gap 2*4^d/C(2d,d)=10.184  4sqrt(d)=11.314  old 2^d=256  greedy factor 1+ln C(2d,d)=10.46 -> explicit gap <= 106.6
+delta=16: asymptotic gap 2*4^d/C(2d,d)=14.291  4sqrt(d)=16.000  old 2^d=65536  greedy factor 1+ln C(2d,d)=21.21 -> explicit gap <= 303.2
+d=128 delta=4: lower V/2^d=6.886e+05 old upper C(d,delta)=1.067e+07 (gap 15.5) new upper(greedy, explicit)=2.560e+07 (gap 37.2); new upper (Rodl, o(1)=0) gap 7.08
+d=128 delta=8: lower V/2^d=5.976e+09 old upper C(d,delta)=1.430e+12 (gap 239.2) new upper(greedy, explicit)=5.951e+11 (gap 99.6); new upper (Rodl, o(1)=0) gap 9.52
+d=128 delta=16: lower V/2^d=1.656e+15 old upper C(d,delta)=9.334e+19 (gap 56361.7) new upper(greedy, explicit)=4.318e+17 (gap 260.7); new upper (Rodl, o(1)=0) gap 12.29
+d=256 delta=8: lower V/2^d=1.653e+12 old upper C(d,delta)=4.097e+14 (gap 247.8) new upper(greedy, explicit)=1.705e+14 (gap 103.1); new upper (Rodl, o(1)=0) gap 9.86
+Part C: minimal r=0 covers (d<=5, T<=4) enumerated=730, with some e_t<delta: 0

@@ -1,0 +1,11 @@
+code_eps1_r1 killed_mem=0 load=3.34 role=1 m=3199 n=3170 d=64 delta=3 B=64 U=1 Q=256 fallback=0 wall_s=52.2381 cpu_s=26.5247 sent_MB=1522.07 recv_MB=52.6812 matches=2265 truth=2265 false_neg=0 false_pos=0 
+syn12_eps1_r1 killed_mem=0 load=5.89 role=1 m=4096 n=4096 d=128 delta=4 B=32 U=1 Q=160 fallback=0 wall_s=54.102 cpu_s=27.8259 sent_MB=1678.66 recv_MB=54.5877 matches=352 truth=352 false_neg=0 false_pos=0 
+syn10_eps01_r1 killed_mem=0 load=4.53 role=1 m=1024 n=1024 d=128 delta=4 B=256 U=1 Q=1280 fallback=0 wall_s=109.97 cpu_s=55.6285 sent_MB=3536.93 recv_MB=108.403 matches=84 truth=84 false_neg=0 false_pos=0 
+code_eps1_r2 killed_mem=0 load=5.64 role=1 m=3199 n=3170 d=64 delta=3 B=64 U=1 Q=256 fallback=0 wall_s=52.5467 cpu_s=26.6979 sent_MB=1522.07 recv_MB=52.6812 matches=2265 truth=2265 false_neg=0 false_pos=0 
+syn12_eps1_r2 killed_mem=0 load=4.53 role=1 m=4096 n=4096 d=128 delta=4 B=32 U=1 Q=160 fallback=0 wall_s=53.008 cpu_s=26.9643 sent_MB=1678.66 recv_MB=54.5877 matches=352 truth=352 false_neg=0 false_pos=0 
+syn10_eps01_r2 killed_mem=0 load=4.71 role=1 m=1024 n=1024 d=128 delta=4 B=256 U=1 Q=1280 fallback=0 wall_s=108.491 cpu_s=54.4862 sent_MB=3536.93 recv_MB=108.403 matches=84 truth=84 false_neg=0 false_pos=0 
+code_eps1_r3 killed_mem=0 load=4.09 role=1 m=3199 n=3170 d=64 delta=3 B=64 U=1 Q=256 fallback=0 wall_s=51.4387 cpu_s=25.8995 sent_MB=1522.07 recv_MB=52.6812 matches=2265 truth=2265 false_neg=0 false_pos=0 
+syn12_eps1_r3 killed_mem=0 load=3.65 role=1 m=4096 n=4096 d=128 delta=4 B=32 U=1 Q=160 fallback=0 wall_s=53.4451 cpu_s=27.1361 sent_MB=1678.66 recv_MB=54.5877 matches=352 truth=352 false_neg=0 false_pos=0 
+syn10_eps01_r3 killed_mem=0 load=4.13 role=1 m=1024 n=1024 d=128 delta=4 B=256 U=1 Q=1280 fallback=0 wall_s=110.54 cpu_s=56.2948 sent_MB=3536.93 recv_MB=108.403 matches=84 truth=84 false_neg=0 false_pos=0 
+code_eps01_r1 killed_mem=1 load=4.49 
+syn12_eps01_r1 killed_mem=1 load=4.78 

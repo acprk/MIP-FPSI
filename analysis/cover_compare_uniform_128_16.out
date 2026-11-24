@@ -1,0 +1,7 @@
+dedup m=1 n=4096 d=128 delta=16
+block(17,1) r=0        T=   17 min_key=   7 B=    52 Q=     884 1.27Q/n=0.2741 cover_ok=True
+block(9,1) r=1         T=    9 min_key=  14 B=     5 Q=     685 1.27Q/n=0.2124 cover_ok=True
+pagh(q=2) c=9          T= 1022 min_key=  19 B=     2 Q=    2044 1.27Q/n=0.6338 cover_ok=True
+pagh(q=3) c=6          T=  189 min_key=  12 B=     6 Q=    1134 1.27Q/n=0.3516 cover_ok=True
+pagh(q=4) c=5          T=  124 min_key=   9 B=    17 Q=    2108 1.27Q/n=0.6536 cover_ok=True
+pagh(q=8) c=3          T=   56 min_key=   4 B=   292 Q=   16352 1.27Q/n=5.0701 cover_ok=True

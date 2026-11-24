@@ -1,0 +1,13 @@
+k=64 injected files per target, 10 targets, competing load C=33
+exact   advantage 1.000 over 20 runs
+rounded advantage 1.000 over 20 runs
+DP eps=1 advantage 0.453 over 600 runs (bound tanh(1/2)=0.462)
+full end-to-end runs (all must be exact):
+  A_t0_H0_exact se=0 re=0 observed B=64 false_neg=0 false_pos=0
+  A_t0_H1_exact se=0 re=0 observed B=65 false_neg=0 false_pos=0
+  A_t1_H0_exact se=0 re=0 observed B=64 false_neg=0 false_pos=0
+  A_t1_H1_exact se=0 re=0 observed B=65 false_neg=0 false_pos=0
+  A_t0_H0_pow2 se=0 re=0 observed B=64 false_neg=0 false_pos=0
+  A_t0_H0_dp se=0 re=0 observed B=84 false_neg=0 false_pos=0
+  A_t0_H1_pow2 se=0 re=0 observed B=128 false_neg=0 false_pos=0
+  A_t0_H1_dp se=0 re=0 observed B=86 false_neg=0 false_pos=0

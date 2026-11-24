@@ -1,0 +1,8 @@
+recv_overflow: expect=abort sender_exit=134 receiver_exit=134 -> PASS
+send_overflow_index: expect=abort sender_exit=134 receiver_exit=134 -> PASS
+send_overflow_fallback: expect=ok sender_exit=0 receiver_exit=0 -> PASS
+bounds_ok: expect=ok sender_exit=0 receiver_exit=0 -> PASS
+dp_plus_bound: expect=abort sender_exit=134 receiver_exit=134 -> PASS
+cuckoo_retry: expect=ok sender_exit=0 receiver_exit=0 -> PASS
+cuckoo_retry_noU: expect=ok sender_exit=0 receiver_exit=0 -> PASS
+failures=0

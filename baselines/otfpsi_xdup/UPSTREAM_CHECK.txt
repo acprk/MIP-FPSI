@@ -1,0 +1,3 @@
+xdup-artifact.zip sha256 9387b61c93b4c1164336e6af65a594915e56c099acdb35e8a76fa5e0a24c106c (Zenodo record 19480020, md5 in xdup_zenodo_record.json)
+md5 of local zip: fef9cced0204de1dc97a168004262745
+01_otfpsi (excluding build/, eval/): 26 files identical to the published zip, 0 differ, 0 not in zip

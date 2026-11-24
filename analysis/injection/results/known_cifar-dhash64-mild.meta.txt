@@ -1,0 +1,1 @@
+{'dataset': 'cifar-dhash64-mild', 'd': 64, 'delta': 4, 'b': 6, 's': 2, 'n': 54994, 'T': 15, 'keybits': '20/21/22', 'B': 26, 'Bbar': 52, 'load1_frac': 0.9235, 'trials': 2000, 'dp_draws': 100, 'seed': 0}

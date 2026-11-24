@@ -1,0 +1,338 @@
+{
+ "m_files": 3199,
+ "n_files": 3170,
+ "derived_near_copies_G": 2657,
+ "by_delta": {
+  "0": {
+   "candidates": 1843,
+   "pairs": 15780,
+   "useful": 1771,
+   "precision": 0.9609332609875203,
+   "same_path": 1738,
+   "unrelated": 47,
+   "recall_G": 0.6526157320286037
+  },
+  "1": {
+   "candidates": 2137,
+   "pairs": 19471,
+   "useful": 2051,
+   "precision": 0.9597566682264858,
+   "same_path": 2010,
+   "unrelated": 58,
+   "recall_G": 0.754234098607452
+  },
+  "2": {
+   "candidates": 2343,
+   "pairs": 22829,
+   "useful": 2241,
+   "precision": 0.9564660691421255,
+   "same_path": 2197,
+   "unrelated": 68,
+   "recall_G": 0.8223560406473467
+  },
+  "3": {
+   "candidates": 2491,
+   "pairs": 26095,
+   "useful": 2373,
+   "precision": 0.9526294660778803,
+   "same_path": 2334,
+   "unrelated": 76,
+   "recall_G": 0.872412495295446
+  },
+  "4": {
+   "candidates": 2581,
+   "pairs": 29760,
+   "useful": 2452,
+   "precision": 0.9500193723363037,
+   "same_path": 2414,
+   "unrelated": 81,
+   "recall_G": 0.9017689123071133
+  },
+  "5": {
+   "candidates": 2655,
+   "pairs": 33638,
+   "useful": 2510,
+   "precision": 0.9453860640301318,
+   "same_path": 2480,
+   "unrelated": 90,
+   "recall_G": 0.9247271358675198
+  },
+  "6": {
+   "candidates": 2723,
+   "pairs": 37074,
+   "useful": 2563,
+   "precision": 0.9412412780022035,
+   "same_path": 2543,
+   "unrelated": 100,
+   "recall_G": 0.9442980805419646
+  },
+  "7": {
+   "candidates": 2782,
+   "pairs": 41695,
+   "useful": 2604,
+   "precision": 0.9360172537742631,
+   "same_path": 2590,
+   "unrelated": 115,
+   "recall_G": 0.9589762890477983
+  },
+  "8": {
+   "candidates": 2826,
+   "pairs": 46329,
+   "useful": 2624,
+   "precision": 0.9285208775654635,
+   "same_path": 2624,
+   "unrelated": 139,
+   "recall_G": 0.9710199473089951
+  }
+ },
+ "incremental_delta3": {
+  "count": 648,
+  "categories": {
+   "same_path_successor": 591,
+   "other_file_similar": 43,
+   "unrelated": 14
+  }
+ },
+ "incremental_sample": [
+  {
+   "sender": "Lib/test/test_opcache.py",
+   "best_match": "Lib/test/test_opcache.py",
+   "hamming": 1,
+   "line_ratio": 0.976,
+   "category": "same_path_successor",
+   "sender_lines": 463
+  },
+  {
+   "sender": "Include/pyerrors.h",
+   "best_match": "Include/pyerrors.h",
+   "hamming": 1,
+   "line_ratio": 0.985,
+   "category": "same_path_successor",
+   "sender_lines": 331
+  },
+  {
+   "sender": "Modules/_blake2/impl/blake2s.c",
+   "best_match": "Modules/_blake2/impl/blake2s.c",
+   "hamming": 1,
+   "line_ratio": 0.998,
+   "category": "same_path_successor",
+   "sender_lines": 415
+  },
+  {
+   "sender": "Doc/library/filecmp.rst",
+   "best_match": "Doc/library/filecmp.rst",
+   "hamming": 1,
+   "line_ratio": 0.99,
+   "category": "same_path_successor",
+   "sender_lines": 207
+  },
+  {
+   "sender": "Doc/library/platform.rst",
+   "best_match": "Doc/library/platform.rst",
+   "hamming": 3,
+   "line_ratio": 0.963,
+   "category": "same_path_successor",
+   "sender_lines": 295
+  },
+  {
+   "sender": "Python/dtoa.c",
+   "best_match": "Python/dtoa.c",
+   "hamming": 2,
+   "line_ratio": 0.986,
+   "category": "same_path_successor",
+   "sender_lines": 2860
+  },
+  {
+   "sender": "Doc/library/tkinter.messagebox.rst",
+   "best_match": "Doc/library/tkinter.messagebox.rst",
+   "hamming": 1,
+   "line_ratio": 0.99,
+   "category": "same_path_successor",
+   "sender_lines": 194
+  },
+  {
+   "sender": "Lib/test/test_webbrowser.py",
+   "best_match": "Lib/test/test_webbrowser.py",
+   "hamming": 2,
+   "line_ratio": 0.917,
+   "category": "same_path_successor",
+   "sender_lines": 336
+  },
+  {
+   "sender": "Doc/library/http.rst",
+   "best_match": "Doc/library/http.rst",
+   "hamming": 1,
+   "line_ratio": 0.928,
+   "category": "same_path_successor",
+   "sender_lines": 190
+  },
+  {
+   "sender": "PC/clinic/msvcrtmodule.c.h",
+   "best_match": "PC/clinic/msvcrtmodule.c.h",
+   "hamming": 2,
+   "line_ratio": 0.949,
+   "category": "same_path_successor",
+   "sender_lines": 650
+  },
+  {
+   "sender": "Lib/ctypes/test/test_prototypes.py",
+   "best_match": "Lib/test/test_ctypes/test_prototypes.py",
+   "hamming": 1,
+   "line_ratio": 0.995,
+   "category": "other_file_similar",
+   "sender_lines": 222
+  },
+  {
+   "sender": "Lib/ctypes/test/test_arrays.py",
+   "best_match": "Lib/test/test_ctypes/test_arrays.py",
+   "hamming": 2,
+   "line_ratio": 0.996,
+   "category": "other_file_similar",
+   "sender_lines": 238
+  },
+  {
+   "sender": "Lib/ctypes/test/test_callbacks.py",
+   "best_match": "Lib/test/test_ctypes/test_callbacks.py",
+   "hamming": 1,
+   "line_ratio": 0.977,
+   "category": "other_file_similar",
+   "sender_lines": 325
+  },
+  {
+   "sender": "Lib/tkinter/test/test_ttk/test_style.py",
+   "best_match": "Lib/test/test_ttk/test_style.py",
+   "hamming": 1,
+   "line_ratio": 0.997,
+   "category": "other_file_similar",
+   "sender_lines": 363
+  },
+  {
+   "sender": "Lib/tkinter/test/test_tkinter/test_simpledialog.py",
+   "best_match": "Lib/test/test_tkinter/test_simpledialog.py",
+   "hamming": 3,
+   "line_ratio": 0.971,
+   "category": "other_file_similar",
+   "sender_lines": 35
+  },
+  {
+   "sender": "Lib/ctypes/test/test_buffers.py",
+   "best_match": "Lib/test/test_ctypes/test_buffers.py",
+   "hamming": 1,
+   "line_ratio": 0.986,
+   "category": "other_file_similar",
+   "sender_lines": 73
+  },
+  {
+   "sender": "Lib/datetime.py",
+   "best_match": "Lib/_pydatetime.py",
+   "hamming": 3,
+   "line_ratio": 0.976,
+   "category": "other_file_similar",
+   "sender_lines": 2635
+  },
+  {
+   "sender": "Tools/scripts/diff.py",
+   "best_match": "Doc/includes/diff.py",
+   "hamming": 3,
+   "line_ratio": 0.992,
+   "category": "other_file_similar",
+   "sender_lines": 60
+  },
+  {
+   "sender": "Tools/scripts/deepfreeze.py",
+   "best_match": "Tools/build/deepfreeze.py",
+   "hamming": 2,
+   "line_ratio": 0.917,
+   "category": "other_file_similar",
+   "sender_lines": 512
+  },
+  {
+   "sender": "Lib/ctypes/test/test_as_parameter.py",
+   "best_match": "Lib/test/test_ctypes/test_as_parameter.py",
+   "hamming": 1,
+   "line_ratio": 0.996,
+   "category": "other_file_similar",
+   "sender_lines": 242
+  },
+  {
+   "sender": "Tools/scripts/highlight.py",
+   "best_match": "Lib/test/test_ctypes/test_python_api.py",
+   "hamming": 1,
+   "line_ratio": 0.125,
+   "category": "unrelated",
+   "sender_lines": 265
+  },
+  {
+   "sender": "Modules/_ctypes/libffi_osx/types.c",
+   "best_match": "Doc/library/grp.rst",
+   "hamming": 1,
+   "line_ratio": 0.217,
+   "category": "unrelated",
+   "sender_lines": 115
+  },
+  {
+   "sender": "Doc/distutils/sourcedist.rst",
+   "best_match": "Doc/library/faulthandler.rst",
+   "hamming": 2,
+   "line_ratio": 0.239,
+   "category": "unrelated",
+   "sender_lines": 245
+  },
+  {
+   "sender": "Doc/library/smtpd.rst",
+   "best_match": "Doc/library/asyncio-dev.rst",
+   "hamming": 2,
+   "line_ratio": 0.231,
+   "category": "unrelated",
+   "sender_lines": 268
+  },
+  {
+   "sender": "Tools/c-analyzer/c_parser/preprocessor/__init__.py",
+   "best_match": "Tools/build/freeze_modules.py",
+   "hamming": 2,
+   "line_ratio": 0.026,
+   "category": "unrelated",
+   "sender_lines": 190
+  },
+  {
+   "sender": "Doc/c-api/init.rst",
+   "best_match": "Doc/c-api/memory.rst",
+   "hamming": 3,
+   "line_ratio": 0.042,
+   "category": "unrelated",
+   "sender_lines": 1878
+  },
+  {
+   "sender": "Lib/distutils/command/install_lib.py",
+   "best_match": "Doc/c-api/apiabiversion.rst",
+   "hamming": 1,
+   "line_ratio": 0.172,
+   "category": "unrelated",
+   "sender_lines": 217
+  },
+  {
+   "sender": "Modules/_ctypes/libffi_osx/ffi.c",
+   "best_match": "Doc/library/selectors.rst",
+   "hamming": 3,
+   "line_ratio": 0.174,
+   "category": "unrelated",
+   "sender_lines": 227
+  },
+  {
+   "sender": "Modules/clinic/_pickle.c.h",
+   "best_match": "Objects/clinic/listobject.c.h",
+   "hamming": 3,
+   "line_ratio": 0.189,
+   "category": "unrelated",
+   "sender_lines": 839
+  },
+  {
+   "sender": "Lib/distutils/filelist.py",
+   "best_match": "Doc/installing/index.rst",
+   "hamming": 1,
+   "line_ratio": 0.176,
+   "category": "unrelated",
+   "sender_lines": 327
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+# audit_r5 fresh build (cmake -S impl -B audit_r5/build -DCMAKE_CXX_COMPILER=/usr/bin/c++ ; GNU 11.4.0, Release; make -j2 on cores 44,45)
+# (default PATH c++ = gcc 9.5 fails: <span> missing; build11 also used /usr/bin/c++)
+e4d16199f4af10265f3d2c09bdc0f94774c4a0e2cd070d98768b9859388fcf43  audit_r5/build/net_bench   (identical to impl/build11/net_bench)
+5ab1e865341244c9cc0617971ce7ab10f00177dd78be2bc9ef58cded025a9d82  audit_r5/build/unit_tests
+0f2b985b60183dc7c365f54abbb8b9f4729c5509385c6d8dd90bb37ce3421a55  audit_r5/build/fpsi_bench
+a91389360d578803312391972aa9a0a91447d0dcda9be35ce5e2c9b6806720c2  audit_r5/build/or_deliver
+4c79e03191bf1dc0ac057bb452acc2e81732b68c65e4c43f886b8acb6a6d4a45  audit_r5/build/choose_cover
+197bd0842b568bdaa29393221d2bdf1b4e0acae31ccf3d57587133c76617631d  audit_r5/build/cover_dump
+3db252d43387d8cdbf3c9d0560b0346b750a55f378d3b45167ff5702d8e43b21  audit_r5/build/gmw_bench
+67172db02368f16e76491c15854bb9d4727a1013c690a18895b913b868753b3b  audit_r5/build/libmipfpsi.a
+7b26312146844762682beab1f1fb035c04ec31f4268f6efab338a595585765b7  impl/build9/net_bench   (used by impl/scripts/test_policies.sh; differs from current)
+# sources
+09b16affab0205cbcdcf1a6668ec6710125bbeca450371cc49abef6b4456e103  impl/CMakeLists.txt
+329f3b3bd3e91dd869b4e263a301125684934589b49c67468e8d6d6cf8b3e4a7  impl/src/choose_cover.cpp
+3759dc8c12789840b5ee886553f18d23177778beb2795db60d874da32fc3bf2d  impl/src/circuits.cpp
+343111380c1c34e75c99833fece7fe12b242f2eb4e27af44cb6ac76c704e841a  impl/src/circuits.h
+2f02ae1e5d1a70e291917540d30908ccddd302ff9cb2e76d5e3b906a6e5b54b9  impl/src/cover_dump.cpp
+b3effcfff7d31523c9633462375f6d6173fefb7637313dcb4563eeb4ec1ccc93  impl/src/fpsi.cpp
+21fb90cfd4305ea7c7bbabedf85b675704f88190ddf2702b9f8b9523d771dfb6  impl/src/fpsi.h
+2f322488db64b76f5fa25969fd70a7ac35ce58ca7d140ea004a18df5fab569bb  impl/src/gmw_bench.cpp
+733fb14e4711ffdae3569aa9ea840eac21813de0d42b07dd674f0cb2d517f5d2  impl/src/HamCpsi.cpp
+c479e2077a10250847ba13fc2db52199c87cddf01c6d48cb9425269296896c27  impl/src/HamCpsi.h
+44aa517ddbf7cc2aa111d1b8917df30c09eebbc325ead3d2fb995ec3ee7ee341  impl/src/main.cpp
+a827a85a2c016da826e6bf4766bfef4d3b83a02171bba176ec2e9742a2b07927  impl/src/mip.cpp
+2cc05945772f109944c12bf4fe257fe413aebc04cc6737ca1403ea6a48afccce  impl/src/mip.h
+90029d87b46a27c3a8e210cea430a232cd8f95684065f7a3c3ff73307cbb7403  impl/src/net_bench.cpp
+c9347859d2b62956f5fc442552fe892487256b1a20033a8fc9e44d2ac8dfa12e  impl/src/oep.cpp
+0022c7161e37871f315d68bd3aa078b7bd64585c5b54500fcc09f5f454ff62aa  impl/src/oep.h
+fcc518d7a759570a8b458f962580cba77cd1ca53cc2405e51e57f23439f9d4dd  impl/src/or_deliver.cpp
+6ee3802031cda8d7403cf1d0b15cb26be65098efbd29e250aa25f6a03d90bb00  impl/src/osn.cpp
+ae1b040bbfc6147ff9a7c764e8154460fb3239f5f8b9b12c2ccdfad64a863d70  impl/src/osn.h
+7a2756c6166fdaecdc3e5e7c362bdf246f886e5fb87e8f78c902968e5b51aa8b  impl/src/ot_threshold.cpp
+d60bd701600c57575a1941ee36d966dbf171050c137323b90e91275d7d36b57c  impl/src/ot_threshold.h
+69b4002308098f7a06f2e8c8181a1bfea40c4eaccab2ae8bec310d29b5900528  impl/src/unit_tests.cpp

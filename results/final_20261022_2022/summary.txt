@@ -1,0 +1,222 @@
+== bal_d128_2e8 rep1: -m 256 -n 256 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.74
+time_s=0.641317 cpu_s(both parties)=0.641244 comm_MB=1.33976 (S->R 0.921068, R->S 0.41869)
+matches=18 truth=18 false_neg=0 false_pos=0
+== bal_d128_2e8 rep2: -m 256 -n 256 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.74
+time_s=0.633993 cpu_s(both parties)=0.633904 comm_MB=1.33976 (S->R 0.921068, R->S 0.41869)
+matches=18 truth=18 false_neg=0 false_pos=0
+== bal_d128_2e8 rep3: -m 256 -n 256 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.74
+time_s=0.637653 cpu_s(both parties)=0.63751 comm_MB=1.33976 (S->R 0.921068, R->S 0.41869)
+matches=18 truth=18 false_neg=0 false_pos=0
+== bal_d128_2e8 rep4: -m 256 -n 256 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.74
+time_s=0.635586 cpu_s(both parties)=0.635545 comm_MB=1.33976 (S->R 0.921068, R->S 0.41869)
+matches=18 truth=18 false_neg=0 false_pos=0
+== bal_d128_2e8 rep5: -m 256 -n 256 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.74
+time_s=0.634061 cpu_s(both parties)=0.634051 comm_MB=1.33976 (S->R 0.921068, R->S 0.41869)
+matches=18 truth=18 false_neg=0 false_pos=0
+== bal_d128_2e10 rep1: -m 1024 -n 1024 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.74
+time_s=1.29628 cpu_s(both parties)=1.29586 comm_MB=2.76301 (S->R 1.68981, R->S 1.0732)
+matches=84 truth=84 false_neg=0 false_pos=0
+== bal_d128_2e10 rep2: -m 1024 -n 1024 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.60
+time_s=1.29578 cpu_s(both parties)=1.29552 comm_MB=2.76301 (S->R 1.68981, R->S 1.0732)
+matches=84 truth=84 false_neg=0 false_pos=0
+== bal_d128_2e10 rep3: -m 1024 -n 1024 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.60
+time_s=1.29257 cpu_s(both parties)=1.29253 comm_MB=2.76301 (S->R 1.68981, R->S 1.0732)
+matches=84 truth=84 false_neg=0 false_pos=0
+== bal_d128_2e10 rep4: -m 1024 -n 1024 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.60
+time_s=1.27901 cpu_s(both parties)=1.27872 comm_MB=2.76301 (S->R 1.68981, R->S 1.0732)
+matches=84 truth=84 false_neg=0 false_pos=0
+== bal_d128_2e10 rep5: -m 1024 -n 1024 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.60
+time_s=1.39676 cpu_s(both parties)=1.30388 comm_MB=2.76301 (S->R 1.68981, R->S 1.0732)
+matches=84 truth=84 false_neg=0 false_pos=0
+== bal_d128_2e12 rep1: -m 4096 -n 4096 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.63
+time_s=3.98821 cpu_s(both parties)=3.98773 comm_MB=9.97519 (S->R 5.0771, R->S 4.89808)
+matches=352 truth=352 false_neg=0 false_pos=0
+== bal_d128_2e12 rep2: -m 4096 -n 4096 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.63
+time_s=4.07058 cpu_s(both parties)=4.00166 comm_MB=9.97519 (S->R 5.0771, R->S 4.89808)
+matches=352 truth=352 false_neg=0 false_pos=0
+== bal_d128_2e12 rep3: -m 4096 -n 4096 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.74
+time_s=4.10628 cpu_s(both parties)=4.04995 comm_MB=9.97519 (S->R 5.0771, R->S 4.89808)
+matches=352 truth=352 false_neg=0 false_pos=0
+== bal_d128_2e12 rep4: -m 4096 -n 4096 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.84
+time_s=4.09192 cpu_s(both parties)=4.09162 comm_MB=9.97519 (S->R 5.0771, R->S 4.89808)
+matches=352 truth=352 false_neg=0 false_pos=0
+== bal_d128_2e12 rep5: -m 4096 -n 4096 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.93
+time_s=3.99781 cpu_s(both parties)=3.99757 comm_MB=9.97519 (S->R 5.0771, R->S 4.89808)
+matches=352 truth=352 false_neg=0 false_pos=0
+== bal_d128_2e14 rep1: -m 16384 -n 16384 -d 128 -delta 4 -b 5 -s 1 -indexverify load=17.02
+time_s=25.9367 cpu_s(both parties)=25.9343 comm_MB=50.1447 (S->R 25.297, R->S 24.8476)
+matches=1367 truth=1367 false_neg=0 false_pos=0
+== bal_d128_2e14 rep2: -m 16384 -n 16384 -d 128 -delta 4 -b 5 -s 1 -indexverify load=17.08
+time_s=26.7814 cpu_s(both parties)=26.692 comm_MB=50.1447 (S->R 25.297, R->S 24.8476)
+matches=1367 truth=1367 false_neg=0 false_pos=0
+== bal_d128_2e14 rep3: -m 16384 -n 16384 -d 128 -delta 4 -b 5 -s 1 -indexverify load=17.18
+time_s=27.3292 cpu_s(both parties)=27.3263 comm_MB=50.1447 (S->R 25.297, R->S 24.8476)
+matches=1367 truth=1367 false_neg=0 false_pos=0
+== bal_d128_2e14 rep4: -m 16384 -n 16384 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.95
+time_s=27.1432 cpu_s(both parties)=27.0219 comm_MB=50.1447 (S->R 25.297, R->S 24.8476)
+matches=1367 truth=1367 false_neg=0 false_pos=0
+== bal_d128_2e14 rep5: -m 16384 -n 16384 -d 128 -delta 4 -b 5 -s 1 -indexverify load=17.10
+time_s=27.5369 cpu_s(both parties)=27.5327 comm_MB=50.1447 (S->R 25.297, R->S 24.8476)
+matches=1367 truth=1367 false_neg=0 false_pos=0
+== bal_d128_2e16 rep1: -m 65536 -n 65536 -d 128 -delta 4 -b 5 -s 1 -indexverify load=16.89
+time_s=77.1516 cpu_s(both parties)=76.887 comm_MB=200.826 (S->R 100.08, R->S 100.746)
+matches=5439 truth=5439 false_neg=0 false_pos=0
+== bal_d128_2e16 rep2: -m 65536 -n 65536 -d 128 -delta 4 -b 5 -s 1 -indexverify load=19.32
+time_s=80.0202 cpu_s(both parties)=79.7789 comm_MB=200.826 (S->R 100.08, R->S 100.746)
+matches=5439 truth=5439 false_neg=0 false_pos=0
+== bal_d128_2e16 rep3: -m 65536 -n 65536 -d 128 -delta 4 -b 5 -s 1 -indexverify load=18.54
+time_s=77.8318 cpu_s(both parties)=77.8256 comm_MB=200.826 (S->R 100.08, R->S 100.746)
+matches=5439 truth=5439 false_neg=0 false_pos=0
+== pad_d128_2e12 rep1: -m 4096 -n 4096 -d 128 -delta 4 -b 5 -s 1 -Bbar 4 -Ubar 4 -indexverify load=20.24
+time_s=5.70206 cpu_s(both parties)=5.70169 comm_MB=18.0155 (S->R 8.6815, R->S 9.33403)
+matches=352 truth=352 false_neg=0 false_pos=0
+== pad_d128_2e12 rep2: -m 4096 -n 4096 -d 128 -delta 4 -b 5 -s 1 -Bbar 4 -Ubar 4 -indexverify load=20.14
+time_s=5.75515 cpu_s(both parties)=5.75488 comm_MB=18.0155 (S->R 8.6815, R->S 9.33403)
+matches=352 truth=352 false_neg=0 false_pos=0
+== pad_d128_2e12 rep3: -m 4096 -n 4096 -d 128 -delta 4 -b 5 -s 1 -Bbar 4 -Ubar 4 -indexverify load=20.20
+time_s=5.78476 cpu_s(both parties)=5.78437 comm_MB=18.0155 (S->R 8.6815, R->S 9.33403)
+matches=352 truth=352 false_neg=0 false_pos=0
+== unb_m2e8_n2e12_b5 rep1: -m 256 -n 4096 -b 5 -s 1 -indexverify load=20.66
+time_s=0.48604 cpu_s(both parties)=0.486015 comm_MB=2.36964 (S->R 0.921068, R->S 1.44857)
+matches=24 truth=24 false_neg=0 false_pos=0
+== unb_m2e8_n2e12_b5 rep2: -m 256 -n 4096 -b 5 -s 1 -indexverify load=20.66
+time_s=0.486509 cpu_s(both parties)=0.486498 comm_MB=2.36964 (S->R 0.921068, R->S 1.44857)
+matches=24 truth=24 false_neg=0 false_pos=0
+== unb_m2e8_n2e12_b5 rep3: -m 256 -n 4096 -b 5 -s 1 -indexverify load=20.66
+time_s=0.486603 cpu_s(both parties)=0.486381 comm_MB=2.36964 (S->R 0.921068, R->S 1.44857)
+matches=24 truth=24 false_neg=0 false_pos=0
+== unb_m2e8_n2e12_b3 rep1: -m 256 -n 4096 -b 3 -s 1 -indexverify load=20.66
+time_s=2.17747 cpu_s(both parties)=2.17741 comm_MB=6.11361 (S->R 3.49944, R->S 2.61416)
+matches=24 truth=24 false_neg=0 false_pos=0
+== unb_m2e8_n2e12_b3 rep2: -m 256 -n 4096 -b 3 -s 1 -indexverify load=20.66
+time_s=2.21733 cpu_s(both parties)=2.21727 comm_MB=6.11361 (S->R 3.49944, R->S 2.61416)
+matches=24 truth=24 false_neg=0 false_pos=0
+== unb_m2e8_n2e12_b3 rep3: -m 256 -n 4096 -b 3 -s 1 -indexverify load=20.77
+time_s=2.22498 cpu_s(both parties)=2.22451 comm_MB=6.11361 (S->R 3.49944, R->S 2.61416)
+matches=24 truth=24 false_neg=0 false_pos=0
+== unb_m2e8_n2e16_b5 rep1: -m 256 -n 65536 -b 5 -s 1 -indexverify load=20.77
+time_s=1.6066 cpu_s(both parties)=1.60654 comm_MB=17.8384 (S->R 0.921068, R->S 16.9174)
+matches=21 truth=21 false_neg=0 false_pos=0
+== unb_m2e8_n2e16_b5 rep2: -m 256 -n 65536 -b 5 -s 1 -indexverify load=20.95
+time_s=1.58615 cpu_s(both parties)=1.58611 comm_MB=17.8384 (S->R 0.921068, R->S 16.9174)
+matches=21 truth=21 false_neg=0 false_pos=0
+== unb_m2e8_n2e16_b5 rep3: -m 256 -n 65536 -b 5 -s 1 -indexverify load=20.95
+time_s=1.55686 cpu_s(both parties)=1.55681 comm_MB=17.8384 (S->R 0.921068, R->S 16.9174)
+matches=21 truth=21 false_neg=0 false_pos=0
+== unb_m2e8_n2e16_b3 rep1: -m 256 -n 65536 -b 3 -s 1 -indexverify load=20.87
+time_s=2.92253 cpu_s(both parties)=2.88276 comm_MB=14.0022 (S->R 3.49944, R->S 10.5027)
+matches=21 truth=21 false_neg=0 false_pos=0
+== unb_m2e8_n2e16_b3 rep2: -m 256 -n 65536 -b 3 -s 1 -indexverify load=20.87
+time_s=2.92802 cpu_s(both parties)=2.92791 comm_MB=14.0022 (S->R 3.49944, R->S 10.5027)
+matches=21 truth=21 false_neg=0 false_pos=0
+== unb_m2e8_n2e16_b3 rep3: -m 256 -n 65536 -b 3 -s 1 -indexverify load=20.88
+time_s=3.03259 cpu_s(both parties)=3.02347 comm_MB=14.0022 (S->R 3.49944, R->S 10.5027)
+matches=21 truth=21 false_neg=0 false_pos=0
+== unb_m2e10_n2e12_b5 rep1: -m 1024 -n 4096 -b 5 -s 1 -indexverify load=21.45
+time_s=1.55772 cpu_s(both parties)=1.55769 comm_MB=4.7247 (S->R 2.43298, R->S 2.29173)
+matches=78 truth=78 false_neg=0 false_pos=0
+== unb_m2e10_n2e12_b5 rep2: -m 1024 -n 4096 -b 5 -s 1 -indexverify load=21.45
+time_s=1.66169 cpu_s(both parties)=1.59181 comm_MB=4.7247 (S->R 2.43298, R->S 2.29173)
+matches=78 truth=78 false_neg=0 false_pos=0
+== unb_m2e10_n2e12_b5 rep3: -m 1024 -n 4096 -b 5 -s 1 -indexverify load=21.45
+time_s=1.76035 cpu_s(both parties)=1.59177 comm_MB=4.7247 (S->R 2.43298, R->S 2.29173)
+matches=78 truth=78 false_neg=0 false_pos=0
+== unb_m2e10_n2e12_b3 rep1: -m 1024 -n 4096 -b 3 -s 1 -indexverify load=22.78
+time_s=22.6874 cpu_s(both parties)=20.8431 comm_MB=39.8418 (S->R 23.594, R->S 16.2478)
+matches=78 truth=78 false_neg=0 false_pos=0
+== unb_m2e10_n2e12_b3 rep2: -m 1024 -n 4096 -b 3 -s 1 -indexverify load=26.96
+time_s=22.6362 cpu_s(both parties)=20.7929 comm_MB=39.8418 (S->R 23.594, R->S 16.2478)
+matches=78 truth=78 false_neg=0 false_pos=0
+== unb_m2e10_n2e12_b3 rep3: -m 1024 -n 4096 -b 3 -s 1 -indexverify load=30.45
+time_s=22.697 cpu_s(both parties)=20.826 comm_MB=39.8418 (S->R 23.594, R->S 16.2478)
+matches=78 truth=78 false_neg=0 false_pos=0
+== unb_m2e10_n2e16_b5 rep1: -m 1024 -n 65536 -b 5 -s 1 -indexverify load=32.47
+time_s=2.65156 cpu_s(both parties)=2.45653 comm_MB=19.083 (S->R 1.68981, R->S 17.3932)
+matches=99 truth=99 false_neg=0 false_pos=0
+== unb_m2e10_n2e16_b5 rep2: -m 1024 -n 65536 -b 5 -s 1 -indexverify load=32.83
+time_s=2.6122 cpu_s(both parties)=2.41857 comm_MB=19.083 (S->R 1.68981, R->S 17.3932)
+matches=99 truth=99 false_neg=0 false_pos=0
+== unb_m2e10_n2e16_b5 rep3: -m 1024 -n 65536 -b 5 -s 1 -indexverify load=33.24
+time_s=2.67619 cpu_s(both parties)=2.46674 comm_MB=19.083 (S->R 1.68981, R->S 17.3932)
+matches=99 truth=99 false_neg=0 false_pos=0
+== unb_m2e10_n2e16_b3 rep1: -m 1024 -n 65536 -b 3 -s 1 -indexverify load=33.24
+time_s=23.5897 cpu_s(both parties)=21.7369 comm_MB=47.7304 (S->R 23.594, R->S 24.1364)
+matches=99 truth=99 false_neg=0 false_pos=0
+== unb_m2e10_n2e16_b3 rep2: -m 1024 -n 65536 -b 3 -s 1 -indexverify load=34.74
+time_s=24.0579 cpu_s(both parties)=22.2752 comm_MB=47.7304 (S->R 23.594, R->S 24.1364)
+matches=99 truth=99 false_neg=0 false_pos=0
+== unb_m2e10_n2e16_b3 rep3: -m 1024 -n 65536 -b 3 -s 1 -indexverify load=35.62
+time_s=23.4436 cpu_s(both parties)=22.1835 comm_MB=47.7304 (S->R 23.594, R->S 24.1364)
+matches=99 truth=99 false_neg=0 false_pos=0
+== d64_delta3_b6s3_2e12 rep1: -m 4096 -n 4096 -d 64 -delta 3 -b 6 -s 3 -indexverify load=35.73
+time_s=17.8465 cpu_s(both parties)=17.025 comm_MB=34.7041 (S->R 19.1226, R->S 15.5816)
+matches=345 truth=345 false_neg=0 false_pos=0
+== d64_delta3_b6s3_2e12 rep2: -m 4096 -n 4096 -d 64 -delta 3 -b 6 -s 3 -indexverify load=35.57
+time_s=18.0834 cpu_s(both parties)=17.3012 comm_MB=34.7041 (S->R 19.1226, R->S 15.5816)
+matches=345 truth=345 false_neg=0 false_pos=0
+== d64_delta3_b6s3_2e12 rep3: -m 4096 -n 4096 -d 64 -delta 3 -b 6 -s 3 -indexverify load=35.57
+time_s=18.1687 cpu_s(both parties)=17.3725 comm_MB=34.7041 (S->R 19.1226, R->S 15.5816)
+matches=345 truth=345 false_neg=0 false_pos=0
+== d64_delta3_b4s1_2e12 rep1: -m 4096 -n 4096 -d 64 -delta 3 -b 4 -s 1 -indexverify load=35.47
+time_s=4.70997 cpu_s(both parties)=4.52233 comm_MB=10.8295 (S->R 5.71882, R->S 5.11065)
+matches=345 truth=345 false_neg=0 false_pos=0
+== d64_delta3_b4s1_2e12 rep2: -m 4096 -n 4096 -d 64 -delta 3 -b 4 -s 1 -indexverify load=35.47
+time_s=4.75321 cpu_s(both parties)=4.55049 comm_MB=10.8295 (S->R 5.71882, R->S 5.11065)
+matches=345 truth=345 false_neg=0 false_pos=0
+== d64_delta3_b4s1_2e12 rep3: -m 4096 -n 4096 -d 64 -delta 3 -b 4 -s 1 -indexverify load=35.51
+time_s=4.76081 cpu_s(both parties)=4.55838 comm_MB=10.8295 (S->R 5.71882, R->S 5.11065)
+matches=345 truth=345 false_neg=0 false_pos=0
+== d256_delta8_b9s1_2e12 rep1: -m 4096 -n 4096 -d 256 -delta 8 -b 9 -s 1 -indexverify load=35.47
+time_s=20.5413 cpu_s(both parties)=19.397 comm_MB=38.4057 (S->R 20.1873, R->S 18.2184)
+matches=387 truth=387 false_neg=0 false_pos=0
+== d256_delta8_b9s1_2e12 rep2: -m 4096 -n 4096 -d 256 -delta 8 -b 9 -s 1 -indexverify load=35.45
+time_s=20.5875 cpu_s(both parties)=19.4843 comm_MB=38.4057 (S->R 20.1873, R->S 18.2184)
+matches=387 truth=387 false_neg=0 false_pos=0
+== d256_delta8_b9s1_2e12 rep3: -m 4096 -n 4096 -d 256 -delta 8 -b 9 -s 1 -indexverify load=35.66
+time_s=20.0684 cpu_s(both parties)=18.9148 comm_MB=38.4057 (S->R 20.1873, R->S 18.2184)
+matches=387 truth=387 false_neg=0 false_pos=0
+== code_simhash64 rep1: -data ../data/code_simhash64.bin -d 64 -delta 3 -b 4 -s 1 load=36.36
+time_s=27.0791 cpu_s(both parties)=25.6803 comm_MB=66.0295 (S->R 30.4029, R->S 35.6266)
+matches=2265 truth=2265 false_neg=0 false_pos=0
+== code_simhash64 rep2: -data ../data/code_simhash64.bin -d 64 -delta 3 -b 4 -s 1 load=36.44
+time_s=34.368 cpu_s(both parties)=29.321 comm_MB=66.0295 (S->R 30.4029, R->S 35.6266)
+matches=2265 truth=2265 false_neg=0 false_pos=0
+== code_simhash64 rep3: -data ../data/code_simhash64.bin -d 64 -delta 3 -b 4 -s 1 load=21.42
+time_s=32.6928 cpu_s(both parties)=27.747 comm_MB=66.0295 (S->R 30.4029, R->S 35.6266)
+matches=2265 truth=2265 false_neg=0 false_pos=0
+== cifar_mild rep1: -data ../data/cifar_dhash64_mild.bin -d 64 -delta 4 -b 7 -s 3 -indexverify load=16.31
+time_s=220.382 cpu_s(both parties)=204.033 comm_MB=484.158 (S->R 199.938, R->S 284.22)
+matches=4923 truth=4923 false_neg=0 false_pos=0
+== cifar_mild rep2: -data ../data/cifar_dhash64_mild.bin -d 64 -delta 4 -b 7 -s 3 -indexverify load=36.45
+time_s=229.376 cpu_s(both parties)=207.044 comm_MB=484.158 (S->R 199.938, R->S 284.22)
+matches=4923 truth=4923 false_neg=0 false_pos=0
+== cifar_mild rep3: -data ../data/cifar_dhash64_mild.bin -d 64 -delta 4 -b 7 -s 3 -indexverify load=27.55
+time_s=221.492 cpu_s(both parties)=205.221 comm_MB=484.158 (S->R 199.938, R->S 284.22)
+matches=4923 truth=4923 false_neg=0 false_pos=0
+== allpairs_d128_2e8 rep1: -m 256 -n 256 -allpairs -indexverify load=34.58
+time_s=4.35791 cpu_s(both parties)=4.16562 comm_MB=7.25429 (S->R 4.19606, R->S 3.05823)
+matches=18 truth=18 false_neg=0 false_pos=0
+== allpairs_d128_2e8 rep2: -m 256 -n 256 -allpairs -indexverify load=34.77
+time_s=4.27569 cpu_s(both parties)=4.10549 comm_MB=7.25429 (S->R 4.19606, R->S 3.05823)
+matches=18 truth=18 false_neg=0 false_pos=0
+== allpairs_d128_2e8 rep3: -m 256 -n 256 -allpairs -indexverify load=34.79
+time_s=4.13539 cpu_s(both parties)=3.96848 comm_MB=7.25429 (S->R 4.19606, R->S 3.05823)
+matches=18 truth=18 false_neg=0 false_pos=0
+== allpairs_d128_2e10 rep1: -m 1024 -n 1024 -allpairs -indexverify load=34.79
+time_s=74.2252 cpu_s(both parties)=71.3314 comm_MB=111.885 (S->R 64.1493, R->S 47.736)
+matches=84 truth=84 false_neg=0 false_pos=0
+== allpairs_d128_2e10 rep2: -m 1024 -n 1024 -allpairs -indexverify load=35.17
+time_s=78.4451 cpu_s(both parties)=72.94 comm_MB=111.885 (S->R 64.1493, R->S 47.736)
+matches=84 truth=84 false_neg=0 false_pos=0
+== allpairs_d128_2e10 rep3: -m 1024 -n 1024 -allpairs -indexverify load=37.23
+time_s=85.7627 cpu_s(both parties)=75.2495 comm_MB=111.885 (S->R 64.1493, R->S 47.736)
+matches=84 truth=84 false_neg=0 false_pos=0
+== allpairs_d128_2e12 rep1: -m 4096 -n 4096 -allpairs -indexverify load=38.34
+time_s=1336.28 cpu_s(both parties)=1177.12 comm_MB=1787.09 (S->R 1024.02, R->S 763.075)
+matches=352 truth=352 false_neg=0 false_pos=0
+== allpairs_code rep1: -data ../data/code_simhash64.bin -d 64 -delta 3 -allpairs load=37.88
+time_s=351.074 cpu_s(both parties)=305.328 comm_MB=462.073 (S->R 264.821, R->S 197.252)
+matches=2265 truth=2265 false_neg=0 false_pos=0
+== breakdown_2e14 rep1: -m 16384 -n 16384 -v -indexverify load=34.15
+time_s=25.4317 cpu_s(both parties)=22.3917 comm_MB=50.1447 (S->R 25.297, R->S 24.8476)
+matches=1367 truth=1367 false_neg=0 false_pos=0

@@ -1,0 +1,3 @@
+role=1 m=10000 n=55000 d=64 delta=4 B=16 U=1 Q=240 fallback=0
+wall_s=301.376 cpu_s=162.827 sent_MB=7101 recv_MB=180.997
+matches=4923 truth=4923 false_neg=0 false_pos=0

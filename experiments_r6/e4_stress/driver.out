@@ -1,0 +1,237 @@
+2026-11-12T06:36:02-08:00 start a_k1_exact_r1
+2026-11-12T06:36:04-08:00 done a_k1_exact_r1 exit=0
+2026-11-12T06:36:04-08:00 start a_k1_rounded_r1
+2026-11-12T06:36:05-08:00 done a_k1_rounded_r1 exit=0
+2026-11-12T06:36:05-08:00 start a_k1_ufree_r1
+2026-11-12T06:36:07-08:00 done a_k1_ufree_r1 exit=0
+2026-11-12T06:36:07-08:00 start a_k1_exact_r2
+2026-11-12T06:36:09-08:00 done a_k1_exact_r2 exit=0
+2026-11-12T06:36:09-08:00 start a_k1_rounded_r2
+2026-11-12T06:36:10-08:00 done a_k1_rounded_r2 exit=0
+2026-11-12T06:36:10-08:00 start a_k1_ufree_r2
+2026-11-12T06:36:12-08:00 done a_k1_ufree_r2 exit=0
+2026-11-12T06:36:12-08:00 start a_k1_exact_r3
+2026-11-12T06:36:13-08:00 done a_k1_exact_r3 exit=0
+2026-11-12T06:36:13-08:00 start a_k1_rounded_r3
+2026-11-12T06:36:15-08:00 done a_k1_rounded_r3 exit=0
+2026-11-12T06:36:15-08:00 start a_k1_ufree_r3
+2026-11-12T06:36:17-08:00 done a_k1_ufree_r3 exit=0
+2026-11-12T06:36:17-08:00 start a_k2_exact_r1
+2026-11-12T06:36:19-08:00 done a_k2_exact_r1 exit=0
+2026-11-12T06:36:19-08:00 start a_k2_rounded_r1
+2026-11-12T06:36:22-08:00 done a_k2_rounded_r1 exit=0
+2026-11-12T06:36:22-08:00 start a_k2_ufree_r1
+2026-11-12T06:36:25-08:00 done a_k2_ufree_r1 exit=0
+2026-11-12T06:36:25-08:00 start a_k2_exact_r2
+2026-11-12T06:36:28-08:00 done a_k2_exact_r2 exit=0
+2026-11-12T06:36:28-08:00 start a_k2_rounded_r2
+2026-11-12T06:36:31-08:00 done a_k2_rounded_r2 exit=0
+2026-11-12T06:36:31-08:00 start a_k2_ufree_r2
+2026-11-12T06:36:34-08:00 done a_k2_ufree_r2 exit=0
+2026-11-12T06:36:34-08:00 start a_k2_exact_r3
+2026-11-12T06:36:37-08:00 done a_k2_exact_r3 exit=0
+2026-11-12T06:36:37-08:00 start a_k2_rounded_r3
+2026-11-12T06:36:40-08:00 done a_k2_rounded_r3 exit=0
+2026-11-12T06:36:40-08:00 start a_k2_ufree_r3
+2026-11-12T06:36:44-08:00 done a_k2_ufree_r3 exit=0
+2026-11-12T06:36:44-08:00 start a_k4_exact_r1
+2026-11-12T06:36:49-08:00 done a_k4_exact_r1 exit=0
+2026-11-12T06:36:49-08:00 start a_k4_rounded_r1
+2026-11-12T06:36:54-08:00 done a_k4_rounded_r1 exit=0
+2026-11-12T06:36:54-08:00 start a_k4_ufree_r1
+2026-11-12T06:37:00-08:00 done a_k4_ufree_r1 exit=0
+2026-11-12T06:37:00-08:00 start a_k4_exact_r2
+2026-11-12T06:37:05-08:00 done a_k4_exact_r2 exit=0
+2026-11-12T06:37:05-08:00 start a_k4_rounded_r2
+2026-11-12T06:37:10-08:00 done a_k4_rounded_r2 exit=0
+2026-11-12T06:37:10-08:00 start a_k4_ufree_r2
+2026-11-12T06:37:16-08:00 done a_k4_ufree_r2 exit=0
+2026-11-12T06:37:16-08:00 start a_k4_exact_r3
+2026-11-12T06:37:21-08:00 done a_k4_exact_r3 exit=0
+2026-11-12T06:37:21-08:00 start a_k4_rounded_r3
+2026-11-12T06:37:26-08:00 done a_k4_rounded_r3 exit=0
+2026-11-12T06:37:26-08:00 start a_k4_ufree_r3
+2026-11-12T06:37:33-08:00 done a_k4_ufree_r3 exit=0
+2026-11-12T06:37:33-08:00 start a_k8_exact_r1
+2026-11-12T06:37:43-08:00 done a_k8_exact_r1 exit=0
+2026-11-12T06:37:43-08:00 start a_k8_rounded_r1
+2026-11-12T06:37:55-08:00 done a_k8_rounded_r1 exit=0
+2026-11-12T06:37:55-08:00 start a_k8_ufree_r1
+2026-11-12T06:38:08-08:00 done a_k8_ufree_r1 exit=0
+2026-11-12T06:38:08-08:00 start a_k8_exact_r2
+2026-11-12T06:38:19-08:00 done a_k8_exact_r2 exit=0
+2026-11-12T06:38:19-08:00 start a_k8_rounded_r2
+2026-11-12T06:38:30-08:00 done a_k8_rounded_r2 exit=0
+2026-11-12T06:38:30-08:00 start a_k8_ufree_r2
+2026-11-12T06:38:42-08:00 done a_k8_ufree_r2 exit=0
+2026-11-12T06:38:42-08:00 start a_k8_exact_r3
+2026-11-12T06:38:53-08:00 done a_k8_exact_r3 exit=0
+2026-11-12T06:38:53-08:00 start a_k8_rounded_r3
+2026-11-12T06:39:04-08:00 done a_k8_rounded_r3 exit=0
+2026-11-12T06:39:04-08:00 start a_k8_ufree_r3
+2026-11-12T06:39:17-08:00 done a_k8_ufree_r3 exit=0
+2026-11-12T06:39:17-08:00 start a_k16_exact_r1
+2026-11-12T06:39:37-08:00 done a_k16_exact_r1 exit=0
+2026-11-12T06:39:37-08:00 start a_k16_rounded_r1
+2026-11-12T06:39:58-08:00 done a_k16_rounded_r1 exit=0
+2026-11-12T06:39:58-08:00 start a_k16_ufree_r1
+2026-11-12T06:40:27-08:00 done a_k16_ufree_r1 exit=0
+2026-11-12T06:40:27-08:00 start a_k16_exact_r2
+2026-11-12T06:40:49-08:00 done a_k16_exact_r2 exit=0
+2026-11-12T06:40:49-08:00 start a_k16_rounded_r2
+2026-11-12T06:41:11-08:00 done a_k16_rounded_r2 exit=0
+2026-11-12T06:41:11-08:00 start a_k16_ufree_r2
+2026-11-12T06:41:38-08:00 done a_k16_ufree_r2 exit=0
+2026-11-12T06:41:38-08:00 start a_k16_exact_r3
+2026-11-12T06:42:00-08:00 done a_k16_exact_r3 exit=0
+2026-11-12T06:42:00-08:00 start a_k16_rounded_r3
+2026-11-12T06:42:20-08:00 done a_k16_rounded_r3 exit=0
+2026-11-12T06:42:20-08:00 start a_k16_ufree_r3
+2026-11-12T06:42:50-08:00 done a_k16_ufree_r3 exit=0
+2026-11-12T06:42:50-08:00 start a_k32_exact_r1
+2026-11-12T06:43:32-08:00 done a_k32_exact_r1 exit=0
+2026-11-12T06:43:32-08:00 start a_k32_rounded_r1
+2026-11-12T06:44:16-08:00 done a_k32_rounded_r1 exit=0
+2026-11-12T06:44:16-08:00 start a_k32_ufree_r1
+2026-11-12T06:45:14-08:00 done a_k32_ufree_r1 exit=0
+2026-11-12T06:45:14-08:00 start a_k32_exact_r2
+2026-11-12T06:46:00-08:00 done a_k32_exact_r2 exit=0
+2026-11-12T06:46:00-08:00 start a_k32_rounded_r2
+2026-11-12T06:46:48-08:00 done a_k32_rounded_r2 exit=0
+2026-11-12T06:46:48-08:00 start a_k32_ufree_r2
+2026-11-12T06:47:51-08:00 done a_k32_ufree_r2 exit=0
+2026-11-12T06:47:51-08:00 start a_k32_exact_r3
+2026-11-12T06:48:36-08:00 done a_k32_exact_r3 exit=0
+2026-11-12T06:48:36-08:00 start a_k32_rounded_r3
+2026-11-12T06:49:24-08:00 done a_k32_rounded_r3 exit=0
+2026-11-12T06:49:24-08:00 start a_k32_ufree_r3
+2026-11-12T06:50:22-08:00 done a_k32_ufree_r3 exit=0
+2026-11-12T06:50:22-08:00 start a_k64_exact_r1
+2026-11-12T06:52:08-08:00 done a_k64_exact_r1 exit=0
+2026-11-12T06:52:08-08:00 start a_k64_rounded_r1
+2026-11-12T06:53:47-08:00 done a_k64_rounded_r1 exit=0
+2026-11-12T06:53:47-08:00 start a_k64_ufree_r1
+2026-11-12T06:55:46-08:00 done a_k64_ufree_r1 exit=0
+2026-11-12T06:55:46-08:00 start a_k64_exact_r2
+2026-11-12T06:57:26-08:00 done a_k64_exact_r2 exit=0
+2026-11-12T06:57:26-08:00 start a_k64_rounded_r2
+2026-11-12T06:59:05-08:00 done a_k64_rounded_r2 exit=0
+2026-11-12T06:59:05-08:00 start a_k64_ufree_r2
+2026-11-12T07:01:15-08:00 done a_k64_ufree_r2 exit=0
+2026-11-12T07:01:15-08:00 start a_k64_exact_r3
+2026-11-12T07:03:12-08:00 done a_k64_exact_r3 exit=0
+2026-11-12T07:03:12-08:00 start a_k64_rounded_r3
+2026-11-12T07:05:04-08:00 done a_k64_rounded_r3 exit=0
+2026-11-12T07:05:04-08:00 start a_k64_ufree_r3
+2026-11-12T07:07:16-08:00 done a_k64_ufree_r3 exit=0
+2026-11-12T07:07:16-08:00 start b_m256_n4096_exact_r1
+2026-11-12T07:07:16-08:00 done b_m256_n4096_exact_r1 exit=0
+2026-11-12T07:07:16-08:00 start b_m256_n4096_ufree_r1
+2026-11-12T07:07:17-08:00 done b_m256_n4096_ufree_r1 exit=0
+2026-11-12T07:07:17-08:00 start b_m256_n4096_exact_r2
+2026-11-12T07:07:18-08:00 done b_m256_n4096_exact_r2 exit=0
+2026-11-12T07:07:18-08:00 start b_m256_n4096_ufree_r2
+2026-11-12T07:07:18-08:00 done b_m256_n4096_ufree_r2 exit=0
+2026-11-12T07:07:18-08:00 start b_m256_n4096_exact_r3
+2026-11-12T07:07:19-08:00 done b_m256_n4096_exact_r3 exit=0
+2026-11-12T07:07:19-08:00 start b_m256_n4096_ufree_r3
+2026-11-12T07:07:19-08:00 done b_m256_n4096_ufree_r3 exit=0
+2026-11-12T07:07:19-08:00 start b_m1024_n4096_exact_r1
+2026-11-12T07:07:21-08:00 done b_m1024_n4096_exact_r1 exit=0
+2026-11-12T07:07:21-08:00 start b_m1024_n4096_ufree_r1
+2026-11-12T07:07:23-08:00 done b_m1024_n4096_ufree_r1 exit=0
+2026-11-12T07:07:23-08:00 start b_m1024_n4096_exact_r2
+2026-11-12T07:07:24-08:00 done b_m1024_n4096_exact_r2 exit=0
+2026-11-12T07:07:24-08:00 start b_m1024_n4096_ufree_r2
+2026-11-12T07:07:26-08:00 done b_m1024_n4096_ufree_r2 exit=0
+2026-11-12T07:07:26-08:00 start b_m1024_n4096_exact_r3
+2026-11-12T07:07:28-08:00 done b_m1024_n4096_exact_r3 exit=0
+2026-11-12T07:07:28-08:00 start b_m1024_n4096_ufree_r3
+2026-11-12T07:07:29-08:00 done b_m1024_n4096_ufree_r3 exit=0
+2026-11-12T07:07:29-08:00 start b_m4096_n4096_exact_r1
+2026-11-12T07:07:33-08:00 done b_m4096_n4096_exact_r1 exit=0
+2026-11-12T07:07:33-08:00 start b_m4096_n4096_ufree_r1
+2026-11-12T07:07:37-08:00 done b_m4096_n4096_ufree_r1 exit=0
+2026-11-12T07:07:37-08:00 start b_m4096_n4096_exact_r2
+2026-11-12T07:07:42-08:00 done b_m4096_n4096_exact_r2 exit=0
+2026-11-12T07:07:42-08:00 start b_m4096_n4096_ufree_r2
+2026-11-12T07:07:48-08:00 done b_m4096_n4096_ufree_r2 exit=0
+2026-11-12T07:07:48-08:00 start b_m4096_n4096_exact_r3
+2026-11-12T07:07:54-08:00 done b_m4096_n4096_exact_r3 exit=0
+2026-11-12T07:07:54-08:00 start b_m4096_n4096_ufree_r3
+2026-11-12T07:08:00-08:00 done b_m4096_n4096_ufree_r3 exit=0
+2026-11-12T07:08:00-08:00 start b_m16384_n4096_exact_r1
+2026-11-12T07:08:22-08:00 done b_m16384_n4096_exact_r1 exit=0
+2026-11-12T07:08:22-08:00 start b_m16384_n4096_ufree_r1
+2026-11-12T07:08:47-08:00 done b_m16384_n4096_ufree_r1 exit=0
+2026-11-12T07:08:47-08:00 start b_m16384_n4096_exact_r2
+2026-11-12T07:09:01-08:00 done b_m16384_n4096_exact_r2 exit=0
+2026-11-12T07:09:01-08:00 start b_m16384_n4096_ufree_r2
+2026-11-12T07:09:18-08:00 done b_m16384_n4096_ufree_r2 exit=0
+2026-11-12T07:09:18-08:00 start b_m16384_n4096_exact_r3
+2026-11-12T07:09:31-08:00 done b_m16384_n4096_exact_r3 exit=0
+2026-11-12T07:09:31-08:00 start b_m16384_n4096_ufree_r3
+2026-11-12T07:09:45-08:00 done b_m16384_n4096_ufree_r3 exit=0
+2026-11-12T07:09:45-08:00 start b_m65536_n4096_exact_r1
+2026-11-12T07:10:09-08:00 done b_m65536_n4096_exact_r1 exit=0
+2026-11-12T07:10:09-08:00 start b_m65536_n4096_ufree_r1
+2026-11-12T07:10:38-08:00 done b_m65536_n4096_ufree_r1 exit=0
+2026-11-12T07:10:38-08:00 start b_m4096_n256_exact_r1
+2026-11-12T07:10:39-08:00 done b_m4096_n256_exact_r1 exit=0
+2026-11-12T07:10:39-08:00 start b_m4096_n256_ufree_r1
+2026-11-12T07:10:41-08:00 done b_m4096_n256_ufree_r1 exit=0
+2026-11-12T07:10:41-08:00 start b_m4096_n256_exact_r2
+2026-11-12T07:10:42-08:00 done b_m4096_n256_exact_r2 exit=0
+2026-11-12T07:10:42-08:00 start b_m4096_n256_ufree_r2
+2026-11-12T07:10:44-08:00 done b_m4096_n256_ufree_r2 exit=0
+2026-11-12T07:10:44-08:00 start b_m4096_n256_exact_r3
+2026-11-12T07:10:45-08:00 done b_m4096_n256_exact_r3 exit=0
+2026-11-12T07:10:45-08:00 start b_m4096_n256_ufree_r3
+2026-11-12T07:10:47-08:00 done b_m4096_n256_ufree_r3 exit=0
+2026-11-12T07:10:47-08:00 start b_m4096_n1024_exact_r1
+2026-11-12T07:10:49-08:00 done b_m4096_n1024_exact_r1 exit=0
+2026-11-12T07:10:49-08:00 start b_m4096_n1024_ufree_r1
+2026-11-12T07:10:52-08:00 done b_m4096_n1024_ufree_r1 exit=0
+2026-11-12T07:10:52-08:00 start b_m4096_n1024_exact_r2
+2026-11-12T07:10:55-08:00 done b_m4096_n1024_exact_r2 exit=0
+2026-11-12T07:10:55-08:00 start b_m4096_n1024_ufree_r2
+2026-11-12T07:10:58-08:00 done b_m4096_n1024_ufree_r2 exit=0
+2026-11-12T07:10:58-08:00 start b_m4096_n1024_exact_r3
+2026-11-12T07:11:00-08:00 done b_m4096_n1024_exact_r3 exit=0
+2026-11-12T07:11:00-08:00 start b_m4096_n1024_ufree_r3
+2026-11-12T07:11:03-08:00 done b_m4096_n1024_ufree_r3 exit=0
+2026-11-12T07:11:03-08:00 start b_m4096_n16384_exact_r1
+2026-11-12T07:11:08-08:00 done b_m4096_n16384_exact_r1 exit=0
+2026-11-12T07:11:08-08:00 start b_m4096_n16384_ufree_r1
+2026-11-12T07:11:15-08:00 done b_m4096_n16384_ufree_r1 exit=0
+2026-11-12T07:11:15-08:00 start b_m4096_n16384_exact_r2
+2026-11-12T07:11:20-08:00 done b_m4096_n16384_exact_r2 exit=0
+2026-11-12T07:11:20-08:00 start b_m4096_n16384_ufree_r2
+2026-11-12T07:11:27-08:00 done b_m4096_n16384_ufree_r2 exit=0
+2026-11-12T07:11:27-08:00 start b_m4096_n16384_exact_r3
+2026-11-12T07:11:32-08:00 done b_m4096_n16384_exact_r3 exit=0
+2026-11-12T07:11:32-08:00 start b_m4096_n16384_ufree_r3
+2026-11-12T07:11:39-08:00 done b_m4096_n16384_ufree_r3 exit=0
+2026-11-12T07:11:39-08:00 start b_m4096_n65536_exact_r1
+2026-11-12T07:11:46-08:00 done b_m4096_n65536_exact_r1 exit=0
+2026-11-12T07:11:46-08:00 start b_m4096_n65536_ufree_r1
+2026-11-12T07:11:54-08:00 done b_m4096_n65536_ufree_r1 exit=0
+2026-11-12T07:11:54-08:00 start a_k128_exact_r1
+2026-11-12T07:14:45-08:00 done a_k128_exact_r1 exit=0
+2026-11-12T07:14:45-08:00 start a_k128_rounded_r1
+2026-11-12T07:17:31-08:00 done a_k128_rounded_r1 exit=0
+2026-11-12T07:17:31-08:00 start a_k128_ufree_r1
+2026-11-12T07:21:42-08:00 done a_k128_ufree_r1 exit=0
+2026-11-12T07:21:42-08:00 start a_k512_exact_r1
+2026-11-12T07:35:03-08:00 done a_k512_exact_r1 exit=0
+2026-11-12T07:35:03-08:00 start a_k512_rounded_r1
+2026-11-12T07:49:51-08:00 done a_k512_rounded_r1 exit=0
+2026-11-12T07:49:51-08:00 start a_k512_ufree_r1
+2026-11-12T07:52:41-08:00 done a_k512_ufree_r1 exit=3
+2026-11-12T07:52:41-08:00 start a_k2048_exact_r1
+2026-11-12T08:09:54-08:00 done a_k2048_exact_r1 exit=0
+2026-11-12T08:09:54-08:00 start a_k2048_rounded_r1
+2026-11-12T08:26:00-08:00 done a_k2048_rounded_r1 exit=0
+2026-11-12T08:26:00-08:00 start a_k2048_ufree_r1
+2026-11-12T08:42:30-08:00 done a_k2048_ufree_r1 exit=0
+2026-11-12T08:42:32-08:00 finished all

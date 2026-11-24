@@ -1,0 +1,2 @@
+role=0 m=256 n=256 d=128 delta=4 B=4 U=4 Q=20 fallback=0
+wall_s=0.623926 cpu_s=0.336042 sent_MB=1.19011 recv_MB=0.764706

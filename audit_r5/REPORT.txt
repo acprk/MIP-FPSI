@@ -1,0 +1,30 @@
+audit_r5 final report (2026-11-11). Verdict: no critical or major defect; minor/cosmetic items only.
+
+Build: audit_r5/build, /usr/bin/c++ (GCC 11.4), Release. net_bench sha256 e4d16199... = impl/build11/net_bench (bit-identical).
+Default-PATH c++ (gcc 9.5) cannot build (no <span>). All hashes: logs/sha256.txt.
+
+Tests
+- unit_tests: exit 0, all sections ok (logs/unit_tests.log).
+- test_policies.sh copy (scripts/test_policies.sh): NOT RUNNABLE here; loopback TCP connect blocked in the sandbox
+  (net_bench and curl to 127.0.0.1 time out even with listener up). In-process variant (scripts/policy_inproc.sh,
+  logs/policy_inproc/summary.txt): 6/6 "ok" cases PASS; 4 abort cases hang because fpsi_bench waits on both
+  coroutines (when_all_ready) after one party throws: harness artifact, abort path not verified on this run.
+  Historical build9 run results/policy_tests_20261025_0227: 11/11 PASS (not re-verified).
+- Correctness sweep (fpsi_bench, same fpsiSender/fpsiReceiver, LocalAsyncSocket): 1140 runs, 1132 PASS
+  false_neg=0 false_pos=0; 8 FAIL = -otthreshold ablation at d=64, delta=8 aborting with
+  "ot threshold: modulus above 256 not supported" (no wrong output). logs/sweep/summary.tsv.
+  Independent Python brute force (scripts/check_truth.py): 1132 rows, 0 mismatches (logs/check_truth.log).
+
+Defects
+1 minor  fpsi.cpp:425,561  U-free fallback rule uses mQ instead of N; paper Fig.4 step 0 and supp. "Public quantities" say N. Public either way.
+2 minor  ot_threshold.cpp:62-63  OT threshold aborts when dc+(delta+1)tau>=256 (e.g. d=64,delta=8). fpsi_bench ablation only.
+3 minor  fpsi.cpp:198-213 / or_deliver.cpp:56  otFPSI baseline adapter neither dedups nor shuffles X: R learns output positions in sender file order. Baseline only.
+4 minor  supplement.tex:110,112  Sim_S ignores the abort probability; Sim_R counts m2^-lambda' twice (Thm 4(ii) already includes it). Bounds are still valid.
+5 cosmetic protocol.tex:78  abort <= 2^{1-sigma}, but ledger term (2)+(3) is 2*2^-sigma + 2^-16sigma.
+6 cosmetic fpsi.cpp:135-138  delivery tag = 8*ceil(lambda'/8) bits, not lambda'.
+7 cosmetic HamCpsi.cpp:114,185 vs prelim.tex:9  OPPRF point is AES_{seed^h_j}(k) (hash index j), not (k||bin j). Equivalent.
+8 cosmetic HamCpsi.cpp:153  MIP_INJECT_CUCKOO_FAIL test hook in library code; only forces local reseeding.
+9 cosmetic fpsi.cpp:65-66 via 437  DP+Ubar conflict detected by S only after B is released.
+10 cosmetic net_bench.cpp:117-134, main.cpp:148-154  checker compares sets, so duplicate output rows would not be detected (X is deduped, so none occur).
+
+Wire audit: WIRE_AUDIT.txt.

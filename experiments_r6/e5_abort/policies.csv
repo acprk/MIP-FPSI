@@ -1,0 +1,12 @@
+case,expect,exit,pattern,pattern_found,abort_line,verdict,wall_s,maxrss_kb
+recv_overflow,abort,3,B exceeds,yes,abort: sender: ;abort: receiver: B exceeds its public bound: abort;,PASS,0:00.04,7488
+send_overflow_index,abort,3,U exceeds,yes,abort: sender: U exceeds its public bound: abort;abort: receiver: ;,PASS,0:00.02,5824
+send_overflow_fallback,ok,0,fallback=1,yes,,PASS,0:03.72,104556
+bounds_ok,ok,0,fallback=0,yes,,PASS,0:00.61,54264
+dp_plus_bound,abort,3,exclusive,yes,abort: sender: ;abort: receiver: public bounds and DP noise are exclusive policies;,PASS,0:00.01,4992
+cuckoo_retry,ok,0,,n/a,,PASS,0:00.97,70976
+cuckoo_retry_noU,ok,0,,n/a,,PASS,0:00.98,121496
+empty_sender,ok,0,B=0,yes,,PASS,0:00.01,4992
+empty_receiver,ok,0,B=0,yes,,PASS,0:00.01,4992
+wrong_dim,abort,1,header does not match,yes,abort: data file header does not match -d;,PASS,0:00.01,4992
+cuckoo_hook_control,abort,3,failed 16 times,yes,abort: sender: cuckoo hashing failed 16 times;abort: receiver: ;,PASS,0:00.03,5824

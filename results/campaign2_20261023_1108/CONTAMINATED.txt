@@ -1,0 +1,1 @@
+CONTAMINATED: stale run_vs_otfpsi.sh (otFPSI on cores 38,39) ran concurrently for the whole campaign; killed 13:45 PDT. Do not use timings. Superseded by the next campaign2_* run (build3).

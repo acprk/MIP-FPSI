@@ -1,0 +1,7 @@
+terminate called after throwing an instance of 'std::system_error'
+  what():  
+0 <ARTIFACT_ROOT>/impl/src/fpsi.cpp:490
+1 <VOLEPSI_ROOT>/out/install/linux/include/macoro/sync_wait.h:125
+2 <ARTIFACT_ROOT>/impl/src/net_bench.cpp:89
+: End of file
+timeout: the monitored command dumped core

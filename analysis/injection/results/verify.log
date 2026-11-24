@@ -1,0 +1,5 @@
+U128-n2^10: 40 random trials, mismatches = 0
+U128-n2^12: 40 random trials, mismatches = 0
+U64-n2^12: 40 random trials, mismatches = 0
+code-simhash64: 40 random trials, mismatches = 0
+cifar-dhash64-mild: 40 random trials, mismatches = 0

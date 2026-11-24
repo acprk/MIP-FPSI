@@ -1,0 +1,5 @@
+dp_c8_2e12 m=4096 n=4096 d=128 delta=8 b=9 s=1 r=0 T=9 B=26 U=28 Q=234 bins=1261459 prog=1032192 tau=0 fallback=0 nt=1 time_s=291.7 cpu_s(both parties)=139.876 comm_MB=236.025 (S->R 102.328, R->S 133.697) matches=399 truth=399 false_neg=0 false_pos=0 
+both_c8_2e10 m=1024 n=1024 d=128 delta=8 b=9 s=1 r=0 T=9 B=24 U=1 Q=216 bins=289156 prog=9216 tau=0 fallback=0 nt=1 time_s=74.5666 cpu_s(both parties)=37.6375 comm_MB=1164.18 (S->R 21.527, R->S 1142.66) matches=98 truth=98 false_neg=0 false_pos=0 
+both_c8_2e12 
+both_cp m=3199 n=3170 d=64 delta=3 b=4 s=1 r=0 T=4 B=54 U=1 Q=216 bins=843628 prog=11836 tau=26 fallback=0 nt=1 time_s=63.1058 cpu_s(both parties)=61.0912 comm_MB=1652.55 (S->R 45.3537, R->S 1607.19) matches=2265 truth=2265 false_neg=0 false_pos=0 
+def_cp m=3199 n=3170 d=64 delta=3 b=4 s=1 r=0 T=4 B=33 U=38 Q=132 bins=514388 prog=449768 tau=26 fallback=0 nt=1 time_s=23.8879 cpu_s(both parties)=23.491 comm_MB=66.0295 (S->R 30.4029, R->S 35.6266) matches=2265 truth=2265 false_neg=0 false_pos=0 

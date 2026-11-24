@@ -1,0 +1,101 @@
+ot_d128_t4_2e8_r1 load=7.89 1.10 1.44 0.09 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ours_d128_t4_2e8_r1 load=7.89 wall_s=0.50617 cpu_s=0.289708 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.506033 cpu_s=0.286663 sent_MB=0.921068 recv_MB=0.41869 
+ot_d128_t4_2e8_r2 load=7.89 1.12 1.52 0.06 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ours_d128_t4_2e8_r2 load=7.89 wall_s=0.528414 cpu_s=0.302835 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.528341 cpu_s=0.296554 sent_MB=0.921068 recv_MB=0.41869 
+ot_d128_t4_2e8_r3 load=7.89 1.13 1.46 0.07 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ours_d128_t4_2e8_r3 load=7.82 wall_s=0.514902 cpu_s=0.300475 sent_MB=0.41869 recv_MB=0.921068 matches=18 truth=18 false_neg=0 false_pos=0 wall_s=0.514812 cpu_s=0.285765 sent_MB=0.921068 recv_MB=0.41869 
+ot_d128_t4_2e10_r1 load=7.85 16.72 21.65 1.05 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ours_d128_t4_2e10_r1 load=7.85 wall_s=0.996133 cpu_s=0.549602 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=0.995267 cpu_s=0.527872 sent_MB=1.68981 recv_MB=1.0732 
+ot_d128_t4_2e10_r2 load=7.67 16.74 22.43 1.10 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ours_d128_t4_2e10_r2 load=7.67 wall_s=0.986101 cpu_s=0.538361 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=0.985327 cpu_s=0.524729 sent_MB=1.68981 recv_MB=1.0732 
+ot_d128_t4_2e10_r3 load=7.81 16.86 22.27 1.00 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ours_d128_t4_2e10_r3 load=7.81 wall_s=1.02422 cpu_s=0.564731 sent_MB=1.0732 recv_MB=1.68981 matches=84 truth=84 false_neg=0 false_pos=0 wall_s=1.0234 cpu_s=0.541866 sent_MB=1.68981 recv_MB=1.0732 
+ot_d128_t4_2e12_r1 load=8.55 263.76 362.68 15.99 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ours_d128_t4_2e12_r1 load=8.35 wall_s=2.83847 cpu_s=1.52463 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.83145 cpu_s=1.42914 sent_MB=5.0771 recv_MB=4.89808 
+ot_d128_t4_2e12_r2 load=6.37 259.18 356.90 15.46 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ours_d128_t4_2e12_r2 load=6.37 wall_s=2.86362 cpu_s=1.49546 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=2.85836 cpu_s=1.47626 sent_MB=5.0771 recv_MB=4.89808 
+ot_d128_t4_2e12_r3 load=9.40 263.44 364.65 15.18 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ours_d128_t4_2e12_r3 load=9.29 wall_s=3.13992 cpu_s=1.67425 sent_MB=4.89808 recv_MB=5.0771 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.13491 cpu_s=1.5785 sent_MB=5.0771 recv_MB=4.89808 
+ot_d128_t8_2e8_r1 load=9.29 1.13 1.51 0.07 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ours_d128_t8_2e8_r1 load=9.29 wall_s=0.725187 cpu_s=0.415165 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.725136 cpu_s=0.384194 sent_MB=1.18534 recv_MB=0.785583 
+ot_d128_t8_2e8_r2 load=9.29 1.10 1.48 0.08 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ours_d128_t8_2e8_r2 load=9.10 wall_s=0.691997 cpu_s=0.385579 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.691944 cpu_s=0.38017 sent_MB=1.18534 recv_MB=0.785583 
+ot_d128_t8_2e8_r3 load=9.10 1.11 1.47 0.10 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ours_d128_t8_2e8_r3 load=9.10 wall_s=0.689614 cpu_s=0.397157 sent_MB=0.785583 recv_MB=1.18534 matches=23 truth=23 false_neg=0 false_pos=0 wall_s=0.689499 cpu_s=0.367457 sent_MB=1.18534 recv_MB=0.785583 
+ot_d128_t8_2e10_r1 load=8.93 16.79 22.70 1.12 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ours_d128_t8_2e10_r1 load=8.77 wall_s=2.51329 cpu_s=1.33514 sent_MB=3.86276 recv_MB=3.62985 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=2.51234 cpu_s=1.28269 sent_MB=3.62985 recv_MB=3.86276 
+ot_d128_t8_2e10_r2 load=8.45 16.78 22.94 1.04 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ours_d128_t8_2e10_r2 load=8.33 wall_s=2.68591 cpu_s=1.36902 sent_MB=3.86276 recv_MB=3.62985 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=2.68498 cpu_s=1.42944 sent_MB=3.62985 recv_MB=3.86276 
+ot_d128_t8_2e10_r3 load=8.40 16.89 22.26 1.03 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ours_d128_t8_2e10_r3 load=8.37 wall_s=2.42767 cpu_s=1.26894 sent_MB=3.86276 recv_MB=3.62985 matches=98 truth=98 false_neg=0 false_pos=0 wall_s=2.42674 cpu_s=1.2636 sent_MB=3.62985 recv_MB=3.86276 
+ot_d128_t8_2e12_r1 load=6.29 261.58 360.57 16.59 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ours_d128_t8_2e12_r1 load=6.22 wall_s=12.8578 cpu_s=6.81295 sent_MB=23.2668 recv_MB=19.9229 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=12.8518 cpu_s=6.38578 sent_MB=19.9229 recv_MB=23.2668 
+ot_d128_t8_2e12_r2 load=13.72 273.88 355.04 14.22 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ours_d128_t8_2e12_r2 load=12.54 wall_s=12.4974 cpu_s=6.71872 sent_MB=23.2668 recv_MB=19.9229 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=12.4916 cpu_s=6.11205 sent_MB=19.9229 recv_MB=23.2668 
+ot_d128_t8_2e12_r3 load=5.32 256.27 353.40 15.67 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ours_d128_t8_2e12_r3 load=5.25 wall_s=13.7968 cpu_s=7.14696 sent_MB=23.2668 recv_MB=19.9229 matches=399 truth=399 false_neg=0 false_pos=0 wall_s=13.79 cpu_s=6.98292 sent_MB=19.9229 recv_MB=23.2668 
+ot_d128_t16_2e8_r1 load=5.25 1.09 1.45 0.08 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ours_d128_t16_2e8_r1 load=5.23 wall_s=3.74875 cpu_s=1.95233 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.74862 cpu_s=1.87496 sent_MB=4.26743 recv_MB=3.13646 
+ot_d128_t16_2e8_r2 load=5.23 1.12 1.46 0.10 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ours_d128_t16_2e8_r2 load=5.13 wall_s=3.75799 cpu_s=1.9762 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.75788 cpu_s=1.85907 sent_MB=4.26743 recv_MB=3.13646 
+ot_d128_t16_2e8_r3 load=5.12 1.07 1.45 0.07 Total Communication: 9666762 bytes. 9440.197 KB. 9.219 MB. 0.009 GB.
+ours_d128_t16_2e8_r3 load=5.12 wall_s=3.71594 cpu_s=1.92652 sent_MB=3.13646 recv_MB=4.26743 matches=25 truth=25 false_neg=0 false_pos=0 wall_s=3.71586 cpu_s=1.86936 sent_MB=4.26743 recv_MB=3.13646 
+ot_d128_t16_2e10_r1 load=5.35 16.69 22.09 1.11 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ours_d128_t16_2e10_r1 load=5.18 wall_s=39.5888 cpu_s=19.9726 sent_MB=39.0707 recv_MB=47.9804 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=39.5873 cpu_s=20.7831 sent_MB=47.9804 recv_MB=39.0707 
+ot_d128_t16_2e10_r2 load=5.36 16.35 22.18 1.02 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ours_d128_t16_2e10_r2 load=5.39 wall_s=39.0905 cpu_s=19.6663 sent_MB=39.0707 recv_MB=47.9804 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=39.0888 cpu_s=20.6002 sent_MB=47.9804 recv_MB=39.0707 
+ot_d128_t16_2e10_r3 load=5.30 16.50 22.10 1.09 Total Communication: 152383434 bytes. 148811.947 KB. 145.324 MB. 0.142 GB.
+ours_d128_t16_2e10_r3 load=5.29 wall_s=37.3771 cpu_s=18.1935 sent_MB=39.0707 recv_MB=47.9804 matches=110 truth=110 false_neg=0 false_pos=0 wall_s=37.3753 cpu_s=20.3476 sent_MB=47.9804 recv_MB=39.0707 
+ot_d128_t16_2e12_r1 load=6.35 256.80 356.36 14.91 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ours_d128_t16_2e12_r1 load=5.36 wall_s=220.785 cpu_s=109.14 sent_MB=245.814 recv_MB=316.594 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=220.774 cpu_s=116.855 sent_MB=316.594 recv_MB=245.814 
+ot_d128_t16_2e12_r2 load=3.81 254.56 352.45 14.10 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ours_d128_t16_2e12_r2 load=3.60 wall_s=207.273 cpu_s=105.72 sent_MB=245.814 recv_MB=316.594 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=207.258 cpu_s=106.643 sent_MB=316.594 recv_MB=245.814 
+ot_d128_t16_2e12_r3 load=5.40 256.42 349.42 15.66 Total Communication: 2435283839 bytes. 2378206.874 KB. 2322.468 MB. 2.268 GB.
+ours_d128_t16_2e12_r3 load=5.97 wall_s=212.478 cpu_s=108.619 sent_MB=245.814 recv_MB=316.594 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=212.464 cpu_s=109.05 sent_MB=316.594 recv_MB=245.814 
+ours_d128_t4_2e14_r1 load=6.12 wall_s=16.5729 cpu_s=8.74373 sent_MB=24.8476 recv_MB=25.297 matches=1367 truth=1367 false_neg=0 false_pos=0 wall_s=16.5508 cpu_s=8.40532 sent_MB=25.297 recv_MB=24.8476 
+ours_d128_t4_2e14_r2 load=6.31 wall_s=16.3886 cpu_s=8.48899 sent_MB=24.8476 recv_MB=25.297 matches=1367 truth=1367 false_neg=0 false_pos=0 wall_s=16.3677 cpu_s=8.48971 sent_MB=25.297 recv_MB=24.8476 
+ours_d128_t4_2e14_r3 load=6.29 wall_s=16.6453 cpu_s=8.63002 sent_MB=24.8476 recv_MB=25.297 matches=1367 truth=1367 false_neg=0 false_pos=0 wall_s=16.6235 cpu_s=8.60596 sent_MB=25.297 recv_MB=24.8476 
+ot_d128_t4_2e14_r1 load=6.92 4156.77 5772.92 248.24 Total Communication: 38962096821 bytes. 38048922.677 KB. 37157.151 MB. 36.286 GB.
+abl_nocompress_r1 load=6.93 wall_s=3.47161 cpu_s=1.8318 sent_MB=5.86181 recv_MB=5.66833 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.4654 cpu_s=1.75958 sent_MB=5.66833 recv_MB=5.86181 
+abl_uniqc_r1 load=6.93 wall_s=1.72886 cpu_s=0.953532 sent_MB=3.65554 recv_MB=3.03327 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=1.72336 cpu_s=0.872042 sent_MB=3.03327 recv_MB=3.65554 
+abl_pad44_r1 load=7.01 wall_s=5.54024 cpu_s=2.8765 sent_MB=9.33403 recv_MB=8.6815 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=5.53406 cpu_s=2.85719 sent_MB=8.6815 recv_MB=9.33403 
+abl_b3r1_r1 load=7.25 wall_s=68.3132 cpu_s=34.3927 sent_MB=64.7067 recv_MB=93.3092 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=68.3061 cpu_s=36.2102 sent_MB=93.3092 recv_MB=64.7067 
+abl_cover2_r1 load=7.21 wall_s=10.4042 cpu_s=5.30423 sent_MB=13.2843 recv_MB=16.7428 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=10.3986 cpu_s=5.42647 sent_MB=16.7428 recv_MB=13.2843 
+abl_nocompress_r2 load=7.19 wall_s=3.29282 cpu_s=1.74706 sent_MB=5.86181 recv_MB=5.66833 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.28765 cpu_s=1.65758 sent_MB=5.66833 recv_MB=5.86181 
+abl_uniqc_r2 load=7.19 wall_s=1.59428 cpu_s=0.873204 sent_MB=3.65554 recv_MB=3.03327 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=1.58956 cpu_s=0.807213 sent_MB=3.03327 recv_MB=3.65554 
+abl_pad44_r2 load=7.18 wall_s=5.32642 cpu_s=2.85008 sent_MB=9.33403 recv_MB=8.6815 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=5.32085 cpu_s=2.66599 sent_MB=8.6815 recv_MB=9.33403 
+abl_b3r1_r2 load=7.39 wall_s=64.6537 cpu_s=32.8008 sent_MB=64.7067 recv_MB=93.3092 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=64.6457 cpu_s=34.1624 sent_MB=93.3092 recv_MB=64.7067 
+abl_cover2_r2 load=7.30 wall_s=10.5556 cpu_s=5.36273 sent_MB=13.2843 recv_MB=16.7428 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=10.5496 cpu_s=5.51925 sent_MB=16.7428 recv_MB=13.2843 
+abl_nocompress_r3 load=7.30 wall_s=3.29625 cpu_s=1.71884 sent_MB=5.86181 recv_MB=5.66833 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=3.29172 cpu_s=1.6889 sent_MB=5.66833 recv_MB=5.86181 
+abl_uniqc_r3 load=7.36 wall_s=1.63967 cpu_s=0.89407 sent_MB=3.65554 recv_MB=3.03327 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=1.63458 cpu_s=0.82734 sent_MB=3.03327 recv_MB=3.65554 
+abl_pad44_r3 load=7.33 wall_s=5.41306 cpu_s=2.81466 sent_MB=9.33403 recv_MB=8.6815 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=5.40764 cpu_s=2.77789 sent_MB=8.6815 recv_MB=9.33403 
+abl_b3r1_r3 load=7.40 wall_s=66.5254 cpu_s=33.71 sent_MB=64.7067 recv_MB=93.3092 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=66.5188 cpu_s=35.1255 sent_MB=93.3092 recv_MB=64.7067 
+abl_cover2_r3 load=7.34 wall_s=10.6653 cpu_s=5.41644 sent_MB=13.2843 recv_MB=16.7428 matches=352 truth=352 false_neg=0 false_pos=0 wall_s=10.6595 cpu_s=5.57183 sent_MB=16.7428 recv_MB=13.2843 
+scale_d128_t4_2e16 load=7.52 wall_s=71.2824 cpu_s=37.4028 sent_MB=100.746 recv_MB=100.08 matches=5439 truth=5439 false_neg=0 false_pos=0 wall_s=71.2073 cpu_s=36.2342 sent_MB=100.08 recv_MB=100.746 
+scale_d128_t4_2e18 load=7.23 wall_s=301.781 cpu_s=157.685 sent_MB=478.106 recv_MB=402.336 matches=22037 truth=22037 false_neg=0 false_pos=0 wall_s=301.522 cpu_s=153.883 sent_MB=402.336 recv_MB=478.106 
+scale_d128_t4_2e20 load=6.15 wall_s=1849.5 cpu_s=917.274 sent_MB=2465.98 recv_MB=2108.67 matches=87424 truth=87424 false_neg=0 false_pos=0 wall_s=1848.55 cpu_s=974.505 sent_MB=2108.67 recv_MB=2465.98 
+scale_d64_t3_b4s1_2e12 load=6.14 wall_s=3.39959 cpu_s=1.81689 sent_MB=5.11065 recv_MB=5.71882 matches=345 truth=345 false_neg=0 false_pos=0 wall_s=3.39429 cpu_s=1.76036 sent_MB=5.71882 recv_MB=5.11065 
+scale_d64_t3_b6s3_2e12 load=5.89 wall_s=11.8448 cpu_s=6.02889 sent_MB=15.5816 recv_MB=19.1226 matches=345 truth=345 false_neg=0 false_pos=0 wall_s=11.8392 cpu_s=6.35191 sent_MB=19.1226 recv_MB=15.5816 
+scale_d64_t3_b4s1_2e14 load=5.47 wall_s=15.8194 cpu_s=8.53799 sent_MB=28.4998 recv_MB=26.1593 matches=1281 truth=1281 false_neg=0 false_pos=0 wall_s=15.7983 cpu_s=7.84397 sent_MB=26.1593 recv_MB=28.4998 
+scale_d64_t3_b6s3_2e14 load=6.77 wall_s=53.8266 cpu_s=28.6694 sent_MB=78.5663 recv_MB=76.5351 matches=1281 truth=1281 false_neg=0 false_pos=0 wall_s=53.8035 cpu_s=27.3638 sent_MB=76.5351 recv_MB=78.5663 
+scale_d64_t3_b4s1_2e16 load=5.33 wall_s=139.24 cpu_s=70.0237 sent_MB=206.981 recv_MB=189.234 matches=5202 truth=5202 false_neg=0 false_pos=0 wall_s=139.163 cpu_s=73.8723 sent_MB=189.234 recv_MB=206.981 
+scale_d64_t3_b6s3_2e16 load=5.33 wall_s=235.145 cpu_s=123.437 sent_MB=325.783 recv_MB=312.885 matches=5202 truth=5202 false_neg=0 false_pos=0 wall_s=235.061 cpu_s=120.949 sent_MB=312.885 recv_MB=325.783 
+scale_d64_t3_b4s1_2e18 load=4.73 wall_s=1593.91 cpu_s=819.4 sent_MB=1696.31 recv_MB=1473.15 matches=20704 truth=20704 false_neg=0 false_pos=0 wall_s=1593.61 cpu_s=814.82 sent_MB=1473.15 recv_MB=1696.31 
+scale_d64_t3_b6s3_2e18 load=6.89 wall_s=1213.03 cpu_s=633.952 sent_MB=1352 recv_MB=1283.99 matches=20704 truth=20704 false_neg=0 false_pos=0 wall_s=1212.75 cpu_s=583.139 sent_MB=1283.99 recv_MB=1352 
+real_code_r1 load=6.80 wall_s=17.6914 cpu_s=9.30584 sent_MB=35.6266 recv_MB=30.4029 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=17.6848 cpu_s=8.96772 sent_MB=30.4029 recv_MB=35.6266 
+real_code_uniqc_r1 load=6.80 wall_s=1.6096 cpu_s=1.22732 sent_MB=16.5486 recv_MB=1.75642 matches=2112 truth=2265 false_neg=153 false_pos=0 wall_s=1.60489 cpu_s=0.466998 sent_MB=1.75642 recv_MB=16.5486 
+real_code_r2 load=6.36 wall_s=18.4351 cpu_s=9.7963 sent_MB=35.6266 recv_MB=30.4029 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=18.4301 cpu_s=9.22029 sent_MB=30.4029 recv_MB=35.6266 
+real_code_uniqc_r2 load=6.36 wall_s=1.57948 cpu_s=1.22563 sent_MB=16.5486 recv_MB=1.75642 matches=2112 truth=2265 false_neg=153 false_pos=0 wall_s=1.5749 cpu_s=0.431055 sent_MB=1.75642 recv_MB=16.5486 
+real_code_r3 load=6.05 wall_s=18.3222 cpu_s=9.78558 sent_MB=35.6266 recv_MB=30.4029 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=18.3165 cpu_s=9.1519 sent_MB=30.4029 recv_MB=35.6266 
+real_code_uniqc_r3 load=5.97 wall_s=1.6467 cpu_s=1.25626 sent_MB=16.5486 recv_MB=1.75642 matches=2112 truth=2265 false_neg=153 false_pos=0 wall_s=1.64206 cpu_s=0.473197 sent_MB=1.75642 recv_MB=16.5486 
+real_code_pad64 load=5.26 wall_s=36.0823 cpu_s=18.958 sent_MB=65.5431 recv_MB=58.6607 matches=2265 truth=2265 false_neg=0 false_pos=0 wall_s=36.0754 cpu_s=18.2866 sent_MB=58.6607 recv_MB=65.5431 
+ot_code load=4.68 85.12 107.18 6.55 Total Communication: 580028700 bytes. 566434.277 KB. 553.158 MB. 0.540 GB.
+real_cifar load=4.24 wall_s=148.361 cpu_s=79.0931 sent_MB=284.22 recv_MB=199.938 matches=4923 truth=4923 false_neg=0 false_pos=0 wall_s=148.322 cpu_s=69.9914 sent_MB=199.938 recv_MB=284.22 
+real_cifar_uniqc load=4.22 wall_s=28.2128 cpu_s=19.5774 sent_MB=167.765 recv_MB=28.4517 matches=4921 truth=4923 false_neg=2 false_pos=0 wall_s=28.1816 cpu_s=9.29387 sent_MB=28.4517 recv_MB=167.765 
+ot_cifar load=15.83 5385.41 6911.79 405.50 Total Communication: 36241727140 bytes. 35392311.660 KB. 34562.804 MB. 33.753 GB.
+cov16_cover3_r1 load=32.04 wall_s=1099.08 cpu_s=270.217 sent_MB=425.877 recv_MB=350.148 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=1098.96 cpu_s=281.096 sent_MB=350.148 recv_MB=425.877 
+break_2e14_r1 load=1.98 throttled_delta=1166
+break_2e14_r2 load=8.98 throttled_delta=8
+break_2e14_r3 load=12.68 throttled_delta=0
+cov16_cover3_r1 load=21.32 throttled_delta=10716 wall_s=1195.47 cpu_s=259.676 sent_MB=425.877 recv_MB=350.148 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=1195.44 cpu_s=249.052 sent_MB=350.148 recv_MB=425.877 
+cov16_cover3_r2 load=42.22 throttled_delta=6543 wall_s=809.636 cpu_s=235.067 sent_MB=425.877 recv_MB=350.148 matches=423 truth=423 false_neg=0 false_pos=0 wall_s=809.61 cpu_s=244.389 sent_MB=350.148 recv_MB=425.877 

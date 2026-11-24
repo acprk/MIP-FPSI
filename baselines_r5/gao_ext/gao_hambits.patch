@@ -1,0 +1,49 @@
+--- <ARTIFACT_ROOT>/../code_repro/Fuzzy-Private-Set-Intersection-from-Fuzzy-Mapping/frontend/fpsi.cpp	2026-04-28 03:28:14.271221923 -0700
++++ patched/src/frontend/fpsi.cpp	2026-11-10 05:04:08.604723879 -0800
+@@ -422,7 +422,11 @@
+ 
+         const u64 dimension = cmd.getOr("hamd", 128);
+         const u64 delta = cmd.getOr("hamdelta", 4);
+-        const u64 side_length = cmd.getOr("hamside", ((dimension / (delta + 1)) / 8) * 8);
++        // [baselines_r5 patch] -hambits: allow non-byte-aligned super-components of
++        // P = floor(d/(delta+1)) bits (the protocol code in Hamming.cpp is bit-level already);
++        // only the guard below and the synthetic-data generator assumed byte alignment.
++        const bool bit_level = cmd.isSet("hambits");
++        const u64 side_length = cmd.getOr("hamside", bit_level ? (dimension / (delta + 1)) : ((dimension / (delta + 1)) / 8) * 8);
+         const u64 recv_set_size = 1ull << cmd.getOr("hamr", 6);
+         const u64 send_set_size = 1ull << cmd.getOr("hams", 6);
+ 
+@@ -440,11 +444,15 @@
+             printf("dimension should not be less than (threshold + 1) * 8\n");
+             return;
+         }
+-        if((side_length > ((dimension / (delta + 1)) / 8) * 8 )){
++        if(!bit_level && (side_length > ((dimension / (delta + 1)) / 8) * 8 )){
+             printf("side_length should be less than ((dimension / (threshold + 1)) / 8) * 8\n");
+             return;
+         }
+-        if((side_length % 8 != 0)){
++        if(bit_level && (side_length * (delta + 1) > dimension || side_length > 63)){
++            printf("bit-level side_length too large\n");
++            return;
++        }
++        if(!bit_level && (side_length % 8 != 0)){
+             printf("side_length mod 8 should be 0\n");
+             return;
+         }
+@@ -481,6 +489,15 @@
+             unique_components.push_back(unique_component);
+ 
+             BitVector element_temp( data, dimension);
++            if(bit_level){
++                // overwrite super-components 0..delta (bits j*P .. j*P+P-1) with index i, bit by bit;
++                // same reading order as receiver_key_hamming (first bit = most significant)
++                for(u64 j = 0; j < delta + 1; j++){
++                    for(u64 k = 0; k < side_length; k++){
++                        element_temp[j * side_length + k] = (i >> (side_length - 1 - k)) & 1;
++                    }
++                }
++            }
+             recv_set.push_back(element_temp);
+         }
+ 

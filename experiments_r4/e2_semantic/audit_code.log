@@ -1,0 +1,17 @@
+0 {'candidates': 1843, 'pairs': 15780, 'useful': 1771, 'precision': 0.9609332609875203, 'same_path': 1738, 'unrelated': 47, 'recall_G': 0.6526157320286037}
+1 {'candidates': 2137, 'pairs': 19471, 'useful': 2051, 'precision': 0.9597566682264858, 'same_path': 2010, 'unrelated': 58, 'recall_G': 0.754234098607452}
+2 {'candidates': 2343, 'pairs': 22829, 'useful': 2241, 'precision': 0.9564660691421255, 'same_path': 2197, 'unrelated': 68, 'recall_G': 0.8223560406473467}
+3 {'candidates': 2491, 'pairs': 26095, 'useful': 2373, 'precision': 0.9526294660778803, 'same_path': 2334, 'unrelated': 76, 'recall_G': 0.872412495295446}
+4 {'candidates': 2581, 'pairs': 29760, 'useful': 2452, 'precision': 0.9500193723363037, 'same_path': 2414, 'unrelated': 81, 'recall_G': 0.9017689123071133}
+5 {'candidates': 2655, 'pairs': 33638, 'useful': 2510, 'precision': 0.9453860640301318, 'same_path': 2480, 'unrelated': 90, 'recall_G': 0.9247271358675198}
+6 {'candidates': 2723, 'pairs': 37074, 'useful': 2563, 'precision': 0.9412412780022035, 'same_path': 2543, 'unrelated': 100, 'recall_G': 0.9442980805419646}
+7 {'candidates': 2782, 'pairs': 41695, 'useful': 2604, 'precision': 0.9360172537742631, 'same_path': 2590, 'unrelated': 115, 'recall_G': 0.9589762890477983}
+8 {'candidates': 2826, 'pairs': 46329, 'useful': 2624, 'precision': 0.9285208775654635, 'same_path': 2624, 'unrelated': 139, 'recall_G': 0.9710199473089951}
+{
+ "count": 648,
+ "categories": {
+  "same_path_successor": 591,
+  "other_file_similar": 43,
+  "unrelated": 14
+ }
+}

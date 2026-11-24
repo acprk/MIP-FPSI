@@ -1,0 +1,3 @@
+m=37 n=700 d=128 delta=8 b=9 s=1 r=0 T=9 B=2 U=1 Q=18 bins=847 prog=6300 tau=0 fallback=0 nt=1
+time_s=0.302865 cpu_s(both parties)=0.302837 comm_MB=2.54434 (S->R 0.77134, R->S 1.77299)
+matches=10 truth=10 false_neg=0 false_pos=0

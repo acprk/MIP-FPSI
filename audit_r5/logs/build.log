@@ -1,0 +1,81 @@
+make: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[1]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+[  9%] Building CXX object CMakeFiles/mipfpsi.dir/src/mip.cpp.o
+[  9%] Building CXX object CMakeFiles/mipfpsi.dir/src/circuits.cpp.o
+[ 13%] Building CXX object CMakeFiles/mipfpsi.dir/src/HamCpsi.cpp.o
+[ 18%] Building CXX object CMakeFiles/mipfpsi.dir/src/osn.cpp.o
+[ 22%] Building CXX object CMakeFiles/mipfpsi.dir/src/oep.cpp.o
+[ 27%] Building CXX object CMakeFiles/mipfpsi.dir/src/ot_threshold.cpp.o
+<ARTIFACT_ROOT>/impl/src/oep.cpp:19:13: warning: ‘mip::u64 mip::{anonymous}::nextPow2(mip::u64)’ defined but not used [-Wunused-function]
+   19 |         u64 nextPow2(u64 v)
+      |             ^~~~~~~~
+[ 31%] Building CXX object CMakeFiles/mipfpsi.dir/src/fpsi.cpp.o
+[ 36%] Linking CXX static library libmipfpsi.a
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 36%] Built target mipfpsi
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 45%] Building CXX object CMakeFiles/gmw_bench.dir/src/gmw_bench.cpp.o
+[ 45%] Building CXX object CMakeFiles/fpsi_bench.dir/src/main.cpp.o
+[ 50%] Linking CXX executable fpsi_bench
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 50%] Built target fpsi_bench
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 54%] Building CXX object CMakeFiles/unit_tests.dir/src/unit_tests.cpp.o
+[ 59%] Linking CXX executable gmw_bench
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 59%] Built target gmw_bench
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 63%] Building CXX object CMakeFiles/choose_cover.dir/src/choose_cover.cpp.o
+[ 68%] Linking CXX executable unit_tests
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 68%] Built target unit_tests
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 72%] Building CXX object CMakeFiles/net_bench.dir/src/net_bench.cpp.o
+<ARTIFACT_ROOT>/impl/src/net_bench.cpp:7: warning: "COPROTO_ENABLE_BOOST" redefined
+    7 | #define COPROTO_ENABLE_BOOST
+      | 
+In file included from <VOLEPSI_ROOT>/out/install/linux/include/coproto/Common/Defines.h:8,
+                 from <VOLEPSI_ROOT>/out/install/linux/include/coproto/Socket/Socket.h:11,
+                 from <ARTIFACT_ROOT>/impl/src/fpsi.h:8,
+                 from <ARTIFACT_ROOT>/impl/src/net_bench.cpp:5:
+<VOLEPSI_ROOT>/out/install/linux/include/coproto/config.h:13: note: this is the location of the previous definition
+   13 | #define COPROTO_ENABLE_BOOST ON
+      | 
+[ 77%] Linking CXX executable choose_cover
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 77%] Built target choose_cover
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 81%] Building CXX object CMakeFiles/cover_dump.dir/src/cover_dump.cpp.o
+[ 86%] Linking CXX executable cover_dump
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 86%] Built target cover_dump
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+make[2]: Entering directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 90%] Building CXX object CMakeFiles/or_deliver.dir/src/or_deliver.cpp.o
+[ 95%] Linking CXX executable net_bench
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+[ 95%] Built target net_bench
+[100%] Linking CXX executable or_deliver
+make[2]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+[100%] Built target or_deliver
+make[1]: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+make: Leaving directory '<ARTIFACT_ROOT>/audit_r5/build'
+
+[exited with code 0]

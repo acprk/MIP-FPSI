@@ -1,0 +1,23 @@
+m=16384 n=16384 d=128 delta=4 b=5 s=1 r=0 T=5 B=3 U=2 Q=15 bins=321440 prog=163810 tau=0 fallback=0 nt=1
+time_s=29.0747 cpu_s(both parties)=29.0309 comm_MB=50.1447 (S->R 25.297, R->S 24.8476)
+matches=1367 truth=1367 false_neg=0 false_pos=0
+sender
+Label           Time (ms)  diff (ms)
+__________________________________
+S map               267.0    266.972  ******
+S cpsi             1707.1   1440.176  *******
+S threshold       22398.3  20691.158  **********
+S permute         28768.0   6369.645  *********
+S or              28965.9    197.984  *****
+S deliver         29053.9     88.006  *****
+
+receiver
+Label           Time (ms)  diff (ms)
+__________________________________
+R map               462.0    461.993  ******
+R cpsi             1886.1   1424.131  *******
+R threshold       23085.4  21199.284  **********
+R permute         28817.6   5732.236  *********
+R or              28974.9    157.207  *****
+R deliver         29073.8     98.959  *****
+

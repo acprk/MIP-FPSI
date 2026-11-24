@@ -1,0 +1,82 @@
+----------------------------------------
+Configuration:
+  Distance Computation Protocol: batched
+  Threshold Comparison Protocol: np
+  Querier Size: 2973
+  Responder Size: 2959
+  Vector Size: 64
+  P Bits: 7
+  Modulus: 65
+  Threshold Comparison Count: 8797107
+  Threshold: 3
+  Run Sender: No
+  Run Receiver: No
+  IP: localhost:1212
+  PRF: aes
+  OT Protocol: softspoken
+  Secret Shared: No
+----------------------------------------
+REAL_NATIVE m=2973 n=2959 d=64 threshold=3
+[Responder] Querier index: 0
+[Responder] Querier index: 185
+[Responder] Querier index: 370
+[Responder] Querier index: 555
+[Responder] Querier index: 740
+[Responder] Querier index: 925
+[Responder] Querier index: 1110
+[Responder] Querier index: 1295
+[Responder] Querier index: 1480
+[Responder] Querier index: 1665
+[Responder] Querier index: 1850
+[Responder] Querier index: 2035
+[Responder] Querier index: 2220
+[Responder] Querier index: 2405
+[Responder] Querier index: 2590
+[Responder] Querier index: 2775
+[Responder] Querier index: 2960
+############ Responder Distance Computation ############
+Label                    Time (ms)  diff (ms)
+__________________________________
+Memory allocation             19.3     19.268  ***
+Base OTs                      35.4     16.172  ***
+Random OTs                    60.3     24.811  ***
+Correlation transfer       30990.7  30930.487  **********
+
+Communication: 502018032 bytes (0.468 GB)
+############ Querier Distance Computation ############
+Label                                   Time (ms)  diff (ms)
+__________________________________
+Choice computation                            1.0      1.018  
+Base OTs                                     35.5     34.513  ***
+Random OTs                                   60.5     24.960  ***
+Correlation transfer and extraction       30999.1  30938.614  **********
+
+Communication: 502018032 bytes (0.468 GB)
+[Querier] OT Batch: 0/2
+[Querier] OT Batch: 1/2
+############ Sender Summary ############
+Label                            Time (ms)  diff (ms)
+__________________________________
+Base OTs                              11.9     11.938  **
+Random OTs                          2913.3   2901.389  ********
+Random OTs                         26108.1  23194.733  **********
+Message masking and transfer       27236.2   1128.134  *******
+
+Communication: 564167584 bytes (0.525 GB)
+############ Receiver Summary ############
+Label                           Time (ms)  diff (ms)
+__________________________________
+Base OTs                             12.1     12.080  **
+Compute Choices                     114.0    101.924  *****
+Random OTs                         2913.6   2799.630  ********
+Compute Choices                   25970.6  23056.921  **********
+Random OTs                        26108.1    137.587  *****
+Receive and Unmask Messages       27242.7   1134.571  *******
+
+Communication: 564167584 bytes (0.525 GB)
+PROTOCOL_CPU distance 55.869
+PROTOCOL_CPU threshold 40.646
+PROTOCOL_WALL distance 31.000 threshold 27.243
+Total Communication: 1066185616 bytes.
+REAL_CHECK full_pairs=8797107 full_mismatches=0 true_pairs=3267 got_pairs=3267 sender_rows_with_match=2265 sample=200000 sample_true=82 sample_mismatches=0 truematch_checked=3267 truematch_mismatches=0
+REAL_VERIFY OK

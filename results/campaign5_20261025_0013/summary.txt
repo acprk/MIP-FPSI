@@ -1,0 +1,94 @@
+t4_pow2_B_r1 sender_exit=0 receiver_exit=0 load=4.51
+t16_exact_r1 sender_exit=0 receiver_exit=0 load=4.03
+code_noU_r1 sender_exit=0 receiver_exit=0 load=3.88
+t4_pow2_A_r1 sender_exit=0 receiver_exit=0 load=4.05
+t8_pow2_B_r1 sender_exit=0 receiver_exit=0 load=4.05
+ot12_r1 exit=0 load=3.89
+otcode_r1 exit=0 load=3.79
+code_pow2_r1 sender_exit=0 receiver_exit=0 load=3.77
+t8_ctrl_r1 sender_exit=0 receiver_exit=0 load=3.76
+t4_noU_A_r1 sender_exit=0 receiver_exit=0 load=3.76
+t4_ours8_r1 sender_exit=0 receiver_exit=0 load=3.70
+code_exact_r1 sender_exit=0 receiver_exit=0 load=3.63
+t4_ctrl_r1 sender_exit=0 receiver_exit=0 load=3.66
+t4_noU_B_r1 sender_exit=0 receiver_exit=0 load=3.66
+t8_ours8_r1 sender_exit=0 receiver_exit=0 load=3.76
+t16_pow2_r1 sender_exit=0 receiver_exit=0 load=12.94
+t8_pow2_A_r1 sender_exit=0 receiver_exit=0 load=12.70
+t8_pow2_A_r2 sender_exit=0 receiver_exit=0 load=12.80
+t8_pow2_B_r2 sender_exit=0 receiver_exit=0 load=12.70
+t4_noU_A_r2 sender_exit=0 receiver_exit=0 load=12.70
+t16_exact_r2 sender_exit=0 receiver_exit=0 load=13.46
+t16_pow2_r2 sender_exit=0 receiver_exit=0 load=13.09
+t4_ours8_r2 sender_exit=0 receiver_exit=0 load=13.09
+t4_ctrl_r2 sender_exit=0 receiver_exit=0 load=13.01
+t4_noU_B_r2 sender_exit=0 receiver_exit=0 load=12.92
+t4_pow2_A_r2 sender_exit=0 receiver_exit=0 load=13.09
+t4_pow2_B_r2 sender_exit=0 receiver_exit=0 load=13.08
+otcode_r2 exit=0 load=13.52
+code_noU_r2 sender_exit=0 receiver_exit=0 load=17.81
+ot12_r2 exit=0 load=13.07
+t8_ctrl_r2 sender_exit=0 receiver_exit=0 load=13.24
+code_pow2_r2 sender_exit=0 receiver_exit=0 load=13.25
+code_exact_r2 sender_exit=0 receiver_exit=0 load=13.48
+t8_ours8_r2 sender_exit=0 receiver_exit=0 load=13.95
+t4_noU_A_r3 sender_exit=0 receiver_exit=0 load=13.95
+t8_ours8_r3 sender_exit=0 receiver_exit=0 load=13.82
+t8_pow2_A_r3 sender_exit=0 receiver_exit=0 load=13.96
+t16_exact_r3 sender_exit=0 receiver_exit=0 load=12.72
+t4_pow2_B_r3 sender_exit=0 receiver_exit=0 load=12.90
+t8_pow2_B_r3 sender_exit=0 receiver_exit=0 load=12.65
+t4_ctrl_r3 sender_exit=0 receiver_exit=0 load=12.39
+otcode_r3 exit=0 load=14.13
+t4_pow2_A_r3 sender_exit=0 receiver_exit=0 load=14.13
+t4_noU_B_r3 sender_exit=0 receiver_exit=0 load=18.77
+code_exact_r3 sender_exit=0 receiver_exit=0 load=15.51
+t8_ctrl_r3 sender_exit=0 receiver_exit=0 load=12.56
+code_pow2_r3 sender_exit=0 receiver_exit=0 load=10.24
+code_noU_r3 sender_exit=0 receiver_exit=0 load=10.33
+ot12_r3 exit=0 load=8.62
+t4_ours8_r3 sender_exit=0 receiver_exit=0 load=8.49
+t16_pow2_r3 sender_exit=0 receiver_exit=0 load=12.28
+t16_exact_r4 sender_exit=0 receiver_exit=0 load=10.80
+t4_noU_A_r4 sender_exit=0 receiver_exit=0 load=10.89
+t4_pow2_B_r4 sender_exit=0 receiver_exit=0 load=10.82
+t8_ours8_r4 sender_exit=0 receiver_exit=0 load=10.37
+t4_ours8_r4 sender_exit=0 receiver_exit=0 load=10.18
+ot12_r4 exit=0 load=18.49
+t8_ctrl_r4 sender_exit=0 receiver_exit=0 load=15.99
+t8_pow2_B_r4 sender_exit=0 receiver_exit=0 load=15.12
+t8_pow2_A_r4 sender_exit=0 receiver_exit=0 load=14.32
+t4_ctrl_r4 sender_exit=0 receiver_exit=0 load=14.21
+otcode_r4 exit=0 load=14.25
+code_noU_r4 sender_exit=0 receiver_exit=0 load=19.06
+code_exact_r4 sender_exit=0 receiver_exit=0 load=19.55
+code_pow2_r4 sender_exit=0 receiver_exit=0 load=19.23
+t4_pow2_A_r4 sender_exit=0 receiver_exit=0 load=19.29
+t4_noU_B_r4 sender_exit=0 receiver_exit=0 load=19.51
+t16_pow2_r4 sender_exit=0 receiver_exit=0 load=14.39
+t4_ctrl_r5 sender_exit=0 receiver_exit=0 load=14.04
+ot12_r5 exit=0 load=14.11
+t4_pow2_A_r5 sender_exit=0 receiver_exit=0 load=13.86
+code_pow2_r5 sender_exit=0 receiver_exit=0 load=12.43
+t8_pow2_A_r5 sender_exit=0 receiver_exit=0 load=11.97
+otcode_r5 exit=0 load=11.66
+t8_ours8_r5 sender_exit=0 receiver_exit=0 load=11.43
+t8_pow2_B_r5 sender_exit=0 receiver_exit=0 load=16.48
+t4_noU_B_r5 sender_exit=0 receiver_exit=0 load=15.80
+t4_ours8_r5 sender_exit=0 receiver_exit=0 load=15.80
+t16_pow2_r5 sender_exit=0 receiver_exit=0 load=12.42
+t16_exact_r5 sender_exit=0 receiver_exit=0 load=9.66
+code_noU_r5 sender_exit=0 receiver_exit=0 load=9.58
+t4_noU_A_r5 sender_exit=0 receiver_exit=0 load=9.69
+code_exact_r5 sender_exit=0 receiver_exit=0 load=10.02
+t8_ctrl_r5 sender_exit=0 receiver_exit=0 load=9.58
+t4_pow2_B_r5 sender_exit=0 receiver_exit=0 load=9.58
+cifar_exact_r1 sender_exit=0 receiver_exit=0 load=8.68
+cifar_pow2_r1 sender_exit=0 receiver_exit=0 load=10.67
+cifar_noU_r1 sender_exit=0 receiver_exit=0 load=10.97
+cifar_exact_r2 sender_exit=0 receiver_exit=0 load=11.85
+cifar_pow2_r2 sender_exit=0 receiver_exit=0 load=13.27
+cifar_noU_r2 sender_exit=0 receiver_exit=0 load=62.05
+cifar_exact_r3 sender_exit=0 receiver_exit=0 load=61.81
+cifar_pow2_r3 sender_exit=0 receiver_exit=0 load=59.04
+cifar_noU_r3 sender_exit=0 receiver_exit=0 load=56.98

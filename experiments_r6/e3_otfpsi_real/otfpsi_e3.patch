@@ -1,0 +1,535 @@
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/distance_computation/batched_distance_computation.cpp <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/distance_computation/batched_distance_computation.cpp
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/distance_computation/batched_distance_computation.cpp	2026-11-12 06:31:46.927831067 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/distance_computation/batched_distance_computation.cpp	2026-11-12 06:32:23.350391920 -0800
+@@ -3,7 +3,7 @@
+ #include "../util/prf.h"
+ #include <cmath>
+ 
+-std::vector<uint16_t> runBatchedDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, coproto::AsioSocket &chl, const config &cfg, size_t &total_communication)
++std::vector<uint16_t> runBatchedDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, coproto::Socket &chl, const config &cfg, size_t &total_communication)
+ {
+     assert(cfg.modulus > 0 && (size_t)cfg.modulus > cfg.vector_size);
+     assert(pow(2, cfg.p_bits) >= cfg.modulus); // Ensure the modulus is less than or equal to 2^p_bits
+@@ -186,13 +186,13 @@
+     }
+ }
+ 
+-std::vector<uint16_t> runBatchedDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, coproto::AsioSocket &_chl, const config &cfg)
++std::vector<uint16_t> runBatchedDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, coproto::Socket &_chl, const config &cfg)
+ {
+     assert(cfg.modulus > 0 && (size_t)cfg.modulus > cfg.vector_size);
+     assert(pow(2, cfg.p_bits) >= cfg.modulus); // Ensure the modulus is less than or equal to 2^p_bits
+     assert(querier_vectors.size() == cfg.querier_size);
+ 
+-    coproto::AsioSocket &chl = _chl;
++    coproto::Socket &chl = _chl;
+     PRNG prng(osuCrypto::sysRandomSeed());
+ 
+     Timer receiver_timer;
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/distance_computation/distance_computation.h <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/distance_computation/distance_computation.h
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/distance_computation/distance_computation.h	2026-11-12 06:31:46.927831067 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/distance_computation/distance_computation.h	2026-11-12 06:32:29.163481053 -0800
+@@ -6,17 +6,17 @@
+ #include <cryptoTools/Common/CLP.h>
+ #include "coproto/Socket/AsioSocket.h"
+ 
+-std::vector<uint16_t> runBatchedDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, coproto::AsioSocket &chl, const config &cfg, size_t &total_communication);
+-std::vector<uint16_t> runBatchedDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, coproto::AsioSocket &chl, const config &cfg);
+-std::vector<uint16_t> runIndividualDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, const std::optional<std::vector<BitVector>> &querier_shares, coproto::AsioSocket &chl, const config &cfg, size_t &total_communication);
+-std::vector<uint16_t> runIndividualDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, const std::optional<std::vector<BitVector>> &responder_shares, coproto::AsioSocket &chl, const config &cfg);
+-std::vector<uint16_t> runSharedBatchedDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, const std::optional<std::vector<BitVector>> &querier_shares, coproto::AsioSocket &chl, const config &cfg, size_t &total_communication);
+-std::vector<uint16_t> runSharedBatchedDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, const std::optional<std::vector<BitVector>> &responder_shares, coproto::AsioSocket &chl, const config &cfg);
++std::vector<uint16_t> runBatchedDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, coproto::Socket &chl, const config &cfg, size_t &total_communication);
++std::vector<uint16_t> runBatchedDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, coproto::Socket &chl, const config &cfg);
++std::vector<uint16_t> runIndividualDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, const std::optional<std::vector<BitVector>> &querier_shares, coproto::Socket &chl, const config &cfg, size_t &total_communication);
++std::vector<uint16_t> runIndividualDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, const std::optional<std::vector<BitVector>> &responder_shares, coproto::Socket &chl, const config &cfg);
++std::vector<uint16_t> runSharedBatchedDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, const std::optional<std::vector<BitVector>> &querier_shares, coproto::Socket &chl, const config &cfg, size_t &total_communication);
++std::vector<uint16_t> runSharedBatchedDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, const std::optional<std::vector<BitVector>> &responder_shares, coproto::Socket &chl, const config &cfg);
+ 
+ 
+ inline std::vector<uint16_t> runDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, const std::optional<std::vector<BitVector>> &querier_shares, const config &cfg, size_t &total_communication)
+ {
+-    auto chl = osuCrypto::cp::asioConnect(cfg.ip, true);
++    auto chl = localConnect(true); // e3: was osuCrypto::cp::asioConnect(cfg.ip, true)
+ 
+     if (!cfg.distance_computation.has_value())
+         throw std::runtime_error("Distance Computation not enabled");
+@@ -46,7 +46,7 @@
+ 
+ inline std::vector<uint16_t> runDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, const std::optional<std::vector<BitVector>> &responder_shares, const config &cfg)
+ {
+-    auto chl = osuCrypto::cp::asioConnect(cfg.ip, false);
++    auto chl = localConnect(false); // e3: was osuCrypto::cp::asioConnect(cfg.ip, false)
+ 
+     if (!cfg.distance_computation.has_value())
+         throw std::runtime_error("Distance Computation not enbaled");
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/distance_computation/individual_distance_computation.cpp <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/distance_computation/individual_distance_computation.cpp
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/distance_computation/individual_distance_computation.cpp	2026-11-12 06:31:46.927831067 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/distance_computation/individual_distance_computation.cpp	2026-11-12 06:32:14.290252792 -0800
+@@ -14,7 +14,7 @@
+         return DEFAULT_OT_BATCH_SIZE;
+ }
+ 
+-std::unique_ptr<osuCrypto::OtExtSender> get_ot_sender_with_base_ots(const config &cfg, size_t num_ots, Timer &sender_timer, PRNG &prng, coproto::AsioSocket &chl)
++std::unique_ptr<osuCrypto::OtExtSender> get_ot_sender_with_base_ots(const config &cfg, size_t num_ots, Timer &sender_timer, PRNG &prng, coproto::Socket &chl)
+ {
+     std::unique_ptr<osuCrypto::OtExtSender> sender = getOTExtSender(cfg, num_ots);
+ 
+@@ -31,7 +31,7 @@
+     return sender;
+ }
+ 
+-std::vector<uint16_t> runIndividualDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, const std::optional<std::vector<BitVector>> &querier_shares, coproto::AsioSocket &chl, const config &cfg, size_t &total_communication)
++std::vector<uint16_t> runIndividualDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, const std::optional<std::vector<BitVector>> &querier_shares, coproto::Socket &chl, const config &cfg, size_t &total_communication)
+ {
+     assert(cfg.modulus > 0 && (size_t)cfg.modulus > cfg.vector_size);
+     assert(pow(2, cfg.p_bits) >= cfg.modulus); // Ensure the modulus is less than or equal to 2^p_bits
+@@ -187,7 +187,7 @@
+     }
+ }
+ 
+-std::unique_ptr<osuCrypto::OtExtReceiver> get_ot_receiver_with_base_ots(const config &cfg, size_t num_ots, Timer &receiver_timer, PRNG &prng, coproto::AsioSocket &chl)
++std::unique_ptr<osuCrypto::OtExtReceiver> get_ot_receiver_with_base_ots(const config &cfg, size_t num_ots, Timer &receiver_timer, PRNG &prng, coproto::Socket &chl)
+ {
+     std::unique_ptr<osuCrypto::OtExtReceiver> receiver = getOTExtReceiver(cfg, num_ots);
+ 
+@@ -200,7 +200,7 @@
+     return receiver;
+ }
+ 
+-std::vector<uint16_t> runIndividualDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, const std::optional<std::vector<BitVector>> &responder_shares, coproto::AsioSocket &chl, const config &cfg)
++std::vector<uint16_t> runIndividualDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, const std::optional<std::vector<BitVector>> &responder_shares, coproto::Socket &chl, const config &cfg)
+ {
+     assert(cfg.modulus > 0 && (size_t)cfg.modulus > cfg.vector_size);
+     assert(pow(2, cfg.p_bits) >= cfg.modulus); // Ensure the modulus is less than or equal to 2^p_bits
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/distance_computation/shared_batched_distance_computation.cpp <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/distance_computation/shared_batched_distance_computation.cpp
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/distance_computation/shared_batched_distance_computation.cpp	2026-11-12 06:31:46.927831067 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/distance_computation/shared_batched_distance_computation.cpp	2026-11-12 06:32:16.197282097 -0800
+@@ -6,7 +6,7 @@
+ 
+ #define CORRELATION_BATCH_SIZE ((size_t)1024 * 1024)
+ 
+-std::vector<uint16_t> runSharedBatchedDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, const std::optional<std::vector<BitVector>> &querier_shares, coproto::AsioSocket &chl, const config &cfg, size_t &total_communication)
++std::vector<uint16_t> runSharedBatchedDistanceComputationResponder(const std::vector<BitVector> &responder_vectors, const std::optional<std::vector<BitVector>> &querier_shares, coproto::Socket &chl, const config &cfg, size_t &total_communication)
+ {
+     assert(cfg.modulus > 0 && (size_t)cfg.modulus > cfg.vector_size);
+     assert(pow(2, cfg.p_bits) >= cfg.modulus); // Ensure the modulus is less than or equal to 2^p_bits
+@@ -179,7 +179,7 @@
+     }
+ }
+ 
+-std::vector<uint16_t> runSharedBatchedDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, const std::optional<std::vector<BitVector>> &responder_shares, coproto::AsioSocket &chl, const config &cfg)
++std::vector<uint16_t> runSharedBatchedDistanceComputationQuerier(const std::vector<BitVector> &querier_vectors, const std::optional<std::vector<BitVector>> &responder_shares, coproto::Socket &chl, const config &cfg)
+ {
+     assert(cfg.modulus > 0 && (size_t)cfg.modulus > cfg.vector_size);
+     assert(pow(2, cfg.p_bits) >= cfg.modulus); // Ensure the modulus is less than or equal to 2^p_bits
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/main.cpp <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/main.cpp
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/main.cpp	2026-11-12 06:31:46.926831052 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/main.cpp	2026-11-12 06:33:51.537733771 -0800
+@@ -22,6 +22,8 @@
+     print_config(cfg);
+     if (std::getenv("OTFPSI_MATCHED_DATA")) // added: output-matched stage 1 on real inputs
+         return runMatchedStage1(cfg);
++    if (std::getenv("OTFPSI_REAL_DATA")) // added (e3): native pairwise-output otFPSI on real inputs
++        return runRealNative(cfg);
+ 
+     double total_time = 0;
+     size_t total_communication = 0;
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/matched.h <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/matched.h
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/matched.h	2026-11-12 06:31:46.926831052 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/matched.h	2026-11-12 06:33:47.075666383 -0800
+@@ -3,45 +3,58 @@
+ // Runs otFPSI's native batched distance computation on REAL inputs (querier = sender set X,
+ // responder = receiver set Y), feeds the masked distances into its threshold comparison in
+ // secret-shared-output mode, and writes each party's XOR share of the m x n comparison bits to a
+-// file. Stage 2 (OR per sender vector + OT delivery) is impl/build*/or_deliver.
++// file. Stage 2 (OR per sender vector + OT delivery) is or_deliver_local (e3) / impl or_deliver.
+ // Enabled by the environment variable OTFPSI_MATCHED_DATA=<data.bin> (format: u64 m, u64 n,
+ // u64 d, X rows, Y rows; bit k of a row is bit k%8 of byte k/8). Output files:
+ // $OTFPSI_MATCHED_OUT.S (querier share) and $OTFPSI_MATCHED_OUT.R (responder share).
+-#include "distance_computation/distance_computation.h"
+-#include "threshold_comparison/threshold_comparison.h"
+-#include <cstdlib>
+-#include <fstream>
+-#include <thread>
+-
+-inline std::vector<BitVector> matchedReadRows(std::ifstream &in, size_t rows, size_t d)
+-{
+-    size_t db = d / 8;
+-    std::vector<uint8_t> buf(db);
+-    std::vector<BitVector> out(rows, BitVector(d));
+-    for (size_t i = 0; i < rows; ++i)
+-    {
+-        in.read((char *)buf.data(), db);
+-        for (size_t k = 0; k < d; ++k)
+-            out[i][k] = (buf[k / 8] >> (k % 8)) & 1;
+-    }
+-    return out;
+-}
++// e3 changes: (1) the sender's shuffle: if OTFPSI_MATCHED_SHUFFLED_DATA=<path> is set, the sender
++// permutes the rows of X with a fresh secret uniform permutation (Fisher-Yates, as in our protocol's
++// step 0) BEFORE stage 1, and writes the data file in the permuted order for stage 2, so the order of
++// the delivered outputs reveals nothing about the sender's original order (the OR/delivery rows are
++// indexed by sender row; the shuffle has to precede stage 1 so that both parties' share rows refer to
++// the same permuted order without an oblivious-shuffle subprotocol). The shuffle time is inside the
++// measured protocol CPU. (2) exact check of ALL m*n shared comparison bits + random sample + all
++// true matches (realCheck), instead of a 200,000-pair sample only.
++#include "realinput.h"
+ 
+ inline int runMatchedStage1(config cfg)
+ {
+     const char *path = std::getenv("OTFPSI_MATCHED_DATA");
+     const char *outp = std::getenv("OTFPSI_MATCHED_OUT");
++    const char *shuf = std::getenv("OTFPSI_MATCHED_SHUFFLED_DATA");
+     if (!path || !outp)
+         throw std::runtime_error("OTFPSI_MATCHED_DATA and OTFPSI_MATCHED_OUT must be set");
+-    std::ifstream in(path, std::ios::binary);
+-    uint64_t m, n, d;
+-    in.read((char *)&m, 8);
+-    in.read((char *)&n, 8);
+-    in.read((char *)&d, 8);
+-    if (!in || d != cfg.vector_size)
+-        throw std::runtime_error("data file does not match -vector_size");
+-    auto X = matchedReadRows(in, m, d);
+-    auto Y = matchedReadRows(in, n, d);
++    RealData D = realRead(path, cfg.vector_size);
++    const uint64_t m = D.m, n = D.n, d = D.d;
++
++    double c0 = processCpuSeconds();
++    if (shuf)
++    {
++        PRNG sp(osuCrypto::sysRandomSeed()); // sender's private randomness
++        std::vector<uint64_t> pi(m);
++        for (uint64_t i = 0; i < m; ++i)
++            pi[i] = i;
++        for (uint64_t i = m; i > 1; --i)
++            std::swap(pi[i - 1], pi[sp.get<uint64_t>() % i]);
++        std::vector<BitVector> X2(m);
++        std::vector<uint64_t> xw2(m);
++        for (uint64_t i = 0; i < m; ++i)
++        {
++            X2[i] = D.X[pi[i]];
++            xw2[i] = D.xw[pi[i]];
++        }
++        D.X.swap(X2);
++        D.xw.swap(xw2);
++        // the sender's (permuted) input for stage 2; Y unchanged
++        std::ofstream f(shuf, std::ios::binary);
++        f.write((const char *)&m, 8); f.write((const char *)&n, 8); f.write((const char *)&d, 8);
++        for (uint64_t i = 0; i < m; ++i)
++            for (uint64_t k = 0; k < d / 8; ++k) { uint8_t b = (D.xw[i] >> (8 * k)) & 0xff; f.write((const char *)&b, 1); }
++        for (uint64_t j = 0; j < n; ++j)
++            for (uint64_t k = 0; k < d / 8; ++k) { uint8_t b = (D.yw[j] >> (8 * k)) & 0xff; f.write((const char *)&b, 1); }
++        std::cout << "SENDER_SHUFFLE applied, permuted data written to " << shuf << std::endl;
++    }
++    double cs = processCpuSeconds();
+ 
+     cfg.querier_size = m;
+     cfg.responder_size = n;
+@@ -51,14 +64,16 @@
+     tcfg.secret_shared = true;  // shared comparison outputs
+ 
+     size_t comm = 0;
+-    double c0 = processCpuSeconds();
++    double c0b = processCpuSeconds();
++    auto w0 = std::chrono::steady_clock::now();
+     std::vector<uint16_t> mask_sums, masked_distances;
+     {
+-        auto thrd = std::thread([&] { mask_sums = runDistanceComputationResponder(Y, std::nullopt, dcfg, comm); });
+-        masked_distances = runDistanceComputationQuerier(X, std::nullopt, dcfg);
++        auto thrd = std::thread([&] { mask_sums = runDistanceComputationResponder(D.Y, std::nullopt, dcfg, comm); });
++        masked_distances = runDistanceComputationQuerier(D.X, std::nullopt, dcfg);
+         thrd.join();
+     }
+     double c1 = processCpuSeconds();
++    auto w1 = std::chrono::steady_clock::now();
+     std::optional<BitVector> shareR;
+     BitVector shareS;
+     {
+@@ -67,8 +82,12 @@
+         thrd.join();
+     }
+     double c2 = processCpuSeconds();
+-    std::cout << "PROTOCOL_CPU distance " << c1 - c0 << std::endl;
++    auto w2 = std::chrono::steady_clock::now();
++    std::cout << "PROTOCOL_CPU shuffle " << cs - c0 << std::endl;
++    std::cout << "PROTOCOL_CPU distance " << c1 - c0b << std::endl;
+     std::cout << "PROTOCOL_CPU threshold " << c2 - c1 << std::endl;
++    std::cout << "PROTOCOL_WALL distance " << std::chrono::duration<double>(w1 - w0).count()
++              << " threshold " << std::chrono::duration<double>(w2 - w1).count() << std::endl;
+     std::cout << "Total Communication: " << comm << " bytes." << std::endl;
+ 
+     // write shares (row-major: querier index * n + responder index)
+@@ -77,22 +96,12 @@
+     fr.write((const char *)&m, 8); fr.write((const char *)&n, 8);
+     fs.write((const char *)shareS.data(), shareS.sizeBytes());
+     fr.write((const char *)shareR->data(), shareR->sizeBytes());
++    fs.close();
++    fr.close();
+ 
+-    // plaintext check of the shared comparison bits on a sample of pairs
+-    PRNG prng(osuCrypto::sysRandomSeed());
+-    size_t bad = 0, checked = 0;
+-    for (size_t t = 0; t < 200000 && t < m * n; ++t)
+-    {
+-        size_t idx = (m * n <= 200000) ? t : prng.get<uint64_t>() % (m * n);
+-        size_t i = idx / n, j = idx % n;
+-        size_t h = 0;
+-        for (size_t k = 0; k < d; ++k)
+-            h += X[i][k] ^ Y[j][k];
+-        bool want = h <= cfg.threshold;
+-        bool got = shareS[idx] ^ (*shareR)[idx];
+-        bad += want != got;
+-        ++checked;
+-    }
+-    std::cout << "MATCHED_CHECK checked=" << checked << " mismatches=" << bad << std::endl;
++    BitVector got = shareS;
++    got ^= *shareR;
++    size_t bad = realCheck(D, cfg.threshold, got, "MATCHED_CHECK");
++    std::cout << "MATCHED_CHECK checked=all mismatches=" << bad << std::endl;
+     return bad ? 2 : 0;
+ }
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/realinput.h <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/realinput.h
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/realinput.h	1969-12-31 16:00:00.000000000 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/realinput.h	2026-11-12 06:33:28.907391462 -0800
+@@ -0,0 +1,154 @@
++#pragma once
++// Added (e3): NATIVE otFPSI on REAL inputs (pairwise output, as in the artifact) and an exact check.
++// Same pipeline as the artifact's native benchmark, except that (a) the inputs are read from a data
++// file instead of being sampled at random, and (b) the threshold comparison is run on the masked
++// distances produced by the distance protocol (the artifact feeds it independent random values), so
++// the querier ends with the plaintext m x n match matrix. Querier = sender set X, responder =
++// receiver set Y (as in matched.h).
++// Enabled by OTFPSI_REAL_DATA=<data.bin> (u64 m, u64 n, u64 d, X rows, Y rows; bit k of a row is
++// bit k%8 of byte k/8). Optional OTFPSI_REAL_SAMPLE=<count> (default 200000).
++// Check: (1) every one of the m*n pairs against a plaintext popcount brute force (d <= 64), (2) a
++// uniformly random sample of OTFPSI_REAL_SAMPLE pairs, (3) all true matches listed separately.
++#include "distance_computation/distance_computation.h"
++#include "threshold_comparison/threshold_comparison.h"
++#include <chrono>
++#include <cstdlib>
++#include <fstream>
++#include <thread>
++
++struct RealData
++{
++    uint64_t m = 0, n = 0, d = 0;
++    std::vector<BitVector> X, Y;
++    std::vector<uint64_t> xw, yw; // packed rows (d <= 64) for the brute force
++};
++
++inline RealData realRead(const char *path, size_t vector_size)
++{
++    RealData D;
++    std::ifstream in(path, std::ios::binary);
++    in.read((char *)&D.m, 8);
++    in.read((char *)&D.n, 8);
++    in.read((char *)&D.d, 8);
++    if (!in || D.d != vector_size || D.d > 64 || D.d % 8)
++        throw std::runtime_error("data file does not match -vector_size (or d > 64)");
++    size_t db = D.d / 8;
++    auto rows = [&](size_t cnt, std::vector<BitVector> &V, std::vector<uint64_t> &W)
++    {
++        V.assign(cnt, BitVector(D.d));
++        W.assign(cnt, 0);
++        std::vector<uint8_t> buf(db);
++        for (size_t i = 0; i < cnt; ++i)
++        {
++            in.read((char *)buf.data(), db);
++            for (size_t k = 0; k < D.d; ++k)
++            {
++                uint64_t b = (buf[k / 8] >> (k % 8)) & 1;
++                V[i][k] = b;
++                W[i] |= b << k;
++            }
++        }
++    };
++    rows(D.m, D.X, D.xw);
++    rows(D.n, D.Y, D.yw);
++    if (!in)
++        throw std::runtime_error("data file truncated");
++    return D;
++}
++
++// Compare a match matrix (row-major, querier index * n + responder index) with the plaintext.
++inline size_t realCheck(const RealData &D, size_t threshold, const BitVector &got, const char *tag)
++{
++    const uint64_t m = D.m, n = D.n;
++    size_t bad = 0, truePairs = 0, rowsWithMatch = 0, gotPairs = 0;
++    std::vector<std::pair<uint32_t, uint32_t>> trueList;
++    for (uint64_t i = 0; i < m; ++i)
++    {
++        bool any = false;
++        for (uint64_t j = 0; j < n; ++j)
++        {
++            bool want = (size_t)__builtin_popcountll(D.xw[i] ^ D.yw[j]) <= threshold;
++            bool g = got[i * n + j];
++            bad += want != g;
++            gotPairs += g;
++            if (want)
++            {
++                ++truePairs;
++                any = true;
++                trueList.emplace_back((uint32_t)i, (uint32_t)j);
++            }
++        }
++        rowsWithMatch += any;
++    }
++    // independent re-check on a random sample (BitVector path, as in matched.h) and on all true matches
++    size_t sample = 200000;
++    if (const char *s = std::getenv("OTFPSI_REAL_SAMPLE"))
++        sample = std::strtoull(s, nullptr, 10);
++    PRNG prng(osuCrypto::sysRandomSeed());
++    size_t sbad = 0, sMatches = 0;
++    for (size_t t = 0; t < sample; ++t)
++    {
++        uint64_t idx = prng.get<uint64_t>() % (m * n);
++        uint64_t i = idx / n, j = idx % n;
++        size_t h = 0;
++        for (size_t k = 0; k < D.d; ++k)
++            h += D.X[i][k] ^ D.Y[j][k];
++        bool want = h <= threshold;
++        sMatches += want;
++        sbad += want != (bool)got[idx];
++    }
++    size_t tbad = 0;
++    for (auto [i, j] : trueList)
++    {
++        size_t h = 0;
++        for (size_t k = 0; k < D.d; ++k)
++            h += D.X[i][k] ^ D.Y[j][k];
++        tbad += !(h <= threshold && got[(uint64_t)i * n + j]);
++    }
++    std::cout << tag << " full_pairs=" << m * n << " full_mismatches=" << bad
++              << " true_pairs=" << truePairs << " got_pairs=" << gotPairs
++              << " sender_rows_with_match=" << rowsWithMatch
++              << " sample=" << sample << " sample_true=" << sMatches << " sample_mismatches=" << sbad
++              << " truematch_checked=" << trueList.size() << " truematch_mismatches=" << tbad << std::endl;
++    return bad + sbad + tbad;
++}
++
++inline int runRealNative(config cfg)
++{
++    RealData D = realRead(std::getenv("OTFPSI_REAL_DATA"), cfg.vector_size);
++    cfg.querier_size = D.m;
++    cfg.responder_size = D.n;
++    cfg.threshold_comparison_count = D.m * D.n;
++    config dcfg = cfg, tcfg = cfg;
++    dcfg.secret_shared = false; // native inputs
++    tcfg.secret_shared = false; // native (pairwise) output to the querier
++    std::cout << "REAL_NATIVE m=" << D.m << " n=" << D.n << " d=" << D.d << " threshold=" << cfg.threshold << std::endl;
++
++    size_t comm = 0;
++    double c0 = processCpuSeconds();
++    auto w0 = std::chrono::steady_clock::now();
++    std::vector<uint16_t> mask_sums, masked_distances;
++    {
++        auto thrd = std::thread([&] { mask_sums = runDistanceComputationResponder(D.Y, std::nullopt, dcfg, comm); });
++        masked_distances = runDistanceComputationQuerier(D.X, std::nullopt, dcfg);
++        thrd.join();
++    }
++    double c1 = processCpuSeconds();
++    auto w1 = std::chrono::steady_clock::now();
++    BitVector result;
++    {
++        auto thrd = std::thread([&] { runThresholdComparisonSender(tcfg, mask_sums, comm); });
++        result = runThresholdComparisonReceiver(tcfg, masked_distances);
++        thrd.join();
++    }
++    double c2 = processCpuSeconds();
++    auto w2 = std::chrono::steady_clock::now();
++    std::cout << "PROTOCOL_CPU distance " << c1 - c0 << std::endl;
++    std::cout << "PROTOCOL_CPU threshold " << c2 - c1 << std::endl;
++    std::cout << "PROTOCOL_WALL distance " << std::chrono::duration<double>(w1 - w0).count()
++              << " threshold " << std::chrono::duration<double>(w2 - w1).count() << std::endl;
++    std::cout << "Total Communication: " << comm << " bytes." << std::endl;
++    size_t bad = realCheck(D, cfg.threshold, result, "REAL_CHECK");
++    std::cout << (bad ? "REAL_VERIFY FAILED" : "REAL_VERIFY OK") << std::endl;
++    return bad ? 2 : 0;
++}
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/threshold_comparison/np_threshold_comparison.cpp <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/threshold_comparison/np_threshold_comparison.cpp
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/threshold_comparison/np_threshold_comparison.cpp	2026-11-12 06:31:46.927831067 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/threshold_comparison/np_threshold_comparison.cpp	2026-11-12 06:32:13.064233947 -0800
+@@ -12,7 +12,7 @@
+ #define CORRELATION_BATCH_SIZE ((size_t)2048)
+ #define OT_BATCH_SIZE ((size_t)4096 * 4096 / 2)
+ 
+-std::optional<BitVector> runNpThresholdComparisonSender(const config &cfg, coproto::AsioSocket &chl, const std::vector<uint16_t> &distance_masks, size_t &total_communication)
++std::optional<BitVector> runNpThresholdComparisonSender(const config &cfg, coproto::Socket &chl, const std::vector<uint16_t> &distance_masks, size_t &total_communication)
+ {
+     assert(distance_masks.size() == cfg.threshold_comparison_count);
+ 
+@@ -141,7 +141,7 @@
+     return choices;
+ }
+ 
+-BitVector runNpThresholdComparisonReceiver(const config &cfg, coproto::AsioSocket &chl, const std::vector<uint16_t> &maskedDistances)
++BitVector runNpThresholdComparisonReceiver(const config &cfg, coproto::Socket &chl, const std::vector<uint16_t> &maskedDistances)
+ {
+     assert(maskedDistances.size() == cfg.threshold_comparison_count);
+ 
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/threshold_comparison/threshold_comparison.h <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/threshold_comparison/threshold_comparison.h
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/threshold_comparison/threshold_comparison.h	2026-11-12 06:31:46.927831067 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/threshold_comparison/threshold_comparison.h	2026-11-12 06:32:31.629518835 -0800
+@@ -9,8 +9,8 @@
+ #include "libOTe/Tools/Coproto.h"
+ #include "coproto/Socket/AsioSocket.h"
+ 
+-BitVector runNpThresholdComparisonReceiver(const config &cfg, coproto::AsioSocket &chl, const std::vector<uint16_t> &maskedDistances);
+-std::optional<BitVector> runNpThresholdComparisonSender(const config &cfg, coproto::AsioSocket &chl, const std::vector<uint16_t> &masks, size_t &total_communication);
++BitVector runNpThresholdComparisonReceiver(const config &cfg, coproto::Socket &chl, const std::vector<uint16_t> &maskedDistances);
++std::optional<BitVector> runNpThresholdComparisonSender(const config &cfg, coproto::Socket &chl, const std::vector<uint16_t> &masks, size_t &total_communication);
+ 
+ 
+ inline BitVector runThresholdComparisonReceiver(const config &cfg, const std::vector<uint16_t> &maskedDistances)
+@@ -18,7 +18,7 @@
+     assert(cfg.threshold_comparison_count == maskedDistances.size());
+ 
+     // get up the networking
+-    auto chl = osuCrypto::cp::asioConnect(cfg.ip, false);
++    auto chl = localConnect(false); // e3: was osuCrypto::cp::asioConnect(cfg.ip, false)
+ 
+     if (!cfg.threshold_comparison.has_value())
+         throw std::runtime_error("Threshold Comparison not enabled");
+@@ -38,7 +38,7 @@
+     assert(cfg.threshold_comparison_count == masks.size());
+ 
+     // get up the networking
+-    auto chl = osuCrypto::cp::asioConnect(cfg.ip, true);
++    auto chl = localConnect(true); // e3: was osuCrypto::cp::asioConnect(cfg.ip, true)
+ 
+     if (!cfg.threshold_comparison.has_value())
+         throw std::runtime_error("Threshold Comparison not enabled");
+diff -ruN '--exclude=build' -x '*.o' <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/util/cryptotools.h <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/util/cryptotools.h
+--- <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_orig/util/cryptotools.h	2026-11-12 06:31:46.928831083 -0800
++++ <ARTIFACT_ROOT>/experiments_r6/e3_otfpsi_real/otfpsi_src/util/cryptotools.h	2026-11-12 06:32:09.282175781 -0800
+@@ -17,6 +17,29 @@
+     return u.ru_utime.tv_sec + u.ru_stime.tv_sec + (u.ru_utime.tv_usec + u.ru_stime.tv_usec) / 1e6;
+ }
+ 
++// Added (e3): in-process transport. Loopback TCP is unavailable in the measurement sandbox, so the
++// two party threads of the single otfpsi process talk over coproto::LocalAsyncSocket instead of
++// AsioSocket on 127.0.0.1. Each protocol phase connects both parties once: the first caller creates
++// the pair and takes its end, the second caller takes the other end.
++#include "coproto/Socket/LocalAsyncSock.h"
++#include <array>
++#include <mutex>
++#include <optional>
++inline coproto::LocalAsyncSocket localConnect(bool server)
++{
++    static std::mutex mu;
++    static std::optional<std::array<coproto::LocalAsyncSocket, 2>> pending;
++    std::lock_guard<std::mutex> lk(mu);
++    if (!pending)
++    {
++        pending.emplace(coproto::LocalAsyncSocket::makePair());
++        return (*pending)[server ? 0 : 1];
++    }
++    coproto::LocalAsyncSocket s = (*pending)[server ? 0 : 1];
++    pending.reset();
++    return s;
++}
++
+ using PRNG = osuCrypto::PRNG;
+ using BitVector = osuCrypto::BitVector;
+ using block = osuCrypto::block;
